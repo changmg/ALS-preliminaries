@@ -1,0 +1,13 @@
+# A circuit with four inputs and two outputs
+#
+INPUT(X1)
+INPUT(X2)
+INPUT(X3)
+INPUT(X4)
+OUTPUT(X6)
+OUTPUT(X7)
+
+# Lines below describe the gates
+X5 = and(X1, X2)
+X6 = or(X3, X5)
+X7 = xor(X3, X4)

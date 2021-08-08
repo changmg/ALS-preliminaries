@@ -1,0 +1,136 @@
+digraph G{
+
+    // size = "5, 5";
+    root[
+        shape=box,
+        // label="abe+\nace+\nde+\nabfg+\nacfg+\ndfg+\nbh+\nch"
+        label="abe+ace+de+abfg+acfg+dfg+bh+ch"
+        fontsize=20
+    ];
+
+    l00[
+        shape=box,
+        label="be+\nce+\nbfg+\ncfg"
+        fontsize=20
+    ]
+    root -> l00[label="var=a\nco=a", fontsize=20]
+
+    l01[
+        shape=box,
+        label="ae+\nafg+\nh"
+        fontsize=20
+    ]
+    root -> l01[label="var=b\nco=b", fontsize=20]
+
+    l02[
+        shape=box,
+        label="ae+\nafg+\nh"
+        fontsize=20
+    ]
+    root -> l02[label="var=c\nco=c", fontsize=20]
+
+    l03[
+        shape=box,
+        label="e+\nfg"
+        fontsize=20
+    ]
+    root -> l03[label="var=d\nco=d", fontsize=20]
+
+    l04[
+        shape=box,
+        label="ab+\nac+\nd"
+        fontsize=20
+    ]
+    root -> l04[label="var=e\nco=e", fontsize=20]
+
+    l05[
+        shape=box,
+        label="ab+\nac+\nd"
+        fontsize=20
+    ]
+    root -> l05[label="var=f\nco=fg", fontsize=20]
+
+    l06[
+        shape=box,
+        label="ab+\nac+\nd"
+        fontsize=20
+    ]
+    root -> l06[label="var=g\nco=fg", fontsize=20]
+
+    l07[
+        shape=box,
+        label="b+\nc"
+        fontsize=20
+    ]
+    root -> l07[label="var=h\nco=h", fontsize=20]
+
+    l10[
+        shape=box,
+        label="e\n+fg"
+        fontsize=20
+    ]
+    l00 -> l10[label="var=b\nco=b", fontsize=20]
+
+    l11[
+        shape=box,
+        label="e+\nfg"
+        fontsize=20
+    ]
+    l00 -> l11[label="var=c\nco=c", fontsize=20]
+
+    l12[
+        shape=box,
+        label="b+\nc"
+        fontsize=20
+    ]
+    l00 -> l12[label="var=e\nco=e", fontsize=20]
+
+    l13[
+        shape=box,
+        label="b+\nc"
+        fontsize=20
+    ]
+    l00 -> l13[label="var=f\nco=fg", fontsize=20]
+
+    l14[
+        shape=box,
+        label="b+\nc"
+        fontsize=20
+    ]
+    l00 -> l14[label="var=g\nco=fg", fontsize=20]
+
+    l15[
+        shape=box,
+        label="e+\nfg"
+        fontsize=20
+    ]
+    l01 -> l15[label="var=a\nco=a", fontsize=20]
+
+    l16[
+        shape=box,
+        label="e+\nfg"
+        fontsize=20
+    ]
+    l02 -> l16[label="var=a\nco=a", fontsize=20]
+
+    l17[
+        shape=box,
+        label="b+\nc"
+        fontsize=20
+    ]
+    l04 -> l17[label="var=a\nco=a", fontsize=20]
+
+    l18[
+        shape=box,
+        label="b+\nc"
+        fontsize=20
+    ]
+    l05 -> l18[label="var=a\nco=a", fontsize=20]
+
+    l19[
+        shape=box,
+        label="b+\nc"
+        fontsize=20
+    ]
+    l06 -> l19[label="var=a\nco=a", fontsize=20]
+}

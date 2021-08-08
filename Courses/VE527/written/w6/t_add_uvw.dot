@@ -1,0 +1,20 @@
+digraph G{
+
+    X[
+        label="Y=t+uvw",
+        fontsize=20
+    ];
+
+    G[
+        label="G=Yq+Yrs+pqr"
+        fontsize=20
+    ]
+
+    H[
+        label="H=pu+qtx+qu+rsu"
+        fontsize=20
+    ]
+
+    X -> G
+    X -> H
+}
