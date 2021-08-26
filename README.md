@@ -8,8 +8,6 @@
 
 ### 2.1 abc
 
-- [ ] TODO
-
 ## 3 Papers
 
 - Survey of ALS: Paper 1
