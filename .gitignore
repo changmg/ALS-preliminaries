@@ -1,0 +1,15 @@
+# Synopsys
+scc*.lib
+scc*.db
+csrc/
+DVEfiles/
+simv.daidir/
+*.saif
+*.vcd
+*.vpd
+simv
+*.key
+alib-52/
+*.log
+*.svf
+*.namemap

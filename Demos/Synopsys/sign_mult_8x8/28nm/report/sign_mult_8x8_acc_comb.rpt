@@ -1,0 +1,142 @@
+ 
+****************************************
+Report : area
+Design : sign_mult_8x8_acc
+Version: O-2018.06-SP1
+Date   : Mon Jan 10 10:16:04 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    tcbn28hpcplusbwp7t30p140hvtssg0p72v0c (File: /home/ectl/Work/Misc/ALS-preliminaries/Demos/Synopsys/std_cells/tcbn28hpcplusbwp7t30p140hvtssg0p72v0c.db)
+
+Number of ports:                           32
+Number of nets:                           196
+Number of cells:                          154
+Number of combinational cells:            154
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         35
+Number of references:                      19
+
+Combinational area:                 94.962001
+Buf/Inv area:                        6.860000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                    94.962001
+Total area:                 undefined
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sign_mult_8x8_acc
+Version: O-2018.06-SP1
+Date   : Mon Jan 10 10:16:04 2022
+****************************************
+
+Operating Conditions: ssg0p72v0c   Library: tcbn28hpcplusbwp7t30p140hvtssg0p72v0c
+Wire Load Model Mode: segmented
+
+  Startpoint: in[3] (input port)
+  Endpoint: out[14] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sign_mult_8x8_acc  ZeroWireload          tcbn28hpcplusbwp7t30p140hvtssg0p72v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  in[3] (in)                                              0.00       0.00 f
+  U36/ZN (CKND0BWP7T30P140HVT)                            0.05       0.05 r
+  U89/ZN (AOI22D1BWP7T30P140HVT)                          0.14       0.20 f
+  U33/ZN (AOI221D0BWP7T30P140HVT)                         0.52       0.72 r
+  U101/ZN (AOI22D1BWP7T30P140HVT)                         0.22       0.94 f
+  U106/S (FA1D0BWP7T30P140HVT)                            0.31       1.25 f
+  U102/S (FA1D0BWP7T30P140HVT)                            0.26       1.51 f
+  intadd_0/U10/CO (FA1D0BWP7T30P140HVT)                   0.23       1.74 f
+  intadd_0/U9/CO (FA1D0BWP7T30P140HVT)                    0.17       1.92 f
+  intadd_0/U8/CO (FA1D0BWP7T30P140HVT)                    0.17       2.09 f
+  intadd_0/U7/CO (FA1D0BWP7T30P140HVT)                    0.17       2.26 f
+  intadd_0/U6/CO (FA1D0BWP7T30P140HVT)                    0.17       2.44 f
+  intadd_0/U5/CO (FA1D0BWP7T30P140HVT)                    0.17       2.61 f
+  intadd_0/U4/CO (FA1D0BWP7T30P140HVT)                    0.17       2.79 f
+  intadd_0/U3/CO (FA1D0BWP7T30P140HVT)                    0.17       2.96 f
+  intadd_0/U2/S (FA1D0BWP7T30P140HVT)                     0.25       3.21 r
+  U83/ZN (CKND0BWP7T30P140HVT)                            0.03       3.24 f
+  out[14] (out)                                           0.00       3.24 f
+  data arrival time                                                  3.24
+
+  max_delay                                               5.00       5.00
+  output external delay                                   0.00       5.00
+  data required time                                                 5.00
+  --------------------------------------------------------------------------
+  data required time                                                 5.00
+  data arrival time                                                 -3.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.76
+
+
+1
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : sign_mult_8x8_acc
+Version: O-2018.06-SP1
+Date   : Mon Jan 10 10:16:04 2022
+****************************************
+
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp7t30p140hvtssg0p72v0c (File: /home/ectl/Work/Misc/ALS-preliminaries/Demos/Synopsys/std_cells/tcbn28hpcplusbwp7t30p140hvtssg0p72v0c.db)
+
+
+Operating Conditions: ssg0p72v0c   Library: tcbn28hpcplusbwp7t30p140hvtssg0p72v0c
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+sign_mult_8x8_acc      ZeroWireload      tcbn28hpcplusbwp7t30p140hvtssg0p72v0c
+
+
+Global Operating Voltage = 0.72 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  16.5046 uW   (61%)
+  Net Switching Power  =  10.7463 uW   (39%)
+                         ---------
+Total Dynamic Power    =  27.2509 uW  (100%)
+
+Cell Leakage Power     =   4.8924 nW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.6505e-02        1.0746e-02            4.8924        2.7256e-02  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          1.6505e-02 mW     1.0746e-02 mW         4.8924 nW     2.7256e-02 mW
+1
