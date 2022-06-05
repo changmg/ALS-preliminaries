@@ -32,11 +32,11 @@ docker run -it -p 5902:5902 -p 1234:22 --hostname lizhen --mac-address 02:42:ac:
 其中，
 
 - 将虚拟机的5902端口映射成本地的5902端口，用于vnc远程桌面服务
-- 将虚拟机的22端口映射成本地的22端口，用于ssh远程连接服务
+- 将虚拟机的22端口映射成本地的1234端口，用于ssh远程连接服务
 - hostname和mac-address不可修改，因为Synopsys软件的破解依赖于它们
 - /home/ectl/Docker/swap为本地路径，/mnt/mydata为虚拟机中的路径，这两个路径用于本地和虚拟机之间交换文件
 
-3. 使用ssh连接虚拟机
+3. 使用ssh连接虚拟机（可选）
 
    在**本地**终端输入，
 
