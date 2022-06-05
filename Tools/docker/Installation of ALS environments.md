@@ -58,6 +58,6 @@ docker run -it -p 5902:5902 -p 1234:22 --hostname lizhen --mac-address 02:42:ac:
 
      https://www.realvnc.com/en/connect/download/viewer/linux/
 
-   - 在本地配置连接，地址是127.0.0.1:5902，密码为zhenchen
+   - 在本地配置连接，地址是127.0.0.1:5902，密码为123456
 
      ![Screenshot from 2022-01-09 22-12-52](https://s2.loli.net/2022/01/09/6K9tBry7oZfcDM4.png)
