@@ -2,7 +2,7 @@
 
 ## 1 Courses
 
-- Logic synthesis part in the VE527 slides: Lecture 2, 8, 10-16.
+- Logic synthesis part in the VE527 slides: Lecture 2, 8-16.
 
 ## 2 Tools
 
