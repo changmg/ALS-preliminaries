@@ -1,0 +1,32 @@
+/* Script file for constraining Multiply16x16 */
+rpt_file = "mult16.rpt"
+design = "mult16"
+
+current_design Multiply16x16
+include script_path + defaults.con
+
+/* Define design environment */
+set_load 2.2 res
+set_driving_cell -cell FD1 all_inputs()
+set_drive 0 clk_name
+
+/* Define design constraints */
+set_input_delay 1.35 -clock clk_name {op1, op2}
+set_max_area 0
+
+/* Define multi-cycle path for multiplier */
+set_multicycle_path 2 -from all_inputs() \
+   -to all_registers(-data_pins -edge_triggered)
+
+/* Ungroup Designware parts */
+designware_cells = \
+   filter( find("cell"),"@is_oper==true" )
+if (dc_shell_status != {}) {
+   set_ungroup designware_cells true
+}
+
+compile 
+write -f db -hierarchy -o db_path + design + ".db"
+include script_path + report.scr
+report_timing_requirements -ignore \
+   >> log_path + rpt_file

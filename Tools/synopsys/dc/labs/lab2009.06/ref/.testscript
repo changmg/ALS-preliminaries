@@ -1,0 +1,94 @@
+#!/bin/sh
+#
+###############################################################
+#
+#
+# If you wish to run the GUI test,
+# toggle the following variable to a "1":
+# 
+test_gui=0
+#
+#
+###############################################################
+
+###############################################################
+#
+# NO CHANGES REQUIRED BELOW THIS LINE
+#
+#
+########################################################################
+#
+#
+echo " "
+echo " ******************************************************"
+echo " Running the Synopsys Workshop Installation Test Script"
+echo " "
+echo "       Course Name:    "
+echo "       Course Version: "
+echo "       Last Update:    2009-03-11"
+echo " ******************************************************"
+echo ""
+
+/bin/rm -rf .Test
+mkdir .Test
+results=".Test/results"
+echo  Installation Test > $results
+echo >> $results
+
+LANG=C
+LC_ALL=C
+export LANG LC_ALL
+
+echo " Running  Test 1 - installation integrity check"
+sum=`find  -follow | sort | cksum | awk '{print $1$2}'`
+if [ "$sum" = "385063202398592" ]
+then
+    echo "Test 1a PASSED:   All files are installed "  >> $results
+else
+    echo "Test 1a FAILED:   There are files missing in the installation " | tee -a $results
+    echo "" | tee -a $results
+fi
+sum=`cat  | cksum | awk '{print $1$2}'`
+if [ "$sum" = "" ]
+then
+    echo "Test 1b PASSED:   Files are consistent"  >> $results
+else
+    echo "Test 1b FAILED:   File consistency problems found" | tee -a $results
+    echo "" | tee -a $results
+fi
+
+cd .Test
+results="./results"
+tmpout=/tmp/tmpout$$
+echo "exit" > exit.cmd
+
+echo " Running  Test 2 - testing executables"
+if [ "$test_gui" = "1" ]
+then
+    echo " Running  Test 3 - testing GUIs"
+else
+    echo " Skipping Test 3 - GUI"
+fi
+/bin/rm -f 
+# results reporting - if grep finds 'FAIL' it returns with 0, else 1
+grep FAIL $results >& /dev/null
+if [ "$?" = "0" ]
+then
+  echo "" >> $results
+  echo "  *******************************************************" >> $results
+  echo "  * Recommended Suggestions for Corrections of FAILURES *" >> $results
+  echo "  *******************************************************" >> $results
+  echo "" >> $results
+  echo "  1. Be sure the class materials installed correctly.    " >> $results
+  echo "" >> $results
+  echo "  2. Be sure the required executables are in your path." >> $results
+  echo "" >> $results
+  echo "     Have a look at the tool log files in .Test/" >> $results
+  echo ""
+  echo " Installation Test FAILS for  workshop" | tee -a $results
+  echo " For details execute: cat .Test/results"
+else
+  echo ""
+  echo " Installation Test PASSED for  workshop" | tee -a $results
+  echo ""
+fi

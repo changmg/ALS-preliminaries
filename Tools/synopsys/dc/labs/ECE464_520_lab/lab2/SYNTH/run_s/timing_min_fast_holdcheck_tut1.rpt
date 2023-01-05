@@ -1,0 +1,33 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : counter
+Version: K-2015.06
+Date   : Thu Sep 17 10:26:03 2020
+****************************************
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
+Wire Load Model Mode: top
+
+  Startpoint: value_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: zero (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  value_reg[3]/CK (DFF_X1)               0.0000     0.0000 r
+  value_reg[3]/Q (DFF_X1)                0.0541     0.0541 r
+  U43/ZN (NOR2_X1)                       0.0159     0.0701 f
+  zero (out)                             0.0000     0.0701 f
+  data arrival time                                 0.0701
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

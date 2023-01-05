@@ -1,0 +1,10 @@
+read_verilog ChipLevel.v
+read_verilog Adder16.v
+read_verilog CascadeMod.v
+read_verilog Adder8.v
+read_verilog Counter.v
+read_verilog Comparator.v
+read_verilog Multiply8x8.v
+read_verilog Multiply16x16.v
+read_verilog MuxMod.v
+read_verilog PathSegment.v

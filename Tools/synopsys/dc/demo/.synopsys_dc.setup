@@ -1,0 +1,28 @@
+################################
+## Library Setting
+#########################################
+
+set search_path "$search_path ./std_cells"
+set synthetic_library "dw_foundation.sldb"
+set target_library "tcbn28hpcplusbwp7t30p140hvtssg0p72v0c.db"
+set link_library "* $synthetic_library $target_library"
+
+################################
+## Alias and other configurations
+#########################################
+set hdlin_enable_vpp true
+set hdlin_translate_off_skip_text true
+
+alias cud current_design
+alias h history
+
+suppress_message ELAB-909
+suppress_message VER-318
+suppress_message ELAB-311
+suppress_message ELAB-349
+suppress_message ELAB-910
+suppress_message VER-61
+suppress_message ELAB-314
+
+history keep 100
+set sh_enable_line_editing true

@@ -1,0 +1,33 @@
+set RTL_SOURCE_FILES   "ORCA_TYPES.vhd \
+                        BLENDER.vhd \
+                        RISCTYPES.vhd \
+                        ALU.vhd \
+                        CLOCK_GEN.vhd \
+                        CONTEXT_MEM.vhd \
+                        CONTROL.vhd \
+                        DATA_PATH.vhd \
+                        INSTRN_LAT.vhd \
+                        ORCA.vhd \
+                        ORCA_IO.vhd \
+                        PCI_FIFO.vhd \
+                        PCI_TOP.vhd \
+                        REG_FILE.vhd \
+                        RISC_CORE.vhd \
+                        SDRAM_FIFO.vhd \
+                        SDRAM_TOP.vhd \
+                        PARSER.vhd \
+                        PCI_CORE.vhd \
+                        PCI_W_MUX.vhd \
+                        PRGRM_CNT.vhd \
+                        PRGRM_CNT_TOP.vhd \
+                        PRGRM_DECODE.vhd \
+                        PRGRM_FSM.vhd \
+                        RESET_BLOCK.vhd \
+                        RISC_CHIP.vhd \
+                        SDRAM_IF.vhd \
+                        SD_W_MUX.vhd \
+                        STACK_FSM.vhd \
+                        STACK_MEM.vhd \
+                        STACK_TOP.vhd \
+                        ORCA_TOP.vhd"
+

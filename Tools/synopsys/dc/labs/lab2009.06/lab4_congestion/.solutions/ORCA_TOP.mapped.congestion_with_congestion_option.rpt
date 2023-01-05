@@ -1,0 +1,46 @@
+Information: Base Cell (com): cell xn02d1, w=4510, h=3690 (npin=3)
+Information: Base Cell (seq): cell sdcrq1, w=12710, h=3690 (npin=5)
+Warning: Poly layer CP is ignored during extraction. (RCEX-076)
+Information: Layer METAL3 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer METAL4 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer METAL5 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer METAL6 is ignored for resistance and capacitance computation. (RCEX-019)
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer METAL : 0.0002 0.0002 (RCEX-011)
+Information: Library Derived Res for layer METAL : 0.00068 0.00037 (RCEX-011)
+Information: Library Derived Cap for layer METAL2 : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METAL2 : 0.0004 0.00021 (RCEX-011)
+Information: Library Derived Cap for layer METAL3 : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Res for layer METAL3 : 0.0004 0.00021 (RCEX-011)
+Information: Library Derived Cap for layer METAL4 : 0.00021 0.0002 (RCEX-011)
+Information: Library Derived Res for layer METAL4 : 0.0004 0.00021 (RCEX-011)
+Information: Library Derived Cap for layer METAL5 : 0.00021 0.00021 (RCEX-011)
+Information: Library Derived Res for layer METAL5 : 0.0002 0.00011 (RCEX-011)
+Information: Library Derived Cap for layer METAL6 : 0.00027 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL6 : 6.1e-05 3.4e-05 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.0002 0.0002 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00068 0.00037 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00025 0.00025 (RCEX-011)
+Information: Library Derived Vertical Res : 0.0004 0.00021 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.00068 0.00019 (RCEX-011)
+
+Information: Running stand-alone coarse placer in a separate process using temp directory '/tmp'. (PSYN-605)
+Information: Executable name is '/global/apps/syn_2008.09-SP4/linux/syn/bin/rpsa_exec'.  (PSYN-877)
+ 
+****************************************
+Report : congestion
+Design : ORCA_TOP
+Version: B-2008.09-SP4
+Date   : Mon Apr 13 06:32:31 2009
+****************************************
+
+Both Dirs: Overflow = 6104 Max = 85 (1 GRCs) GRCs = 1559 (12.88%)
+H routing: Overflow = 3226 Max = 29 (1 GRCs) GRCs = 698  (5.77%)
+V routing: Overflow = 2878 Max = 67 (2 GRCs) GRCs = 947  (7.83%)
+1

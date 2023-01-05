@@ -1,0 +1,1742 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Sep 16 15:15:14 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     18
+    Unconnected ports (LINT-28)                                    11
+    Feedthrough (LINT-29)                                           7
+
+Cells                                                              13
+    Connected to power or ground (LINT-32)                         10
+    Nets connected to multiple pins on same cell (LINT-33)          3
+--------------------------------------------------------------------------------
+
+Warning: In design 'Multiply8x8_DW02_mult_0', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', port 'A[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', port 'B[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', port 'B[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', port 'B[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', port 'B[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', port 'B[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', port 'B[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', port 'B[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'Multiply8x8_DW01_add_1', input port 'A[6]' is connected directly to output port 'SUM[6]'. (LINT-29)
+Warning: In design 'Multiply8x8_DW01_add_1', input port 'A[5]' is connected directly to output port 'SUM[5]'. (LINT-29)
+Warning: In design 'Multiply8x8_DW01_add_1', input port 'A[4]' is connected directly to output port 'SUM[4]'. (LINT-29)
+Warning: In design 'Multiply8x8_DW01_add_1', input port 'A[3]' is connected directly to output port 'SUM[3]'. (LINT-29)
+Warning: In design 'Multiply8x8_DW01_add_1', input port 'A[2]' is connected directly to output port 'SUM[2]'. (LINT-29)
+Warning: In design 'Multiply8x8_DW01_add_1', input port 'A[1]' is connected directly to output port 'SUM[1]'. (LINT-29)
+Warning: In design 'Multiply8x8_DW01_add_1', input port 'A[0]' is connected directly to output port 'SUM[0]'. (LINT-29)
+Warning: In design 'Multiply8x8', a pin on submodule 'mult_13' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 0. 
+Warning: In design 'Multiply8x8_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[13]' is connected to logic 0. 
+Warning: In design 'Multiply8x8_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[6]' is connected to logic 0. 
+Warning: In design 'Multiply8x8_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[5]' is connected to logic 0. 
+Warning: In design 'Multiply8x8_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[4]' is connected to logic 0. 
+Warning: In design 'Multiply8x8_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[3]' is connected to logic 0. 
+Warning: In design 'Multiply8x8_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[2]' is connected to logic 0. 
+Warning: In design 'Multiply8x8_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[1]' is connected to logic 0. 
+Warning: In design 'Multiply8x8_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'Multiply8x8_DW02_mult_0', a pin on submodule 'FS_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'Multiply8x8_DW02_mult_0', the same net is connected to more than one pin on submodule 'FS_1'. (LINT-33)
+   Net 'n82' is connected to pins 'A[13]', 'B[6]''.
+Warning: In design 'Multiply8x8_DW02_mult_0', the same net is connected to more than one pin on submodule 'FS_1'. (LINT-33)
+   Net 'n83' is connected to pins 'B[5]', 'B[4]'', 'B[3]', 'B[2]', 'B[1]'.
+Warning: In design 'Multiply8x8_DW02_mult_0', the same net is connected to more than one pin on submodule 'FS_1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'B[0]', 'CI''.
+1
+ 
+****************************************
+Report : area
+Design : Multiply8x8
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:14 2020
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    lsi_10k (File: /home/ectl/Software/synopsys/syn2015.06/libraries/syn/lsi_10k.db)
+
+Number of ports:                          110
+Number of nets:                           433
+Number of cells:                          312
+Number of combinational cells:            290
+Number of sequential cells:                20
+Number of macros/black boxes:               0
+Number of buf/inv:                         39
+Number of references:                       3
+
+Combinational area:                837.000000
+Buf/Inv area:                       53.000000
+Noncombinational area:             112.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   949.000000
+Total area:                 undefined
+1
+ 
+****************************************
+Report : design
+Design : Multiply8x8
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:14 2020
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    lsi_10k (File: /home/ectl/Software/synopsys/syn2015.06/libraries/syn/lsi_10k.db)
+
+Local Link Library:
+
+    {lsi_10k.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WCCOM
+    Library : lsi_10k
+    Process :   1.50
+    Temperature :  70.00
+    Voltage :   4.75
+    Interconnect Model : worst_case_tree
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : Multiply8x8
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:14 2020
+****************************************
+
+Attributes:
+   BO - reference allows boundary optimization
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U3                        B2IP            lsi_10k         4.000000  
+mult_13                   Multiply8x8_DW02_mult_0         833.000000
+                                                                    BO, h
+res_reg[0]                FD1             lsi_10k         7.000000  n
+res_reg[1]                FD1             lsi_10k         7.000000  n
+res_reg[2]                FD1             lsi_10k         7.000000  n
+res_reg[3]                FD1             lsi_10k         7.000000  n
+res_reg[4]                FD1             lsi_10k         7.000000  n
+res_reg[5]                FD1             lsi_10k         7.000000  n
+res_reg[6]                FD1             lsi_10k         7.000000  n
+res_reg[7]                FD1             lsi_10k         7.000000  n
+res_reg[8]                FD1             lsi_10k         7.000000  n
+res_reg[9]                FD1             lsi_10k         7.000000  n
+res_reg[10]               FD1             lsi_10k         7.000000  n
+res_reg[11]               FD1             lsi_10k         7.000000  n
+res_reg[12]               FD1             lsi_10k         7.000000  n
+res_reg[13]               FD1             lsi_10k         7.000000  n
+res_reg[14]               FD1             lsi_10k         7.000000  n
+res_reg[15]               FD1             lsi_10k         7.000000  n
+--------------------------------------------------------------------------------
+Total 18 cells                                            949.000000
+1
+ 
+****************************************
+Report : reference
+Design : Multiply8x8
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:14 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+B2IP               lsi_10k        4.000000       1      4.000000  
+FD1                lsi_10k        7.000000      16    112.000000  n
+Multiply8x8_DW02_mult_0         833.000000       1    833.000000  h
+-----------------------------------------------------------------------------
+Total 3 references                                    949.000000
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : Multiply8x8
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:14 2020
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in    198.0000   0.0000   --      --      --         
+op1[0]         in      0.0000   0.0000   --      --      --         
+op1[1]         in      0.0000   0.0000   --      --      --         
+op1[2]         in      0.0000   0.0000   --      --      --         
+op1[3]         in      0.0000   0.0000   --      --      --         
+op1[4]         in      0.0000   0.0000   --      --      --         
+op1[5]         in      0.0000   0.0000   --      --      --         
+op1[6]         in      0.0000   0.0000   --      --      --         
+op1[7]         in      0.0000   0.0000   --      --      --         
+op2[0]         in      0.0000   0.0000   --      --      --         
+op2[1]         in      0.0000   0.0000   --      --      --         
+op2[2]         in      0.0000   0.0000   --      --      --         
+op2[3]         in      0.0000   0.0000   --      --      --         
+op2[4]         in      0.0000   0.0000   --      --      --         
+op2[5]         in      0.0000   0.0000   --      --      --         
+op2[6]         in      0.0000   0.0000   --      --      --         
+op2[7]         in      0.0000   0.0000   --      --      --         
+res[0]         out     1.0000   0.0000   --      --      --         
+res[1]         out     1.0000   0.0000   --      --      --         
+res[2]         out     1.0000   0.0000   --      --      --         
+res[3]         out     1.0000   0.0000   --      --      --         
+res[4]         out     1.0000   0.0000   --      --      --         
+res[5]         out     1.0000   0.0000   --      --      --         
+res[6]         out     1.0000   0.0000   --      --      --         
+res[7]         out     1.0000   0.0000   --      --      --         
+res[8]         out     1.0000   0.0000   --      --      --         
+res[9]         out     1.0000   0.0000   --      --      --         
+res[10]        out     1.0000   0.0000   --      --      --         
+res[11]        out     1.0000   0.0000   --      --      --         
+res[12]        out     1.0000   0.0000   --      --      --         
+res[13]        out     1.0000   0.0000   --      --      --         
+res[14]        out     1.0000   0.0000   --      --      --         
+res[15]        out     1.0000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk              199      --              --              --        -- 
+op1[0]             1      --              --              --        -- 
+op1[1]             1      --              --              --        -- 
+op1[2]             1      --              --              --        -- 
+op1[3]             1      --              --              --        -- 
+op1[4]             1      --              --              --        -- 
+op1[5]             1      --              --              --        -- 
+op1[6]             1      --              --              --        -- 
+op1[7]             1      --              --              --        -- 
+op2[0]             1      --              --              --        -- 
+op2[1]             1      --              --              --        -- 
+op2[2]             1      --              --              --        -- 
+op2[3]             1      --              --              --        -- 
+op2[4]             1      --              --              --        -- 
+op2[5]             1      --              --              --        -- 
+op2[6]             1      --              --              --        -- 
+op2[7]             1      --              --              --        -- 
+res[0]             1      --              --              --        -- 
+res[1]             1      --              --              --        -- 
+res[2]             1      --              --              --        -- 
+res[3]             1      --              --              --        -- 
+res[4]             1      --              --              --        -- 
+res[5]             1      --              --              --        -- 
+res[6]             1      --              --              --        -- 
+res[7]             1      --              --              --        -- 
+res[8]             1      --              --              --        -- 
+res[9]             1      --              --              --        -- 
+res[10]            1      --              --              --        -- 
+res[11]            1      --              --              --        -- 
+res[12]            1      --              --              --        -- 
+res[13]            1      --              --              --        -- 
+res[14]            1      --              --              --        -- 
+res[15]            1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           1.20    --      1.20    --    clk       --    
+              --      1.20    --      1.20  clk(f)          
+op1[0]        1.20    1.20    1.20    1.20  clk       --    
+op1[1]        1.20    1.20    1.20    1.20  clk       --    
+op1[2]        1.20    1.20    1.20    1.20  clk       --    
+op1[3]        1.20    1.20    1.20    1.20  clk       --    
+op1[4]        1.20    1.20    1.20    1.20  clk       --    
+op1[5]        1.20    1.20    1.20    1.20  clk       --    
+op1[6]        1.20    1.20    1.20    1.20  clk       --    
+op1[7]        1.20    1.20    1.20    1.20  clk       --    
+op2[0]        1.20    1.20    1.20    1.20  clk       --    
+op2[1]        1.20    1.20    1.20    1.20  clk       --    
+op2[2]        1.20    1.20    1.20    1.20  clk       --    
+op2[3]        1.20    1.20    1.20    1.20  clk       --    
+op2[4]        1.20    1.20    1.20    1.20  clk       --    
+op2[5]        1.20    1.20    1.20    1.20  clk       --    
+op2[6]        1.20    1.20    1.20    1.20  clk       --    
+op2[7]        1.20    1.20    1.20    1.20  clk       --    
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+clk          IV/  --            IV/  --              -- /  --     n
+op1[0]       IV                 IV                   -- /  --     n,N
+op1[1]       IV                 IV                   -- /  --     n,N
+op1[2]       IV                 IV                   -- /  --     n,N
+op1[3]       IV                 IV                   -- /  --     n,N
+op1[4]       IV                 IV                   -- /  --     n,N
+op1[5]       IV                 IV                   -- /  --     n,N
+op1[6]       IV                 IV                   -- /  --     n,N
+op1[7]       IV                 IV                   -- /  --     n,N
+op2[0]       IV                 IV                   -- /  --     n,N
+op2[1]       IV                 IV                   -- /  --     n,N
+op2[2]       IV                 IV                   -- /  --     n,N
+op2[3]       IV                 IV                   -- /  --     n,N
+op2[4]       IV                 IV                   -- /  --     n,N
+op2[5]       IV                 IV                   -- /  --     n,N
+op2[6]       IV                 IV                   -- /  --     n,N
+op2[7]       IV                 IV                   -- /  --     n,N
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+op1[0]        --      --     --      --     --      --     --     --        -- 
+op1[1]        --      --     --      --     --      --     --     --        -- 
+op1[2]        --      --     --      --     --      --     --     --        -- 
+op1[3]        --      --     --      --     --      --     --     --        -- 
+op1[4]        --      --     --      --     --      --     --     --        -- 
+op1[5]        --      --     --      --     --      --     --     --        -- 
+op1[6]        --      --     --      --     --      --     --     --        -- 
+op1[7]        --      --     --      --     --      --     --     --        -- 
+op2[0]        --      --     --      --     --      --     --     --        -- 
+op2[1]        --      --     --      --     --      --     --     --        -- 
+op2[2]        --      --     --      --     --      --     --     --        -- 
+op2[3]        --      --     --      --     --      --     --     --        -- 
+op2[4]        --      --     --      --     --      --     --     --        -- 
+op2[5]        --      --     --      --     --      --     --     --        -- 
+op2[6]        --      --     --      --     --      --     --     --        -- 
+op2[7]        --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+op1[0]        --      --      --      -- 
+op1[1]        --      --      --      -- 
+op1[2]        --      --      --      -- 
+op1[3]        --      --      --      -- 
+op1[4]        --      --      --      -- 
+op1[5]        --      --      --      -- 
+op1[6]        --      --      --      -- 
+op1[7]        --      --      --      -- 
+op2[0]        --      --      --      -- 
+op2[1]        --      --      --      -- 
+op2[2]        --      --      --      -- 
+op2[3]        --      --      --      -- 
+op2[4]        --      --      --      -- 
+op2[5]        --      --      --      -- 
+op2[6]        --      --      --      -- 
+op2[7]        --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+res[0]        3.85    4.00    3.85    4.00  clk       0.00  
+res[1]        3.85    4.00    3.85    4.00  clk       0.00  
+res[2]        3.85    4.00    3.85    4.00  clk       0.00  
+res[3]        3.85    4.00    3.85    4.00  clk       0.00  
+res[4]        3.85    4.00    3.85    4.00  clk       0.00  
+res[5]        3.85    4.00    3.85    4.00  clk       0.00  
+res[6]        3.85    4.00    3.85    4.00  clk       0.00  
+res[7]        3.85    4.00    3.85    4.00  clk       0.00  
+res[8]        3.85    4.00    3.85    4.00  clk       0.00  
+res[9]        3.85    4.00    3.85    4.00  clk       0.00  
+res[10]       3.85    4.00    3.85    4.00  clk       0.00  
+res[11]       3.85    4.00    3.85    4.00  clk       0.00  
+res[12]       3.85    4.00    3.85    4.00  clk       0.00  
+res[13]       3.85    4.00    3.85    4.00  clk       0.00  
+res[14]       3.85    4.00    3.85    4.00  clk       0.00  
+res[15]       3.85    4.00    3.85    4.00  clk       0.00  
+
+1
+ 
+****************************************
+Report : net
+Design : Multiply8x8
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:14 2020
+****************************************
+
+
+Operating Conditions: WCCOM   Library: lsi_10k
+Wire Load Model Mode: top
+
+
+Attributes:
+   dr - drc disabled
+
+Net                 Fanout     Fanin      Load   Resistance    Pins   Attributes
+--------------------------------------------------------------------------------
+clk                     16         1    214.00         0.00      17   dr
+n1                       8         1     15.00         0.00       9   
+n2                       0         1      0.00         0.00       1   dr
+op1[0]                   5         1      5.00         0.00       6   
+op1[1]                   5         1      5.00         0.00       6   
+op1[2]                   8         1      8.00         0.00       9   
+op1[3]                   8         1      8.00         0.00       9   
+op1[4]                   8         1      8.00         0.00       9   
+op1[5]                   8         1      8.00         0.00       9   
+op1[6]                   8         1      8.00         0.00       9   
+op1[7]                   8         1      8.00         0.00       9   
+op2[0]                   9         1     10.00         0.00      10   
+op2[1]                   8         1      8.00         0.00       9   
+op2[2]                   1         1      2.00         0.00       2   
+op2[3]                   2         1      3.00         0.00       3   
+op2[4]                   3         1      4.00         0.00       4   
+op2[5]                   5         1      5.00         0.00       6   
+op2[6]                   5         1      5.00         0.00       6   
+op2[7]                   5         1      5.00         0.00       6   
+res[0]                   1         1      1.00         0.00       2   
+res[1]                   1         1      1.00         0.00       2   
+res[2]                   1         1      1.00         0.00       2   
+res[3]                   1         1      1.00         0.00       2   
+res[4]                   1         1      1.00         0.00       2   
+res[5]                   1         1      1.00         0.00       2   
+res[6]                   1         1      1.00         0.00       2   
+res[7]                   1         1      1.00         0.00       2   
+res[8]                   1         1      1.00         0.00       2   
+res[9]                   1         1      1.00         0.00       2   
+res[10]                  1         1      1.00         0.00       2   
+res[11]                  1         1      1.00         0.00       2   
+res[12]                  1         1      1.00         0.00       2   
+res[13]                  1         1      1.00         0.00       2   
+res[14]                  1         1      1.00         0.00       2   
+res[15]                  1         1      1.00         0.00       2   
+res_tmp[0]               1         1      1.00         0.00       2   
+res_tmp[1]               1         1      1.00         0.00       2   
+res_tmp[2]               1         1      1.00         0.00       2   
+res_tmp[3]               1         1      1.00         0.00       2   
+res_tmp[4]               1         1      1.00         0.00       2   
+res_tmp[5]               1         1      1.00         0.00       2   
+res_tmp[6]               1         1      1.00         0.00       2   
+res_tmp[7]               1         1      1.00         0.00       2   
+res_tmp[8]               1         1      1.00         0.00       2   
+res_tmp[9]               1         1      1.00         0.00       2   
+res_tmp[10]              1         1      1.00         0.00       2   
+res_tmp[11]              1         1      1.00         0.00       2   
+res_tmp[12]              1         1      1.00         0.00       2   
+res_tmp[13]              1         1      1.00         0.00       2   
+res_tmp[14]              1         1      1.00         0.00       2   
+res_tmp[15]              1         1      1.00         0.00       2   
+--------------------------------------------------------------------------------
+Total 51 nets          152        51    361.00         0.00     203
+Maximum                 16         1    214.00         0.00      17
+Average               2.98      1.00      7.08         0.00    3.98
+1
+ 
+****************************************
+Report : compile_options
+Design : Multiply8x8
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:14 2020
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+Multiply8x8                              flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+
+Multiply8x8_DW02_mult_0                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+
+Multiply8x8_DW01_add_1                   flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : Multiply8x8
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:14 2020
+****************************************
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op1[1] (in)                              1.34       2.54 r
+  mult_13/U146/Z (AN2P)                    1.41       3.95 r
+  mult_13/U72/Z (EOP)                      2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                 3.02       9.24 f
+  mult_13/U20/Z (EO3P)                     4.02      13.26 f
+  mult_13/S2_4_2/CO (FA1P)                 2.93      16.19 f
+  mult_13/S2_5_2/CO (FA1P)                 2.93      19.12 f
+  mult_13/S2_6_2/S (FA1P)                  3.94      23.06 f
+  mult_13/S4_1/CO (FA1P)                   2.93      25.99 f
+  mult_13/U35/Z (MUX21LP)                  1.79      27.78 r
+  mult_13/U36/Z (IVAP)                     0.45      28.23 f
+  mult_13/FS_1/U41/Z (OR2)                 1.80      30.04 f
+  mult_13/FS_1/U40/Z (AN2)                 1.63      31.67 f
+  mult_13/FS_1/U37/Z (ND4P)                1.29      32.96 r
+  mult_13/FS_1/U31/Z (ND3)                 0.90      33.86 f
+  mult_13/FS_1/U74/Z (EOP)                 2.03      35.90 f
+  res_reg[15]/D (FD1)                      0.00      35.90 f
+  data arrival time                                  35.90
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[15]/CP (FD1)                     0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -35.90
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -17.15
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op1[1] (in)                              1.34       2.54 r
+  mult_13/U146/Z (AN2P)                    1.41       3.95 r
+  mult_13/U72/Z (EOP)                      2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                 3.02       9.24 f
+  mult_13/U21/Z (ND2)                      1.19      10.42 r
+  mult_13/U24/Z (ND3)                      0.90      11.33 f
+  mult_13/S2_4_3/CO (FA1A)                 4.11      15.44 f
+  mult_13/S2_5_3/CO (FA1AP)                4.50      19.94 f
+  mult_13/U73/Z (ND2P)                     1.05      20.99 r
+  mult_13/U40/Z (AO3)                      0.94      21.92 f
+  mult_13/S4_3/CO (FA1AP)                  4.35      26.27 f
+  mult_13/U121/Z (EOP)                     2.42      28.69 f
+  mult_13/FS_1/U7/Z (OR2)                  1.69      30.38 f
+  mult_13/FS_1/U39/Z (AN4)                 1.88      32.26 f
+  mult_13/FS_1/U69/Z (ND2)                 1.19      33.45 r
+  mult_13/FS_1/U68/Z (ND2)                 0.40      33.85 f
+  mult_13/FS_1/U43/Z (ENP)                 2.03      35.88 f
+  res_reg[14]/D (FD1)                      0.00      35.88 f
+  data arrival time                                  35.88
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[14]/CP (FD1)                     0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -35.88
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -17.13
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op1[1] (in)                              1.34       2.54 r
+  mult_13/U146/Z (AN2P)                    1.41       3.95 r
+  mult_13/U72/Z (EOP)                      2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                 3.02       9.24 f
+  mult_13/U21/Z (ND2)                      1.19      10.42 r
+  mult_13/U24/Z (ND3)                      0.90      11.33 f
+  mult_13/S2_4_3/CO (FA1A)                 4.11      15.44 f
+  mult_13/S2_5_3/S (FA1AP)                 3.94      19.38 f
+  mult_13/S2_6_2/CO (FA1P)                 2.84      22.22 f
+  mult_13/S4_2/S (FA1A)                    3.59      25.81 f
+  mult_13/U88/Z (IV)                       1.25      27.06 r
+  mult_13/U35/Z (MUX21LP)                  0.86      27.91 f
+  mult_13/U36/Z (IVAP)                     0.67      28.58 r
+  mult_13/FS_1/U6/Z1 (B3I)                 0.43      29.01 f
+  mult_13/FS_1/U24/Z (AO1)                 2.79      31.80 r
+  mult_13/FS_1/U25/Z (NR2)                 0.58      32.37 f
+  mult_13/FS_1/U67/Z (AO7)                 1.46      33.83 r
+  mult_13/FS_1/U77/Z (EOP)                 2.03      35.86 f
+  res_reg[12]/D (FD1)                      0.00      35.86 f
+  data arrival time                                  35.86
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[12]/CP (FD1)                     0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -35.86
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -17.11
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op1[1] (in)                              1.34       2.54 r
+  mult_13/U146/Z (AN2P)                    1.41       3.95 r
+  mult_13/U72/Z (EOP)                      2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                 3.02       9.24 f
+  mult_13/U21/Z (ND2)                      1.19      10.42 r
+  mult_13/U24/Z (ND3)                      0.90      11.33 f
+  mult_13/S2_4_3/CO (FA1A)                 4.11      15.44 f
+  mult_13/S2_5_3/CO (FA1AP)                4.50      19.94 f
+  mult_13/U73/Z (ND2P)                     1.05      20.99 r
+  mult_13/U40/Z (AO3)                      0.94      21.92 f
+  mult_13/S4_3/CO (FA1AP)                  4.35      26.27 f
+  mult_13/U121/Z (EOP)                     2.42      28.69 f
+  mult_13/FS_1/U38/Z (OR2)                 1.69      30.38 f
+  mult_13/FS_1/U15/Z (ND2)                 1.44      31.83 r
+  mult_13/FS_1/U27/Z (OR2)                 0.98      32.80 r
+  mult_13/FS_1/U60/Z (AO3)                 0.94      33.74 f
+  mult_13/FS_1/U45/Z (ENP)                 2.03      35.77 f
+  res_reg[13]/D (FD1)                      0.00      35.77 f
+  data arrival time                                  35.77
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[13]/CP (FD1)                     0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -35.77
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -17.02
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op1[1] (in)                              1.34       2.54 r
+  mult_13/U146/Z (AN2P)                    1.41       3.95 r
+  mult_13/U72/Z (EOP)                      2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                 3.02       9.24 f
+  mult_13/U20/Z (EO3P)                     4.02      13.26 f
+  mult_13/S2_4_2/CO (FA1P)                 2.93      16.19 f
+  mult_13/S2_5_2/CO (FA1P)                 2.93      19.12 f
+  mult_13/S2_6_2/S (FA1P)                  3.94      23.06 f
+  mult_13/S4_1/CO (FA1P)                   2.93      25.99 f
+  mult_13/U35/Z (MUX21LP)                  1.79      27.78 r
+  mult_13/U36/Z (IVAP)                     0.45      28.23 f
+  mult_13/FS_1/U6/Z2 (B3I)                 1.22      29.45 f
+  mult_13/FS_1/U59/Z (ND2)                 1.70      31.16 r
+  mult_13/FS_1/U8/Z (IV)                   0.61      31.77 f
+  mult_13/FS_1/U66/Z (ND2)                 1.19      32.95 r
+  mult_13/FS_1/U72/Z (ND2)                 0.40      33.35 f
+  mult_13/FS_1/U71/Z (EOP)                 2.03      35.39 f
+  res_reg[11]/D (FD1)                      0.00      35.39 f
+  data arrival time                                  35.39
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[11]/CP (FD1)                     0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -35.39
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -16.64
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op1[1] (in)                              1.34       2.54 r
+  mult_13/U146/Z (AN2P)                    1.41       3.95 r
+  mult_13/U72/Z (EOP)                      2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                 3.02       9.24 f
+  mult_13/U21/Z (ND2)                      1.19      10.42 r
+  mult_13/U24/Z (ND3)                      0.90      11.33 f
+  mult_13/S2_4_3/CO (FA1A)                 4.11      15.44 f
+  mult_13/S2_5_3/S (FA1AP)                 3.94      19.38 f
+  mult_13/S2_6_2/CO (FA1P)                 2.84      22.22 f
+  mult_13/U65/CO (FA1A)                    4.11      26.33 f
+  mult_13/U107/Z (EOP)                     2.26      28.60 f
+  mult_13/FS_1/U13/Z (IV)                  1.25      29.84 r
+  mult_13/FS_1/U10/Z (ND2)                 0.56      30.40 f
+  mult_13/FS_1/U65/Z (ND2)                 1.44      31.85 r
+  mult_13/FS_1/U73/Z (ENP)                 2.03      33.88 f
+  res_reg[10]/D (FD1)                      0.00      33.88 f
+  data arrival time                                  33.88
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[10]/CP (FD1)                     0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -33.88
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -15.13
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op1[1] (in)                              1.34       2.54 r
+  mult_13/U146/Z (AN2P)                    1.41       3.95 r
+  mult_13/U72/Z (EOP)                      2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                 3.02       9.24 f
+  mult_13/U20/Z (EO3P)                     4.02      13.26 f
+  mult_13/S2_4_2/CO (FA1P)                 2.93      16.19 f
+  mult_13/S2_5_2/CO (FA1P)                 2.93      19.12 f
+  mult_13/S2_6_2/S (FA1P)                  3.94      23.06 f
+  mult_13/S4_1/CO (FA1P)                   2.93      25.99 f
+  mult_13/U35/Z (MUX21LP)                  1.79      27.78 r
+  mult_13/U36/Z (IVAP)                     0.45      28.23 f
+  mult_13/FS_1/U6/Z2 (B3I)                 1.22      29.45 f
+  mult_13/FS_1/U59/Z (ND2)                 1.70      31.16 r
+  mult_13/FS_1/U22/Z (AN2P)                1.14      32.30 r
+  res_reg[9]/D (FD1)                       0.00      32.30 r
+  data arrival time                                  32.30
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[9]/CP (FD1)                      0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -32.30
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -13.55
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[8] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op1[1] (in)                              1.34       2.54 r
+  mult_13/U146/Z (AN2P)                    1.41       3.95 r
+  mult_13/U72/Z (EOP)                      2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                 3.02       9.24 f
+  mult_13/U20/Z (EO3P)                     4.02      13.26 f
+  mult_13/S2_4_2/CO (FA1P)                 2.93      16.19 f
+  mult_13/S2_5_2/S (FA1P)                  3.86      20.05 f
+  mult_13/U53/Z (ND2)                      1.44      21.50 r
+  mult_13/U55/Z (ND3P)                     1.07      22.56 f
+  mult_13/S4_1/S (FA1P)                    4.20      26.77 r
+  mult_13/U4/Z (EOP)                       2.03      28.80 f
+  res_reg[8]/D (FD1)                       0.00      28.80 f
+  data arrival time                                  28.80
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[8]/CP (FD1)                      0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -28.80
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.05
+
+
+  Startpoint: op2[2] (input port clocked by clk)
+  Endpoint: res_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op2[2] (in)                              0.54       1.74 r
+  U3/Z2 (B2IP)                             1.77       3.51 r
+  mult_13/U5/Z (B4IP)                      0.08       3.59 f
+  mult_13/U39/Z (NR2P)                     1.76       5.35 r
+  mult_13/U28/Z (AN2P)                     1.54       6.89 r
+  mult_13/S2_2_2/S (FA1P)                  3.94      10.83 f
+  mult_13/U95/Z (ND2)                      1.44      12.28 r
+  mult_13/U91/Z (ND3P)                     1.17      13.45 f
+  mult_13/S2_4_1/CO (FA1P)                 3.02      16.47 f
+  mult_13/S2_5_1/CO (FA1P)                 2.93      19.40 f
+  mult_13/U50/Z (EOP)                      2.11      21.51 f
+  mult_13/U51/Z (EOP)                      2.19      23.70 f
+  mult_13/S4_0/S (FA1)                     3.77      27.47 r
+  res_reg[7]/D (FD1)                       0.00      27.47 r
+  data arrival time                                  27.47
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[7]/CP (FD1)                      0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -27.47
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -8.72
+
+
+  Startpoint: op1[0] (input port clocked by clk)
+  Endpoint: res_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op1[0] (in)                              1.34       2.54 r
+  mult_13/U38/Z (IVDA)                     1.70       4.25 r
+  mult_13/U144/Z (AN2)                     1.70       5.95 r
+  mult_13/U93/Z (ND2P)                     0.47       6.41 f
+  mult_13/U92/Z (NR2P)                     1.52       7.94 r
+  mult_13/S1_2_0/CO (FA1A)                 4.07      12.00 r
+  mult_13/S1_3_0/CO (FA1A)                 4.61      16.61 r
+  mult_13/U84/Z (ND2)                      0.56      17.17 f
+  mult_13/U86/Z (ND3P)                     1.82      18.99 r
+  mult_13/U77/Z (ND2P)                     0.47      19.45 f
+  mult_13/U80/Z (ND3P)                     1.57      21.02 r
+  mult_13/U97/Z (EO3)                      3.59      24.61 f
+  res_reg[6]/D (FD1)                       0.00      24.61 f
+  data arrival time                                  24.61
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[6]/CP (FD1)                      0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -24.61
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -5.86
+
+
+  Startpoint: op2[2] (input port clocked by clk)
+  Endpoint: res_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op2[2] (in)                              0.54       1.74 r
+  U3/Z2 (B2IP)                             1.77       3.51 r
+  mult_13/U5/Z (B4IP)                      0.08       3.59 f
+  mult_13/U39/Z (NR2P)                     1.76       5.35 r
+  mult_13/U28/Z (AN2P)                     1.54       6.89 r
+  mult_13/S2_2_2/S (FA1P)                  4.34      11.23 r
+  mult_13/U95/Z (ND2)                      0.56      11.79 f
+  mult_13/U91/Z (ND3P)                     1.69      13.48 r
+  mult_13/S2_4_1/S (FA1P)                  4.34      17.82 r
+  mult_13/U75/Z (EOP)                      2.11      19.93 f
+  mult_13/U76/Z (EOP)                      2.03      21.96 f
+  res_reg[5]/D (FD1)                       0.00      21.96 f
+  data arrival time                                  21.96
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[5]/CP (FD1)                      0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -21.96
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -3.21
+
+
+  Startpoint: op2[2] (input port clocked by clk)
+  Endpoint: res_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.20       1.20 r
+  op2[2] (in)                              0.54       1.74 r
+  U3/Z2 (B2IP)                             1.77       3.51 r
+  mult_13/U5/Z (B4IP)                      0.08       3.59 f
+  mult_13/U39/Z (NR2P)                     1.76       5.35 r
+  mult_13/U28/Z (AN2P)                     1.54       6.89 r
+  mult_13/S2_2_2/S (FA1P)                  4.34      11.23 r
+  mult_13/U94/Z (EO)                       2.10      13.33 f
+  mult_13/U87/Z (EOP)                      2.34      15.67 f
+  mult_13/U81/Z (EOP)                      2.11      17.78 f
+  mult_13/U82/Z (EOP)                      2.03      19.81 f
+  res_reg[4]/D (FD1)                       0.00      19.81 f
+  data arrival time                                  19.81
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  res_reg[4]/CP (FD1)                      0.00      19.55 r
+  library setup time                      -0.80      18.75
+  data required time                                 18.75
+  -----------------------------------------------------------
+  data required time                                 18.75
+  data arrival time                                 -19.81
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.06
+
+
+    Design: Multiply8x8
+
+    max_area               0.00
+  - Current Area         949.00
+  ------------------------------
+    Slack               -949.00  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : Multiply8x8
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:14 2020
+****************************************
+
+Operating Conditions: WCCOM   Library: lsi_10k
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+res_reg[15]/D (FD1)                35.90 f           18.75       -17.15
+res_reg[14]/D (FD1)                35.88 f           18.75       -17.13
+res_reg[12]/D (FD1)                35.86 f           18.75       -17.11
+res_reg[13]/D (FD1)                35.77 f           18.75       -17.02
+res_reg[11]/D (FD1)                35.39 f           18.75       -16.64
+res_reg[10]/D (FD1)                33.88 f           18.75       -15.13
+res_reg[9]/D (FD1)                 32.30 r           18.75       -13.55
+res_reg[8]/D (FD1)                 28.80 f           18.75       -10.05
+res_reg[7]/D (FD1)                 27.47 r           18.75        -8.72
+res_reg[6]/D (FD1)                 24.61 f           18.75        -5.86
+res_reg[5]/D (FD1)                 21.96 f           18.75        -3.21
+res_reg[4]/D (FD1)                 19.81 f           18.75        -1.06
+res_reg[3]/D (FD1)                 15.98 r           18.75         2.77
+res_reg[2]/D (FD1)                 11.92 r           18.75         6.83
+res_reg[1]/D (FD1)                  8.04 f           18.75        10.71
+res[15] (out)                       2.65 f           15.55        12.90
+res[14] (out)                       2.65 f           15.55        12.90
+res[13] (out)                       2.65 f           15.55        12.90
+res[12] (out)                       2.65 f           15.55        12.90
+res[11] (out)                       2.65 f           15.55        12.90
+res[10] (out)                       2.65 f           15.55        12.90
+res[9] (out)                        2.65 f           15.55        12.90
+res[8] (out)                        2.65 f           15.55        12.90
+res[7] (out)                        2.65 f           15.55        12.90
+res[6] (out)                        2.65 f           15.55        12.90
+res[5] (out)                        2.65 f           15.55        12.90
+res[4] (out)                        2.65 f           15.55        12.90
+res[3] (out)                        2.65 f           15.55        12.90
+res[2] (out)                        2.65 f           15.55        12.90
+res[1] (out)                        2.65 f           15.55        12.90
+res[0] (out)                        2.65 f           15.55        12.90
+res_reg[0]/D (FD1)                  5.39 r           18.75        13.36
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 15
+Design : Multiply8x8
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:14 2020
+****************************************
+
+Operating Conditions: WCCOM   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[1] (in)                                             1.34       2.54 r
+  mult_13/A[1] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U146/Z (AN2P)                                   1.41       3.95 r
+  mult_13/U72/Z (EOP)                                     2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                                3.02       9.24 f
+  mult_13/U20/Z (EO3P)                                    4.02      13.26 f
+  mult_13/S2_4_2/CO (FA1P)                                2.93      16.19 f
+  mult_13/S2_5_2/CO (FA1P)                                2.93      19.12 f
+  mult_13/S2_6_2/S (FA1P)                                 3.94      23.06 f
+  mult_13/S4_1/CO (FA1P)                                  2.93      25.99 f
+  mult_13/U35/Z (MUX21LP)                                 1.79      27.78 r
+  mult_13/U36/Z (IVAP)                                    0.45      28.23 f
+  mult_13/FS_1/A[7] (Multiply8x8_DW01_add_1)              0.00      28.23 f
+  mult_13/FS_1/U41/Z (OR2)                                1.80      30.04 f
+  mult_13/FS_1/U40/Z (AN2)                                1.63      31.67 f
+  mult_13/FS_1/U37/Z (ND4P)                               1.29      32.96 r
+  mult_13/FS_1/U31/Z (ND3)                                0.90      33.86 f
+  mult_13/FS_1/U74/Z (EOP)                                2.03      35.90 f
+  mult_13/FS_1/SUM[13] (Multiply8x8_DW01_add_1)           0.00      35.90 f
+  mult_13/PRODUCT[15] (Multiply8x8_DW02_mult_0)           0.00      35.90 f
+  res_reg[15]/D (FD1)                                     0.00      35.90 f
+  data arrival time                                                 35.90
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[15]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -35.90
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -17.15
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[1] (in)                                             1.34       2.54 r
+  mult_13/A[1] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U146/Z (AN2P)                                   1.41       3.95 r
+  mult_13/U72/Z (EOP)                                     2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                                3.02       9.24 f
+  mult_13/U21/Z (ND2)                                     1.19      10.42 r
+  mult_13/U24/Z (ND3)                                     0.90      11.33 f
+  mult_13/S2_4_3/CO (FA1A)                                4.11      15.44 f
+  mult_13/S2_5_3/CO (FA1AP)                               4.50      19.94 f
+  mult_13/U73/Z (ND2P)                                    1.05      20.99 r
+  mult_13/U40/Z (AO3)                                     0.94      21.92 f
+  mult_13/S4_3/CO (FA1AP)                                 4.35      26.27 f
+  mult_13/U121/Z (EOP)                                    2.42      28.69 f
+  mult_13/FS_1/A[9] (Multiply8x8_DW01_add_1)              0.00      28.69 f
+  mult_13/FS_1/U7/Z (OR2)                                 1.69      30.38 f
+  mult_13/FS_1/U39/Z (AN4)                                1.88      32.26 f
+  mult_13/FS_1/U69/Z (ND2)                                1.19      33.45 r
+  mult_13/FS_1/U68/Z (ND2)                                0.40      33.85 f
+  mult_13/FS_1/U43/Z (ENP)                                2.03      35.88 f
+  mult_13/FS_1/SUM[12] (Multiply8x8_DW01_add_1)           0.00      35.88 f
+  mult_13/PRODUCT[14] (Multiply8x8_DW02_mult_0)           0.00      35.88 f
+  res_reg[14]/D (FD1)                                     0.00      35.88 f
+  data arrival time                                                 35.88
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[14]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -35.88
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -17.13
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[1] (in)                                             1.34       2.54 r
+  mult_13/A[1] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U146/Z (AN2P)                                   1.41       3.95 r
+  mult_13/U72/Z (EOP)                                     2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                                3.02       9.24 f
+  mult_13/U21/Z (ND2)                                     1.19      10.42 r
+  mult_13/U24/Z (ND3)                                     0.90      11.33 f
+  mult_13/S2_4_3/CO (FA1A)                                4.11      15.44 f
+  mult_13/S2_5_3/S (FA1AP)                                3.94      19.38 f
+  mult_13/S2_6_2/CO (FA1P)                                2.84      22.22 f
+  mult_13/S4_2/S (FA1A)                                   3.59      25.81 f
+  mult_13/U88/Z (IV)                                      1.25      27.06 r
+  mult_13/U35/Z (MUX21LP)                                 0.86      27.91 f
+  mult_13/U36/Z (IVAP)                                    0.67      28.58 r
+  mult_13/FS_1/A[7] (Multiply8x8_DW01_add_1)              0.00      28.58 r
+  mult_13/FS_1/U6/Z1 (B3I)                                0.43      29.01 f
+  mult_13/FS_1/U24/Z (AO1)                                2.79      31.80 r
+  mult_13/FS_1/U25/Z (NR2)                                0.58      32.37 f
+  mult_13/FS_1/U67/Z (AO7)                                1.46      33.83 r
+  mult_13/FS_1/U77/Z (EOP)                                2.03      35.86 f
+  mult_13/FS_1/SUM[10] (Multiply8x8_DW01_add_1)           0.00      35.86 f
+  mult_13/PRODUCT[12] (Multiply8x8_DW02_mult_0)           0.00      35.86 f
+  res_reg[12]/D (FD1)                                     0.00      35.86 f
+  data arrival time                                                 35.86
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[12]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -35.86
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -17.11
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[1] (in)                                             1.34       2.54 r
+  mult_13/A[1] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U146/Z (AN2P)                                   1.41       3.95 r
+  mult_13/U72/Z (EOP)                                     2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                                3.02       9.24 f
+  mult_13/U21/Z (ND2)                                     1.19      10.42 r
+  mult_13/U24/Z (ND3)                                     0.90      11.33 f
+  mult_13/S2_4_3/CO (FA1A)                                4.11      15.44 f
+  mult_13/S2_5_3/CO (FA1AP)                               4.50      19.94 f
+  mult_13/U73/Z (ND2P)                                    1.05      20.99 r
+  mult_13/U40/Z (AO3)                                     0.94      21.92 f
+  mult_13/S4_3/CO (FA1AP)                                 4.35      26.27 f
+  mult_13/U121/Z (EOP)                                    2.42      28.69 f
+  mult_13/FS_1/A[9] (Multiply8x8_DW01_add_1)              0.00      28.69 f
+  mult_13/FS_1/U38/Z (OR2)                                1.69      30.38 f
+  mult_13/FS_1/U15/Z (ND2)                                1.44      31.83 r
+  mult_13/FS_1/U27/Z (OR2)                                0.98      32.80 r
+  mult_13/FS_1/U60/Z (AO3)                                0.94      33.74 f
+  mult_13/FS_1/U45/Z (ENP)                                2.03      35.77 f
+  mult_13/FS_1/SUM[11] (Multiply8x8_DW01_add_1)           0.00      35.77 f
+  mult_13/PRODUCT[13] (Multiply8x8_DW02_mult_0)           0.00      35.77 f
+  res_reg[13]/D (FD1)                                     0.00      35.77 f
+  data arrival time                                                 35.77
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[13]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -35.77
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -17.02
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[1] (in)                                             1.34       2.54 r
+  mult_13/A[1] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U146/Z (AN2P)                                   1.41       3.95 r
+  mult_13/U72/Z (EOP)                                     2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                                3.02       9.24 f
+  mult_13/U20/Z (EO3P)                                    4.02      13.26 f
+  mult_13/S2_4_2/CO (FA1P)                                2.93      16.19 f
+  mult_13/S2_5_2/CO (FA1P)                                2.93      19.12 f
+  mult_13/S2_6_2/S (FA1P)                                 3.94      23.06 f
+  mult_13/S4_1/CO (FA1P)                                  2.93      25.99 f
+  mult_13/U35/Z (MUX21LP)                                 1.79      27.78 r
+  mult_13/U36/Z (IVAP)                                    0.45      28.23 f
+  mult_13/FS_1/A[7] (Multiply8x8_DW01_add_1)              0.00      28.23 f
+  mult_13/FS_1/U6/Z2 (B3I)                                1.22      29.45 f
+  mult_13/FS_1/U59/Z (ND2)                                1.70      31.16 r
+  mult_13/FS_1/U8/Z (IV)                                  0.61      31.77 f
+  mult_13/FS_1/U66/Z (ND2)                                1.19      32.95 r
+  mult_13/FS_1/U72/Z (ND2)                                0.40      33.35 f
+  mult_13/FS_1/U71/Z (EOP)                                2.03      35.39 f
+  mult_13/FS_1/SUM[9] (Multiply8x8_DW01_add_1)            0.00      35.39 f
+  mult_13/PRODUCT[11] (Multiply8x8_DW02_mult_0)           0.00      35.39 f
+  res_reg[11]/D (FD1)                                     0.00      35.39 f
+  data arrival time                                                 35.39
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[11]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -35.39
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -16.64
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[1] (in)                                             1.34       2.54 r
+  mult_13/A[1] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U146/Z (AN2P)                                   1.41       3.95 r
+  mult_13/U72/Z (EOP)                                     2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                                3.02       9.24 f
+  mult_13/U21/Z (ND2)                                     1.19      10.42 r
+  mult_13/U24/Z (ND3)                                     0.90      11.33 f
+  mult_13/S2_4_3/CO (FA1A)                                4.11      15.44 f
+  mult_13/S2_5_3/S (FA1AP)                                3.94      19.38 f
+  mult_13/S2_6_2/CO (FA1P)                                2.84      22.22 f
+  mult_13/U65/CO (FA1A)                                   4.11      26.33 f
+  mult_13/U107/Z (EOP)                                    2.26      28.60 f
+  mult_13/FS_1/A[8] (Multiply8x8_DW01_add_1)              0.00      28.60 f
+  mult_13/FS_1/U13/Z (IV)                                 1.25      29.84 r
+  mult_13/FS_1/U10/Z (ND2)                                0.56      30.40 f
+  mult_13/FS_1/U65/Z (ND2)                                1.44      31.85 r
+  mult_13/FS_1/U73/Z (ENP)                                2.03      33.88 f
+  mult_13/FS_1/SUM[8] (Multiply8x8_DW01_add_1)            0.00      33.88 f
+  mult_13/PRODUCT[10] (Multiply8x8_DW02_mult_0)           0.00      33.88 f
+  res_reg[10]/D (FD1)                                     0.00      33.88 f
+  data arrival time                                                 33.88
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[10]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -33.88
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -15.13
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[1] (in)                                             1.34       2.54 r
+  mult_13/A[1] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U146/Z (AN2P)                                   1.41       3.95 r
+  mult_13/U72/Z (EOP)                                     2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                                3.02       9.24 f
+  mult_13/U20/Z (EO3P)                                    4.02      13.26 f
+  mult_13/S2_4_2/CO (FA1P)                                2.93      16.19 f
+  mult_13/S2_5_2/CO (FA1P)                                2.93      19.12 f
+  mult_13/S2_6_2/S (FA1P)                                 3.94      23.06 f
+  mult_13/S4_1/CO (FA1P)                                  2.93      25.99 f
+  mult_13/U35/Z (MUX21LP)                                 1.79      27.78 r
+  mult_13/U36/Z (IVAP)                                    0.45      28.23 f
+  mult_13/FS_1/A[7] (Multiply8x8_DW01_add_1)              0.00      28.23 f
+  mult_13/FS_1/U6/Z2 (B3I)                                1.22      29.45 f
+  mult_13/FS_1/U59/Z (ND2)                                1.70      31.16 r
+  mult_13/FS_1/U22/Z (AN2P)                               1.14      32.30 r
+  mult_13/FS_1/SUM[7] (Multiply8x8_DW01_add_1)            0.00      32.30 r
+  mult_13/PRODUCT[9] (Multiply8x8_DW02_mult_0)            0.00      32.30 r
+  res_reg[9]/D (FD1)                                      0.00      32.30 r
+  data arrival time                                                 32.30
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[9]/CP (FD1)                                     0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -32.30
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -13.55
+
+
+  Startpoint: op1[1] (input port clocked by clk)
+  Endpoint: res_reg[8] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[1] (in)                                             1.34       2.54 r
+  mult_13/A[1] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U146/Z (AN2P)                                   1.41       3.95 r
+  mult_13/U72/Z (EOP)                                     2.26       6.22 f
+  mult_13/S2_2_3/CO (FA1P)                                3.02       9.24 f
+  mult_13/U20/Z (EO3P)                                    4.02      13.26 f
+  mult_13/S2_4_2/CO (FA1P)                                2.93      16.19 f
+  mult_13/S2_5_2/S (FA1P)                                 3.86      20.05 f
+  mult_13/U53/Z (ND2)                                     1.44      21.50 r
+  mult_13/U55/Z (ND3P)                                    1.07      22.56 f
+  mult_13/S4_1/S (FA1P)                                   4.20      26.77 r
+  mult_13/U4/Z (EOP)                                      2.03      28.80 f
+  mult_13/FS_1/A[6] (Multiply8x8_DW01_add_1)              0.00      28.80 f
+  mult_13/FS_1/SUM[6] (Multiply8x8_DW01_add_1)            0.00      28.80 f
+  mult_13/PRODUCT[8] (Multiply8x8_DW02_mult_0)            0.00      28.80 f
+  res_reg[8]/D (FD1)                                      0.00      28.80 f
+  data arrival time                                                 28.80
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[8]/CP (FD1)                                     0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -28.80
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.05
+
+
+  Startpoint: op2[2] (input port clocked by clk)
+  Endpoint: res_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op2[2] (in)                                             0.54       1.74 r
+  U3/Z2 (B2IP)                                            1.77       3.51 r
+  mult_13/B[2] (Multiply8x8_DW02_mult_0)                  0.00       3.51 r
+  mult_13/U5/Z (B4IP)                                     0.08       3.59 f
+  mult_13/U39/Z (NR2P)                                    1.76       5.35 r
+  mult_13/U28/Z (AN2P)                                    1.54       6.89 r
+  mult_13/S2_2_2/S (FA1P)                                 3.94      10.83 f
+  mult_13/U95/Z (ND2)                                     1.44      12.28 r
+  mult_13/U91/Z (ND3P)                                    1.17      13.45 f
+  mult_13/S2_4_1/CO (FA1P)                                3.02      16.47 f
+  mult_13/S2_5_1/CO (FA1P)                                2.93      19.40 f
+  mult_13/U50/Z (EOP)                                     2.11      21.51 f
+  mult_13/U51/Z (EOP)                                     2.19      23.70 f
+  mult_13/S4_0/S (FA1)                                    3.77      27.47 r
+  mult_13/FS_1/A[5] (Multiply8x8_DW01_add_1)              0.00      27.47 r
+  mult_13/FS_1/SUM[5] (Multiply8x8_DW01_add_1)            0.00      27.47 r
+  mult_13/PRODUCT[7] (Multiply8x8_DW02_mult_0)            0.00      27.47 r
+  res_reg[7]/D (FD1)                                      0.00      27.47 r
+  data arrival time                                                 27.47
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[7]/CP (FD1)                                     0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -27.47
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -8.72
+
+
+  Startpoint: op1[0] (input port clocked by clk)
+  Endpoint: res_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[0] (in)                                             1.34       2.54 r
+  mult_13/A[0] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U38/Z (IVDA)                                    1.70       4.25 r
+  mult_13/U144/Z (AN2)                                    1.70       5.95 r
+  mult_13/U93/Z (ND2P)                                    0.47       6.41 f
+  mult_13/U92/Z (NR2P)                                    1.52       7.94 r
+  mult_13/S1_2_0/CO (FA1A)                                4.07      12.00 r
+  mult_13/S1_3_0/CO (FA1A)                                4.61      16.61 r
+  mult_13/U84/Z (ND2)                                     0.56      17.17 f
+  mult_13/U86/Z (ND3P)                                    1.82      18.99 r
+  mult_13/U77/Z (ND2P)                                    0.47      19.45 f
+  mult_13/U80/Z (ND3P)                                    1.57      21.02 r
+  mult_13/U97/Z (EO3)                                     3.59      24.61 f
+  mult_13/FS_1/A[4] (Multiply8x8_DW01_add_1)              0.00      24.61 f
+  mult_13/FS_1/SUM[4] (Multiply8x8_DW01_add_1)            0.00      24.61 f
+  mult_13/PRODUCT[6] (Multiply8x8_DW02_mult_0)            0.00      24.61 f
+  res_reg[6]/D (FD1)                                      0.00      24.61 f
+  data arrival time                                                 24.61
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[6]/CP (FD1)                                     0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -24.61
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -5.86
+
+
+  Startpoint: op2[2] (input port clocked by clk)
+  Endpoint: res_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op2[2] (in)                                             0.54       1.74 r
+  U3/Z2 (B2IP)                                            1.77       3.51 r
+  mult_13/B[2] (Multiply8x8_DW02_mult_0)                  0.00       3.51 r
+  mult_13/U5/Z (B4IP)                                     0.08       3.59 f
+  mult_13/U39/Z (NR2P)                                    1.76       5.35 r
+  mult_13/U28/Z (AN2P)                                    1.54       6.89 r
+  mult_13/S2_2_2/S (FA1P)                                 4.34      11.23 r
+  mult_13/U95/Z (ND2)                                     0.56      11.79 f
+  mult_13/U91/Z (ND3P)                                    1.69      13.48 r
+  mult_13/S2_4_1/S (FA1P)                                 4.34      17.82 r
+  mult_13/U75/Z (EOP)                                     2.11      19.93 f
+  mult_13/U76/Z (EOP)                                     2.03      21.96 f
+  mult_13/FS_1/A[3] (Multiply8x8_DW01_add_1)              0.00      21.96 f
+  mult_13/FS_1/SUM[3] (Multiply8x8_DW01_add_1)            0.00      21.96 f
+  mult_13/PRODUCT[5] (Multiply8x8_DW02_mult_0)            0.00      21.96 f
+  res_reg[5]/D (FD1)                                      0.00      21.96 f
+  data arrival time                                                 21.96
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[5]/CP (FD1)                                     0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -21.96
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -3.21
+
+
+  Startpoint: op2[2] (input port clocked by clk)
+  Endpoint: res_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op2[2] (in)                                             0.54       1.74 r
+  U3/Z2 (B2IP)                                            1.77       3.51 r
+  mult_13/B[2] (Multiply8x8_DW02_mult_0)                  0.00       3.51 r
+  mult_13/U5/Z (B4IP)                                     0.08       3.59 f
+  mult_13/U39/Z (NR2P)                                    1.76       5.35 r
+  mult_13/U28/Z (AN2P)                                    1.54       6.89 r
+  mult_13/S2_2_2/S (FA1P)                                 4.34      11.23 r
+  mult_13/U94/Z (EO)                                      2.10      13.33 f
+  mult_13/U87/Z (EOP)                                     2.34      15.67 f
+  mult_13/U81/Z (EOP)                                     2.11      17.78 f
+  mult_13/U82/Z (EOP)                                     2.03      19.81 f
+  mult_13/FS_1/A[2] (Multiply8x8_DW01_add_1)              0.00      19.81 f
+  mult_13/FS_1/SUM[2] (Multiply8x8_DW01_add_1)            0.00      19.81 f
+  mult_13/PRODUCT[4] (Multiply8x8_DW02_mult_0)            0.00      19.81 f
+  res_reg[4]/D (FD1)                                      0.00      19.81 f
+  data arrival time                                                 19.81
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[4]/CP (FD1)                                     0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -19.81
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.06
+
+
+  Startpoint: op1[0] (input port clocked by clk)
+  Endpoint: res_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[0] (in)                                             1.34       2.54 r
+  mult_13/A[0] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U38/Z (IVDA)                                    1.70       4.25 r
+  mult_13/U144/Z (AN2)                                    1.70       5.95 r
+  mult_13/U93/Z (ND2P)                                    0.47       6.41 f
+  mult_13/U92/Z (NR2P)                                    1.52       7.94 r
+  mult_13/S1_2_0/CO (FA1A)                                4.07      12.00 r
+  mult_13/S1_3_0/S (FA1A)                                 3.98      15.98 r
+  mult_13/FS_1/A[1] (Multiply8x8_DW01_add_1)              0.00      15.98 r
+  mult_13/FS_1/SUM[1] (Multiply8x8_DW01_add_1)            0.00      15.98 r
+  mult_13/PRODUCT[3] (Multiply8x8_DW02_mult_0)            0.00      15.98 r
+  res_reg[3]/D (FD1)                                      0.00      15.98 r
+  data arrival time                                                 15.98
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[3]/CP (FD1)                                     0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -15.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.77
+
+
+  Startpoint: op1[0] (input port clocked by clk)
+  Endpoint: res_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[0] (in)                                             1.34       2.54 r
+  mult_13/A[0] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U38/Z (IVDA)                                    1.70       4.25 r
+  mult_13/U144/Z (AN2)                                    1.70       5.95 r
+  mult_13/U93/Z (ND2P)                                    0.47       6.41 f
+  mult_13/U92/Z (NR2P)                                    1.52       7.94 r
+  mult_13/S1_2_0/S (FA1A)                                 3.98      11.92 r
+  mult_13/FS_1/A[0] (Multiply8x8_DW01_add_1)              0.00      11.92 r
+  mult_13/FS_1/SUM[0] (Multiply8x8_DW01_add_1)            0.00      11.92 r
+  mult_13/PRODUCT[2] (Multiply8x8_DW02_mult_0)            0.00      11.92 r
+  res_reg[2]/D (FD1)                                      0.00      11.92 r
+  data arrival time                                                 11.92
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[2]/CP (FD1)                                     0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -11.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.83
+
+
+  Startpoint: op1[0] (input port clocked by clk)
+  Endpoint: res_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.20       1.20 r
+  op1[0] (in)                                             1.34       2.54 r
+  mult_13/A[0] (Multiply8x8_DW02_mult_0)                  0.00       2.54 r
+  mult_13/U38/Z (IVDA)                                    1.70       4.25 r
+  mult_13/U144/Z (AN2)                                    1.70       5.95 r
+  mult_13/U110/Z (EO)                                     2.10       8.04 f
+  mult_13/PRODUCT[1] (Multiply8x8_DW02_mult_0)            0.00       8.04 f
+  res_reg[1]/D (FD1)                                      0.00       8.04 f
+  data arrival time                                                  8.04
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  res_reg[1]/CP (FD1)                                     0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                 -8.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.71
+
+
+1

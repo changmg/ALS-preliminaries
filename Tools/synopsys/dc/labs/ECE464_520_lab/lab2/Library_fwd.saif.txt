@@ -1,0 +1,5298 @@
+(SAIFILE
+(SAIFVERSION "2.0" "lib")
+(DIRECTION "forward")
+(DESIGN )
+(DATE "Fri Jan 21 18:50:34 2011")
+(VENDOR "Synopsys, Inc")
+(PROGRAM_NAME "Power Compiler lib2saif")
+(VERSION "X-2005.09-SP3")
+(DIVIDER / )
+(LIBRARY "NangateOpenCellLibrary_PDKv1_2_v2008_10_typical_nldm"
+  (MODULE "AND2_X1"
+    (PORT
+      (A1
+        (COND (!ZN * !A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!ZN * !A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AND2_X2"
+    (PORT
+      (A1
+        (COND (!ZN * !A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!ZN * !A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AND2_X4"
+    (PORT
+      (A1
+        (COND (!ZN * !A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!ZN * !A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AND3_X1"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !ZN) RISE_FALL
+         COND (!A3 * !A2 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!A3 * !A1 * !ZN) RISE_FALL
+         COND (!A3 * A1 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AND3_X2"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !ZN) RISE_FALL
+         COND (!A3 * !A2 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!A3 * !A1 * !ZN) RISE_FALL
+         COND (!A3 * A1 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AND3_X4"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !ZN) RISE_FALL
+         COND (!A3 * !A2 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!A3 * !A1 * !ZN) RISE_FALL
+         COND (!A3 * A1 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AND4_X1"
+    (PORT
+      (A1
+        (COND (!A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * !A2 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (!A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * !ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !A3 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AND4_X2"
+    (PORT
+      (A1
+        (COND (!A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * !A2 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (!A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * !ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !A3 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AND4_X4"
+    (PORT
+      (A1
+        (COND (!A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * !A2 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (!A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * !ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !A3 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "ANTENNA_X1"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI211_X1"
+    (PORT
+      (A
+        (COND (C1 * B * C2 * !ZN) RISE_FALL
+         COND (!C1 * B * !C2 * !ZN) RISE_FALL
+         COND (C1 * !B * C2 * !ZN) RISE_FALL
+         COND (!C1 * B * C2 * !ZN) RISE_FALL
+         COND (C1 * B * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B
+        (COND (C1 * A * C2 * !ZN) RISE_FALL
+         COND (C1 * !A * C2 * !ZN) RISE_FALL
+         COND (C1 * A * !C2 * !ZN) RISE_FALL
+         COND (!C1 * A * !C2 * !ZN) RISE_FALL
+         COND (!C1 * A * C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (!B * !A * !C2 * ZN) RISE_FALL
+         COND (!B * A * !C2 * !ZN) RISE_FALL
+         COND (B * !A * !C2 * !ZN) RISE_FALL
+         COND (B * A * !C2 * !ZN) RISE_FALL
+         COND (B * A * C2 * !ZN) RISE_FALL
+         COND (!B * A * C2 * !ZN) RISE_FALL
+         COND (B * !A * C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (B * !A * C1 * !ZN) RISE_FALL
+         COND (B * A * C1 * !ZN) RISE_FALL
+         COND (B * !A * !C1 * !ZN) RISE_FALL
+         COND (B * A * !C1 * !ZN) RISE_FALL
+         COND (!B * A * C1 * !ZN) RISE_FALL
+         COND (!B * !A * !C1 * ZN) RISE_FALL
+         COND (!B * A * !C1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!C1 * !B * !C2) RISE_FALL (IOPATH A)
+         COND (!C1 * !B * C2) RISE_FALL (IOPATH A)
+         COND (C1 * !B * !C2) RISE_FALL (IOPATH A)
+         COND (!C1 * !A * !C2) RISE_FALL (IOPATH B)
+         COND (!C1 * !A * C2) RISE_FALL (IOPATH B)
+         COND (C1 * !A * !C2) RISE_FALL (IOPATH B)
+         COND_DEFAULT RISE_FALL (IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A * !C1 * !C2)
+      COND (!B * A * !C1 * !C2)
+      COND (B * !A * !C1 * !C2)
+      COND (B * A * !C1 * !C2)
+      COND (!B * !A * !C1 * C2)
+      COND (!B * A * !C1 * C2)
+      COND (B * !A * !C1 * C2)
+      COND (B * A * !C1 * C2)
+      COND (!B * !A * C1 * !C2)
+      COND (!B * A * C1 * !C2)
+      COND (B * !A * C1 * !C2)
+      COND (B * A * C1 * !C2)
+      COND (!B * !A * C1 * C2)
+      COND (!B * A * C1 * C2)
+      COND (B * !A * C1 * C2)
+      COND (B * A * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI211_X2"
+    (PORT
+      (A
+        (COND (C1 * B * C2 * !ZN) RISE_FALL
+         COND (!C1 * B * !C2 * !ZN) RISE_FALL
+         COND (C1 * !B * C2 * !ZN) RISE_FALL
+         COND (!C1 * B * C2 * !ZN) RISE_FALL
+         COND (C1 * B * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B
+        (COND (C1 * A * C2 * !ZN) RISE_FALL
+         COND (C1 * !A * C2 * !ZN) RISE_FALL
+         COND (C1 * A * !C2 * !ZN) RISE_FALL
+         COND (!C1 * A * !C2 * !ZN) RISE_FALL
+         COND (!C1 * A * C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (!B * !A * !C2 * ZN) RISE_FALL
+         COND (!B * A * !C2 * !ZN) RISE_FALL
+         COND (B * !A * !C2 * !ZN) RISE_FALL
+         COND (B * A * !C2 * !ZN) RISE_FALL
+         COND (B * A * C2 * !ZN) RISE_FALL
+         COND (!B * A * C2 * !ZN) RISE_FALL
+         COND (B * !A * C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (B * !A * C1 * !ZN) RISE_FALL
+         COND (B * A * C1 * !ZN) RISE_FALL
+         COND (B * !A * !C1 * !ZN) RISE_FALL
+         COND (B * A * !C1 * !ZN) RISE_FALL
+         COND (!B * A * C1 * !ZN) RISE_FALL
+         COND (!B * !A * !C1 * ZN) RISE_FALL
+         COND (!B * A * !C1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!C1 * !B * !C2) RISE_FALL (IOPATH A)
+         COND (!C1 * !B * C2) RISE_FALL (IOPATH A)
+         COND (C1 * !B * !C2) RISE_FALL (IOPATH A)
+         COND (!C1 * !A * !C2) RISE_FALL (IOPATH B)
+         COND (!C1 * !A * C2) RISE_FALL (IOPATH B)
+         COND (C1 * !A * !C2) RISE_FALL (IOPATH B)
+         COND_DEFAULT RISE_FALL (IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A * !C1 * !C2)
+      COND (!B * A * !C1 * !C2)
+      COND (B * !A * !C1 * !C2)
+      COND (B * A * !C1 * !C2)
+      COND (!B * !A * !C1 * C2)
+      COND (!B * A * !C1 * C2)
+      COND (B * !A * !C1 * C2)
+      COND (B * A * !C1 * C2)
+      COND (!B * !A * C1 * !C2)
+      COND (!B * A * C1 * !C2)
+      COND (B * !A * C1 * !C2)
+      COND (B * A * C1 * !C2)
+      COND (!B * !A * C1 * C2)
+      COND (!B * A * C1 * C2)
+      COND (B * !A * C1 * C2)
+      COND (B * A * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI211_X4"
+    (PORT
+      (A
+        (COND (C1 * B * C2 * !ZN) RISE_FALL
+         COND (!C1 * B * !C2 * !ZN) RISE_FALL
+         COND (C1 * !B * C2 * !ZN) RISE_FALL
+         COND (!C1 * B * C2 * !ZN) RISE_FALL
+         COND (C1 * B * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B
+        (COND (C1 * A * C2 * !ZN) RISE_FALL
+         COND (C1 * !A * C2 * !ZN) RISE_FALL
+         COND (C1 * A * !C2 * !ZN) RISE_FALL
+         COND (!C1 * A * !C2 * !ZN) RISE_FALL
+         COND (!C1 * A * C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (!B * !A * !C2 * ZN) RISE_FALL
+         COND (!B * A * !C2 * !ZN) RISE_FALL
+         COND (B * !A * !C2 * !ZN) RISE_FALL
+         COND (B * A * !C2 * !ZN) RISE_FALL
+         COND (B * A * C2 * !ZN) RISE_FALL
+         COND (!B * A * C2 * !ZN) RISE_FALL
+         COND (B * !A * C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (B * !A * C1 * !ZN) RISE_FALL
+         COND (B * A * C1 * !ZN) RISE_FALL
+         COND (B * !A * !C1 * !ZN) RISE_FALL
+         COND (B * A * !C1 * !ZN) RISE_FALL
+         COND (!B * A * C1 * !ZN) RISE_FALL
+         COND (!B * !A * !C1 * ZN) RISE_FALL
+         COND (!B * A * !C1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!C1 * !B * !C2) RISE_FALL (IOPATH A)
+         COND (!C1 * !B * C2) RISE_FALL (IOPATH A)
+         COND (C1 * !B * !C2) RISE_FALL (IOPATH A)
+         COND (!C1 * !A * !C2) RISE_FALL (IOPATH B)
+         COND (!C1 * !A * C2) RISE_FALL (IOPATH B)
+         COND (C1 * !A * !C2) RISE_FALL (IOPATH B)
+         COND_DEFAULT RISE_FALL (IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A * !C1 * !C2)
+      COND (!B * A * !C1 * !C2)
+      COND (B * !A * !C1 * !C2)
+      COND (B * A * !C1 * !C2)
+      COND (!B * !A * !C1 * C2)
+      COND (!B * A * !C1 * C2)
+      COND (B * !A * !C1 * C2)
+      COND (B * A * !C1 * C2)
+      COND (!B * !A * C1 * !C2)
+      COND (!B * A * C1 * !C2)
+      COND (B * !A * C1 * !C2)
+      COND (B * A * C1 * !C2)
+      COND (!B * !A * C1 * C2)
+      COND (!B * A * C1 * C2)
+      COND (B * !A * C1 * C2)
+      COND (B * A * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI21_X1"
+    (PORT
+      (A
+        (COND (B2 * B1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !ZN) RISE_FALL
+         COND (!B2 * A * !ZN) RISE_FALL
+         COND (!B2 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (!B1 * A * !ZN) RISE_FALL
+         COND (B1 * A * !ZN) RISE_FALL
+         COND (!B1 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!B2 * !B1) RISE_FALL (IOPATH A)
+         COND (B2 * !B1) RISE_FALL (IOPATH A)
+         COND (!B2 * B1) RISE_FALL (IOPATH A)
+         COND_DEFAULT RISE_FALL (IOPATH B1 IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2)
+      COND (!B1 * A * !B2)
+      COND (B1 * !A * !B2)
+      COND (B1 * A * !B2)
+      COND (!B1 * !A * B2)
+      COND (!B1 * A * B2)
+      COND (B1 * !A * B2)
+      COND (B1 * A * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI21_X2"
+    (PORT
+      (A
+        (COND (B2 * B1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !ZN) RISE_FALL
+         COND (!B2 * A * !ZN) RISE_FALL
+         COND (!B2 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (!B1 * A * !ZN) RISE_FALL
+         COND (B1 * A * !ZN) RISE_FALL
+         COND (!B1 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!B2 * !B1) RISE_FALL (IOPATH A)
+         COND (B2 * !B1) RISE_FALL (IOPATH A)
+         COND (!B2 * B1) RISE_FALL (IOPATH A)
+         COND_DEFAULT RISE_FALL (IOPATH B1 IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2)
+      COND (!B1 * A * !B2)
+      COND (B1 * !A * !B2)
+      COND (B1 * A * !B2)
+      COND (!B1 * !A * B2)
+      COND (!B1 * A * B2)
+      COND (B1 * !A * B2)
+      COND (B1 * A * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI21_X4"
+    (PORT
+      (A
+        (COND (B2 * B1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !ZN) RISE_FALL
+         COND (!B2 * A * !ZN) RISE_FALL
+         COND (!B2 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (!B1 * A * !ZN) RISE_FALL
+         COND (B1 * A * !ZN) RISE_FALL
+         COND (!B1 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!B2 * !B1) RISE_FALL (IOPATH A)
+         COND (B2 * !B1) RISE_FALL (IOPATH A)
+         COND (!B2 * B1) RISE_FALL (IOPATH A)
+         COND_DEFAULT RISE_FALL (IOPATH B1 IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2)
+      COND (!B1 * A * !B2)
+      COND (B1 * !A * !B2)
+      COND (B1 * A * !B2)
+      COND (!B1 * !A * B2)
+      COND (!B1 * A * B2)
+      COND (B1 * !A * B2)
+      COND (B1 * A * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI221_X1"
+    (PORT
+      (A
+        (COND (B2 * B1 * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * B1 * !C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * !B1 * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * B1 * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * B1 * C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * B1 * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !B1 * C1 * C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B2 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (!B2 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (!B1 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B1 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (B1 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B1 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * !B2 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C2 * !ZN) RISE_FALL
+         COND (B1 * A * !B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C2 * !ZN) RISE_FALL
+         COND (B1 * !A * B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * B2 * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (B1 * A * !B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C1 * !ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * A * B2 * !C1 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * !C1 * !ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C1 * !ZN) RISE_FALL
+         COND (B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (B1 * A * !B2 * !C1 * !ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND ((!B2 * !B1 * !C2) | (!C1 * !B1 * !C2) | (!B2 * !B1 * !C1)) RISE_FALL (IOPATH A)
+         COND ((B2 * !B1 * !C1 * C2) | (B2 * !B1 * C1 * !C2)) RISE_FALL (IOPATH A)
+         COND ((!B2 * B1 * !C1) | (!B2 * B1 * !C2)) RISE_FALL (IOPATH A)
+         COND (B2 * !A * !C1 * !C2) RISE_FALL (IOPATH B1)
+         COND (B2 * !A * !C1 * C2) RISE_FALL (IOPATH B1)
+         COND (B2 * !A * C1 * !C2) RISE_FALL (IOPATH B1)
+         COND (B1 * !A * !C1 * !C2) RISE_FALL (IOPATH B2)
+         COND (B1 * !A * !C1 * C2) RISE_FALL (IOPATH B2)
+         COND (B1 * !A * C1 * !C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * !A * !B2 * C2) RISE_FALL (IOPATH C1)
+         COND (!B1 * !A * B2 * C2) RISE_FALL (IOPATH C1)
+         COND (B1 * !A * !B2 * C2) RISE_FALL (IOPATH C1)
+         COND (!B1 * !A * !B2 * C1) RISE_FALL (IOPATH C2)
+         COND (!B1 * !A * B2 * C1) RISE_FALL (IOPATH C2)
+         COND (B1 * !A * !B2 * C1) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2 * !C1 * !C2)
+      COND (!B1 * A * !B2 * !C1 * !C2)
+      COND (B1 * !A * !B2 * !C1 * !C2)
+      COND (B1 * A * !B2 * !C1 * !C2)
+      COND (!B1 * !A * B2 * !C1 * !C2)
+      COND (!B1 * A * B2 * !C1 * !C2)
+      COND (B1 * !A * B2 * !C1 * !C2)
+      COND (B1 * A * B2 * !C1 * !C2)
+      COND (!B1 * !A * !B2 * !C1 * C2)
+      COND (!B1 * A * !B2 * !C1 * C2)
+      COND (B1 * !A * !B2 * !C1 * C2)
+      COND (B1 * A * !B2 * !C1 * C2)
+      COND (!B1 * !A * B2 * !C1 * C2)
+      COND (!B1 * A * B2 * !C1 * C2)
+      COND (B1 * !A * B2 * !C1 * C2)
+      COND (B1 * A * B2 * !C1 * C2)
+      COND (!B1 * !A * !B2 * C1 * !C2)
+      COND (!B1 * A * !B2 * C1 * !C2)
+      COND (B1 * !A * !B2 * C1 * !C2)
+      COND (B1 * A * !B2 * C1 * !C2)
+      COND (!B1 * !A * B2 * C1 * !C2)
+      COND (!B1 * A * B2 * C1 * !C2)
+      COND (B1 * !A * B2 * C1 * !C2)
+      COND (B1 * A * B2 * C1 * !C2)
+      COND (!B1 * !A * !B2 * C1 * C2)
+      COND (!B1 * A * !B2 * C1 * C2)
+      COND (B1 * !A * !B2 * C1 * C2)
+      COND (B1 * A * !B2 * C1 * C2)
+      COND (!B1 * !A * B2 * C1 * C2)
+      COND (!B1 * A * B2 * C1 * C2)
+      COND (B1 * !A * B2 * C1 * C2)
+      COND (B1 * A * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI221_X2"
+    (PORT
+      (A
+        (COND (B2 * B1 * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * B1 * !C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * !B1 * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * B1 * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * B1 * C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * B1 * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !B1 * C1 * C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B2 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (!B2 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (!B1 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B1 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (B1 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B1 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * !B2 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C2 * !ZN) RISE_FALL
+         COND (B1 * A * !B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C2 * !ZN) RISE_FALL
+         COND (B1 * !A * B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * B2 * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (B1 * A * !B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C1 * !ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * A * B2 * !C1 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * !C1 * !ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C1 * !ZN) RISE_FALL
+         COND (B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (B1 * A * !B2 * !C1 * !ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND ((!B2 * !B1 * !C2) | (!C1 * !B1 * !C2) | (!B2 * !B1 * !C1)) RISE_FALL (IOPATH A)
+         COND (B2 * !B1 * !C1 * C2) RISE_FALL (IOPATH A)
+         COND ((!B2 * B1 * !C1) | (B2 * !B1 * C1 * !C2) | (!B2 * B1 * !C2)) RISE_FALL (IOPATH A)
+         COND (B2 * !A * !C1 * !C2) RISE_FALL (IOPATH B1)
+         COND (B2 * !A * !C1 * C2) RISE_FALL (IOPATH B1)
+         COND (B2 * !A * C1 * !C2) RISE_FALL (IOPATH B1)
+         COND (B1 * !A * !C1 * !C2) RISE_FALL (IOPATH B2)
+         COND (B1 * !A * !C1 * C2) RISE_FALL (IOPATH B2)
+         COND (B1 * !A * C1 * !C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * !A * !B2 * C2) RISE_FALL (IOPATH C1)
+         COND (!B1 * !A * B2 * C2) RISE_FALL (IOPATH C1)
+         COND (B1 * !A * !B2 * C2) RISE_FALL (IOPATH C1)
+         COND (!B1 * !A * !B2 * C1) RISE_FALL (IOPATH C2)
+         COND (!B1 * !A * B2 * C1) RISE_FALL (IOPATH C2)
+         COND (B1 * !A * !B2 * C1) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2 * !C1 * !C2)
+      COND (!B1 * A * !B2 * !C1 * !C2)
+      COND (B1 * !A * !B2 * !C1 * !C2)
+      COND (B1 * A * !B2 * !C1 * !C2)
+      COND (!B1 * !A * B2 * !C1 * !C2)
+      COND (!B1 * A * B2 * !C1 * !C2)
+      COND (B1 * !A * B2 * !C1 * !C2)
+      COND (B1 * A * B2 * !C1 * !C2)
+      COND (!B1 * !A * !B2 * !C1 * C2)
+      COND (!B1 * A * !B2 * !C1 * C2)
+      COND (B1 * !A * !B2 * !C1 * C2)
+      COND (B1 * A * !B2 * !C1 * C2)
+      COND (!B1 * !A * B2 * !C1 * C2)
+      COND (!B1 * A * B2 * !C1 * C2)
+      COND (B1 * !A * B2 * !C1 * C2)
+      COND (B1 * A * B2 * !C1 * C2)
+      COND (!B1 * !A * !B2 * C1 * !C2)
+      COND (!B1 * A * !B2 * C1 * !C2)
+      COND (B1 * !A * !B2 * C1 * !C2)
+      COND (B1 * A * !B2 * C1 * !C2)
+      COND (!B1 * !A * B2 * C1 * !C2)
+      COND (!B1 * A * B2 * C1 * !C2)
+      COND (B1 * !A * B2 * C1 * !C2)
+      COND (B1 * A * B2 * C1 * !C2)
+      COND (!B1 * !A * !B2 * C1 * C2)
+      COND (!B1 * A * !B2 * C1 * C2)
+      COND (B1 * !A * !B2 * C1 * C2)
+      COND (B1 * A * !B2 * C1 * C2)
+      COND (!B1 * !A * B2 * C1 * C2)
+      COND (!B1 * A * B2 * C1 * C2)
+      COND (B1 * !A * B2 * C1 * C2)
+      COND (B1 * A * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI221_X4"
+    (PORT
+      (A
+        (COND (B2 * B1 * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * B1 * !C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * !B1 * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * B1 * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * B1 * C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * B1 * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !B1 * C1 * C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B2 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (!B2 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B2 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (!B1 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B1 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (B1 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B1 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !C1 * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * !B2 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C2 * !ZN) RISE_FALL
+         COND (B1 * A * !B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * !C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C2 * !ZN) RISE_FALL
+         COND (B1 * !A * B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * B2 * !C2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (B1 * A * !B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C1 * !ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * A * B2 * !C1 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * !C1 * !ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C1 * !ZN) RISE_FALL
+         COND (B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (B1 * A * !B2 * !C1 * !ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!B2 * !B1 * C1 * !C2) RISE_FALL (IOPATH A)
+         COND ((!B2 * !B1 * !C1) | (!C1 * !B1 * !C2)) RISE_FALL (IOPATH A)
+         COND (B2 * !B1 * !C1 * C2) RISE_FALL (IOPATH A)
+         COND ((!B2 * B1 * !C1) | (B2 * !B1 * C1 * !C2) | (!B2 * B1 * !C2)) RISE_FALL (IOPATH A)
+         COND (B2 * !A * !C1 * !C2) RISE_FALL (IOPATH B1)
+         COND (B2 * !A * !C1 * C2) RISE_FALL (IOPATH B1)
+         COND (B2 * !A * C1 * !C2) RISE_FALL (IOPATH B1)
+         COND (B1 * !A * !C1 * !C2) RISE_FALL (IOPATH B2)
+         COND (B1 * !A * !C1 * C2) RISE_FALL (IOPATH B2)
+         COND (B1 * !A * C1 * !C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * !A * !B2 * C2) RISE_FALL (IOPATH C1)
+         COND (!B1 * !A * B2 * C2) RISE_FALL (IOPATH C1)
+         COND (B1 * !A * !B2 * C2) RISE_FALL (IOPATH C1)
+         COND (!B1 * !A * !B2 * C1) RISE_FALL (IOPATH C2)
+         COND (!B1 * !A * B2 * C1) RISE_FALL (IOPATH C2)
+         COND (B1 * !A * !B2 * C1) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2 * !C1 * !C2)
+      COND (!B1 * A * !B2 * !C1 * !C2)
+      COND (B1 * !A * !B2 * !C1 * !C2)
+      COND (B1 * A * !B2 * !C1 * !C2)
+      COND (!B1 * !A * B2 * !C1 * !C2)
+      COND (!B1 * A * B2 * !C1 * !C2)
+      COND (B1 * !A * B2 * !C1 * !C2)
+      COND (B1 * A * B2 * !C1 * !C2)
+      COND (!B1 * !A * !B2 * !C1 * C2)
+      COND (!B1 * A * !B2 * !C1 * C2)
+      COND (B1 * !A * !B2 * !C1 * C2)
+      COND (B1 * A * !B2 * !C1 * C2)
+      COND (!B1 * !A * B2 * !C1 * C2)
+      COND (!B1 * A * B2 * !C1 * C2)
+      COND (B1 * !A * B2 * !C1 * C2)
+      COND (B1 * A * B2 * !C1 * C2)
+      COND (!B1 * !A * !B2 * C1 * !C2)
+      COND (!B1 * A * !B2 * C1 * !C2)
+      COND (B1 * !A * !B2 * C1 * !C2)
+      COND (B1 * A * !B2 * C1 * !C2)
+      COND (!B1 * !A * B2 * C1 * !C2)
+      COND (!B1 * A * B2 * C1 * !C2)
+      COND (B1 * !A * B2 * C1 * !C2)
+      COND (B1 * A * B2 * C1 * !C2)
+      COND (!B1 * !A * !B2 * C1 * C2)
+      COND (!B1 * A * !B2 * C1 * C2)
+      COND (B1 * !A * !B2 * C1 * C2)
+      COND (B1 * A * !B2 * C1 * C2)
+      COND (!B1 * !A * B2 * C1 * C2)
+      COND (!B1 * A * B2 * C1 * C2)
+      COND (B1 * !A * B2 * C1 * C2)
+      COND (B1 * A * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI222_X1"
+    (PORT
+      (ZN
+        (COND ((!B1 * A2 * !C1) | (!B1 * A2 * !B2 * !C2)) RISE_FALL (IOPATH A1)
+         COND (!B1 * A2 * B2 * C1 * !C2) RISE_FALL (IOPATH A1)
+         COND (B1 * A2 * !B2 * !C1 * !C2) RISE_FALL (IOPATH A1)
+         COND ((B1 * A2 * !B2 * !C1 * C2) | (B1 * A2 * !B2 * C1 * !C2)) RISE_FALL (IOPATH A1)
+         COND ((B1 * A1 * !B2 * !C1 * C2) | (!B1 * A1 * B2 * C1 * !C2)) RISE_FALL (IOPATH A2)
+         COND ((!B1 * A1 * !B2 * !C2) | (!B2 * A1 * !C1 * !C2) | (!B1 * A1 * !C1)) RISE_FALL (IOPATH A2)
+         COND (B1 * A1 * !B2 * C1 * !C2) RISE_FALL (IOPATH A2)
+         COND ((B2 * !A1 * !C1 * !C2) | (B2 * !A2 * !C1 * !C2) | (!A2 * !A1 * B2 * !C1)) RISE_FALL (IOPATH B1)
+         COND ((B2 * !A1 * C1 * !C2) | (B2 * !A2 * C1 * !C2)) RISE_FALL (IOPATH B1)
+         COND ((A2 * !A1 * B2 * !C1 * C2) | (!A2 * A1 * B2 * !C1 * C2)) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * B1 * !C1 * C2) RISE_FALL (IOPATH B2)
+         COND ((B1 * !A1 * !C1 * !C2) | (B1 * !A2 * !C1 * !C2) | (!A2 * !A1 * B1 * !C1)) RISE_FALL (IOPATH B2)
+         COND ((B1 * !A1 * C1 * !C2) | (!A2 * A1 * B1 * !C1 * C2) | (B1 * !A2 * C1 * !C2)) RISE_FALL (IOPATH B2)
+         COND ((!A2 * !A1 * !B1 * B2 * C2) | (A2 * !A1 * !B1 * !B2 * C2)) RISE_FALL (IOPATH C1)
+         COND (!B1 * !A2 * !B2 * C2) RISE_FALL (IOPATH C1)
+         COND ((B1 * !A1 * !B2 * C2) | (B1 * !A2 * !B2 * C2)) RISE_FALL (IOPATH C1)
+         COND ((A2 * !A1 * !B1 * B2 * C2) | (!A2 * A1 * !B1 * B2 * C2)) RISE_FALL (IOPATH C1)
+         COND ((!A2 * !A1 * !B1 * B2 * C1) | (A2 * !A1 * !B1 * !B2 * C1)) RISE_FALL (IOPATH C2)
+         COND (!B1 * !A2 * !B2 * C1) RISE_FALL (IOPATH C2)
+         COND ((B1 * !A1 * !B2 * C1) | (B1 * !A2 * !B2 * C1)) RISE_FALL (IOPATH C2)
+         COND ((A2 * !A1 * !B1 * B2 * C1) | (!A2 * A1 * !B1 * B2 * C1)) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A1 IOPATH A2 IOPATH B1 IOPATH B2 IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * A1 * B1 * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI222_X2"
+    (PORT
+      (ZN
+        (COND ((!B1 * A2 * !C1) | (!B1 * A2 * !B2 * !C2)) RISE_FALL (IOPATH A1)
+         COND (!B1 * A2 * B2 * C1 * !C2) RISE_FALL (IOPATH A1)
+         COND (B1 * A2 * !B2 * !C1 * !C2) RISE_FALL (IOPATH A1)
+         COND ((B1 * A2 * !B2 * !C1 * C2) | (B1 * A2 * !B2 * C1 * !C2)) RISE_FALL (IOPATH A1)
+         COND ((!B1 * A1 * !B2 * !C2) | (!B1 * A1 * !C1 * !C2) | (!B1 * A1 * !B2 * !C1)) RISE_FALL (IOPATH A2)
+         COND ((!B1 * A1 * B2 * !C1 * C2) | (!B1 * A1 * B2 * C1 * !C2)) RISE_FALL (IOPATH A2)
+         COND (B1 * A1 * !B2 * !C1 * !C2) RISE_FALL (IOPATH A2)
+         COND ((B1 * A1 * !B2 * !C1 * C2) | (B1 * A1 * !B2 * C1 * !C2)) RISE_FALL (IOPATH A2)
+         COND ((B2 * !A1 * !C1 * !C2) | (B2 * !A2 * !C1 * !C2) | (!A2 * !A1 * B2 * !C1)) RISE_FALL (IOPATH B1)
+         COND ((B2 * !A1 * C1 * !C2) | (B2 * !A2 * C1 * !C2)) RISE_FALL (IOPATH B1)
+         COND ((A2 * !A1 * B2 * !C1 * C2) | (!A2 * A1 * B2 * !C1 * C2)) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * B1 * !C1 * C2) RISE_FALL (IOPATH B2)
+         COND ((B1 * !A1 * !C1 * !C2) | (B1 * !A2 * !C1 * !C2) | (!A2 * !A1 * B1 * !C1)) RISE_FALL (IOPATH B2)
+         COND ((B1 * !A1 * C1 * !C2) | (!A2 * A1 * B1 * !C1 * C2) | (B1 * !A2 * C1 * !C2)) RISE_FALL (IOPATH B2)
+         COND ((!A2 * !A1 * !B1 * B2 * C2) | (A2 * !A1 * !B1 * !B2 * C2)) RISE_FALL (IOPATH C1)
+         COND (!B1 * !A2 * !B2 * C2) RISE_FALL (IOPATH C1)
+         COND ((B1 * !A1 * !B2 * C2) | (B1 * !A2 * !B2 * C2)) RISE_FALL (IOPATH C1)
+         COND ((A2 * !A1 * !B1 * B2 * C2) | (!A2 * A1 * !B1 * B2 * C2)) RISE_FALL (IOPATH C1)
+         COND ((!A2 * !A1 * !B1 * B2 * C1) | (A2 * !A1 * !B1 * !B2 * C1)) RISE_FALL (IOPATH C2)
+         COND (!B1 * !A2 * !B2 * C1) RISE_FALL (IOPATH C2)
+         COND ((B1 * !A1 * !B2 * C1) | (B1 * !A2 * !B2 * C1)) RISE_FALL (IOPATH C2)
+         COND ((A2 * !A1 * !B1 * B2 * C1) | (!A2 * A1 * !B1 * B2 * C1)) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A1 IOPATH A2 IOPATH B1 IOPATH B2 IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * A1 * B1 * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI222_X4"
+    (PORT
+      (ZN
+        (COND ((!B1 * A2 * !B2 * !C1) | (!B1 * A2 * !C1 * !C2)) RISE_FALL (IOPATH A1)
+         COND (!B1 * A2 * B2 * !C1 * C2) RISE_FALL (IOPATH A1)
+         COND ((B1 * A2 * !B2 * !C1 * C2) | (!B1 * A2 * B2 * C1 * !C2) | (B1 * A2 * !B2 * C1 * !C2)) RISE_FALL (IOPATH A1)
+         COND ((!B1 * A2 * !B2 * C1 * !C2) | (B1 * A2 * !B2 * !C1 * !C2)) RISE_FALL (IOPATH A1)
+         COND ((B1 * A1 * !B2 * !C1 * C2) | (!B1 * A1 * B2 * C1 * !C2) | (!B1 * A1 * B2 * !C1 * C2)) RISE_FALL (IOPATH A2)
+         COND ((!B1 * A1 * !C1 * !C2) | (!B2 * A1 * !C1 * !C2) | (!B1 * A1 * !B2 * !C2) | (!B1 * A1 * !B2 * !C1)) RISE_FALL (IOPATH A2)
+         COND (B1 * A1 * !B2 * C1 * !C2) RISE_FALL (IOPATH A2)
+         COND (A2 * !A1 * B2 * !C1 * C2) RISE_FALL (IOPATH B1)
+         COND ((B2 * !A1 * !C1 * !C2) | (B2 * !A2 * !C1 * !C2) | (!A2 * !A1 * B2 * !C1)) RISE_FALL (IOPATH B1)
+         COND ((B2 * !A1 * C1 * !C2) | (!A2 * A1 * B2 * !C1 * C2) | (B2 * !A2 * C1 * !C2)) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * B1 * !C1 * C2) RISE_FALL (IOPATH B2)
+         COND ((B1 * !A1 * !C1 * !C2) | (B1 * !A2 * !C1 * !C2) | (!A2 * !A1 * B1 * !C1)) RISE_FALL (IOPATH B2)
+         COND ((B1 * !A1 * C1 * !C2) | (!A2 * A1 * B1 * !C1 * C2) | (B1 * !A2 * C1 * !C2)) RISE_FALL (IOPATH B2)
+         COND ((!A2 * !A1 * !B1 * B2 * C2) | (A2 * !A1 * !B1 * !B2 * C2)) RISE_FALL (IOPATH C1)
+         COND (A2 * !A1 * !B1 * B2 * C2) RISE_FALL (IOPATH C1)
+         COND (!B1 * !A2 * !B2 * C2) RISE_FALL (IOPATH C1)
+         COND ((B1 * !A1 * !B2 * C2) | (!A2 * A1 * !B1 * B2 * C2) | (B1 * !A2 * !B2 * C2)) RISE_FALL (IOPATH C1)
+         COND ((!A2 * !A1 * !B1 * B2 * C1) | (A2 * !A1 * !B1 * !B2 * C1)) RISE_FALL (IOPATH C2)
+         COND (A2 * !A1 * !B1 * B2 * C1) RISE_FALL (IOPATH C2)
+         COND (!B1 * !A2 * !B2 * C1) RISE_FALL (IOPATH C2)
+         COND ((B1 * !A1 * !B2 * C1) | (!A2 * A1 * !B1 * B2 * C1) | (B1 * !A2 * !B2 * C1)) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A1 IOPATH A2 IOPATH B1 IOPATH B2 IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * A1 * B1 * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI22_X1"
+    (PORT
+      (A1
+        (COND (!B1 * !A2 * !B2 * ZN) RISE_FALL
+         COND (!B1 * !A2 * B2 * ZN) RISE_FALL
+         COND (B1 * !A2 * B2 * !ZN) RISE_FALL
+         COND (B1 * !A2 * !B2 * ZN) RISE_FALL
+         COND (B1 * A2 * B2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (B1 * !A1 * B2 * !ZN) RISE_FALL
+         COND (B1 * !A1 * !B2 * ZN) RISE_FALL
+         COND (!B1 * !A1 * B2 * ZN) RISE_FALL
+         COND (B1 * A1 * B2 * !ZN) RISE_FALL
+         COND (!B1 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (A2 * !A1 * !B2 * ZN) RISE_FALL
+         COND (A2 * A1 * B2 * !ZN) RISE_FALL
+         COND (A2 * A1 * !B2 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !B2 * ZN) RISE_FALL
+         COND (!A2 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (A2 * A1 * B1 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !B1 * ZN) RISE_FALL
+         COND (A2 * A1 * !B1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !B1 * ZN) RISE_FALL
+         COND (!A2 * A1 * !B1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!B1 * A2 * !B2) RISE_FALL (IOPATH A1)
+         COND (!B1 * A2 * B2) RISE_FALL (IOPATH A1)
+         COND (B1 * A2 * !B2) RISE_FALL (IOPATH A1)
+         COND (!B1 * A1 * !B2) RISE_FALL (IOPATH A2)
+         COND (!B1 * A1 * B2) RISE_FALL (IOPATH A2)
+         COND (B1 * A1 * !B2) RISE_FALL (IOPATH A2)
+         COND (!A2 * !A1 * B2) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * B2) RISE_FALL (IOPATH B1)
+         COND (!A2 * A1 * B2) RISE_FALL (IOPATH B1)
+         COND (!A2 * !A1 * B1) RISE_FALL (IOPATH B2)
+         COND (A2 * !A1 * B1) RISE_FALL (IOPATH B2)
+         COND (!A2 * A1 * B1) RISE_FALL (IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2)
+      COND (!A2 * !A1 * B1 * !B2)
+      COND (!A2 * A1 * !B1 * !B2)
+      COND (!A2 * A1 * B1 * !B2)
+      COND (!A2 * !A1 * !B1 * B2)
+      COND (!A2 * !A1 * B1 * B2)
+      COND (!A2 * A1 * !B1 * B2)
+      COND (!A2 * A1 * B1 * B2)
+      COND (A2 * !A1 * !B1 * !B2)
+      COND (A2 * !A1 * B1 * !B2)
+      COND (A2 * A1 * !B1 * !B2)
+      COND (A2 * A1 * B1 * !B2)
+      COND (A2 * !A1 * !B1 * B2)
+      COND (A2 * !A1 * B1 * B2)
+      COND (A2 * A1 * !B1 * B2)
+      COND (A2 * A1 * B1 * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI22_X2"
+    (PORT
+      (A1
+        (COND (!B1 * !A2 * !B2 * ZN) RISE_FALL
+         COND (!B1 * !A2 * B2 * ZN) RISE_FALL
+         COND (B1 * !A2 * B2 * !ZN) RISE_FALL
+         COND (B1 * !A2 * !B2 * ZN) RISE_FALL
+         COND (B1 * A2 * B2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (B1 * !A1 * B2 * !ZN) RISE_FALL
+         COND (B1 * !A1 * !B2 * ZN) RISE_FALL
+         COND (!B1 * !A1 * B2 * ZN) RISE_FALL
+         COND (B1 * A1 * B2 * !ZN) RISE_FALL
+         COND (!B1 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (A2 * !A1 * !B2 * ZN) RISE_FALL
+         COND (A2 * A1 * B2 * !ZN) RISE_FALL
+         COND (A2 * A1 * !B2 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !B2 * ZN) RISE_FALL
+         COND (!A2 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (A2 * A1 * B1 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !B1 * ZN) RISE_FALL
+         COND (A2 * A1 * !B1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !B1 * ZN) RISE_FALL
+         COND (!A2 * A1 * !B1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!B1 * A2 * !B2) RISE_FALL (IOPATH A1)
+         COND (!B1 * A2 * B2) RISE_FALL (IOPATH A1)
+         COND (B1 * A2 * !B2) RISE_FALL (IOPATH A1)
+         COND (!B1 * A1 * !B2) RISE_FALL (IOPATH A2)
+         COND (!B1 * A1 * B2) RISE_FALL (IOPATH A2)
+         COND (B1 * A1 * !B2) RISE_FALL (IOPATH A2)
+         COND (!A2 * !A1 * B2) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * B2) RISE_FALL (IOPATH B1)
+         COND (!A2 * A1 * B2) RISE_FALL (IOPATH B1)
+         COND (!A2 * !A1 * B1) RISE_FALL (IOPATH B2)
+         COND (A2 * !A1 * B1) RISE_FALL (IOPATH B2)
+         COND (!A2 * A1 * B1) RISE_FALL (IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2)
+      COND (!A2 * !A1 * B1 * !B2)
+      COND (!A2 * A1 * !B1 * !B2)
+      COND (!A2 * A1 * B1 * !B2)
+      COND (!A2 * !A1 * !B1 * B2)
+      COND (!A2 * !A1 * B1 * B2)
+      COND (!A2 * A1 * !B1 * B2)
+      COND (!A2 * A1 * B1 * B2)
+      COND (A2 * !A1 * !B1 * !B2)
+      COND (A2 * !A1 * B1 * !B2)
+      COND (A2 * A1 * !B1 * !B2)
+      COND (A2 * A1 * B1 * !B2)
+      COND (A2 * !A1 * !B1 * B2)
+      COND (A2 * !A1 * B1 * B2)
+      COND (A2 * A1 * !B1 * B2)
+      COND (A2 * A1 * B1 * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "AOI22_X4"
+    (PORT
+      (A1
+        (COND (!B1 * !A2 * !B2 * ZN) RISE_FALL
+         COND (!B1 * !A2 * B2 * ZN) RISE_FALL
+         COND (B1 * !A2 * B2 * !ZN) RISE_FALL
+         COND (B1 * !A2 * !B2 * ZN) RISE_FALL
+         COND (B1 * A2 * B2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (B1 * !A1 * B2 * !ZN) RISE_FALL
+         COND (B1 * !A1 * !B2 * ZN) RISE_FALL
+         COND (!B1 * !A1 * B2 * ZN) RISE_FALL
+         COND (B1 * A1 * B2 * !ZN) RISE_FALL
+         COND (!B1 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (A2 * !A1 * !B2 * ZN) RISE_FALL
+         COND (A2 * A1 * B2 * !ZN) RISE_FALL
+         COND (A2 * A1 * !B2 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !B2 * ZN) RISE_FALL
+         COND (!A2 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (A2 * A1 * B1 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !B1 * ZN) RISE_FALL
+         COND (A2 * A1 * !B1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !B1 * ZN) RISE_FALL
+         COND (!A2 * A1 * !B1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!B1 * A2 * !B2) RISE_FALL (IOPATH A1)
+         COND (!B1 * A2 * B2) RISE_FALL (IOPATH A1)
+         COND (B1 * A2 * !B2) RISE_FALL (IOPATH A1)
+         COND (!B1 * A1 * !B2) RISE_FALL (IOPATH A2)
+         COND (!B1 * A1 * B2) RISE_FALL (IOPATH A2)
+         COND (B1 * A1 * !B2) RISE_FALL (IOPATH A2)
+         COND (!A2 * !A1 * B2) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * B2) RISE_FALL (IOPATH B1)
+         COND (!A2 * A1 * B2) RISE_FALL (IOPATH B1)
+         COND (!A2 * !A1 * B1) RISE_FALL (IOPATH B2)
+         COND (A2 * !A1 * B1) RISE_FALL (IOPATH B2)
+         COND (!A2 * A1 * B1) RISE_FALL (IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2)
+      COND (!A2 * !A1 * B1 * !B2)
+      COND (!A2 * A1 * !B1 * !B2)
+      COND (!A2 * A1 * B1 * !B2)
+      COND (!A2 * !A1 * !B1 * B2)
+      COND (!A2 * !A1 * B1 * B2)
+      COND (!A2 * A1 * !B1 * B2)
+      COND (!A2 * A1 * B1 * B2)
+      COND (A2 * !A1 * !B1 * !B2)
+      COND (A2 * !A1 * B1 * !B2)
+      COND (A2 * A1 * !B1 * !B2)
+      COND (A2 * A1 * B1 * !B2)
+      COND (A2 * !A1 * !B1 * B2)
+      COND (A2 * !A1 * B1 * B2)
+      COND (A2 * A1 * !B1 * B2)
+      COND (A2 * A1 * B1 * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "BUF_X1"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "BUF_X16"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "BUF_X2"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "BUF_X32"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "BUF_X4"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "BUF_X8"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "CLKBUF_X1"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "CLKBUF_X2"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "CLKBUF_X3"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "CLKGATETST_X1"
+    (PORT
+      (CK
+        (COND (!GCK * !E * !SE) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (E
+        (COND (GCK * !CK * !SE) RISE_FALL
+         COND (!GCK * !CK * !SE) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SE
+        (COND (!E * !CK * GCK) RISE_FALL
+         COND (!E * !CK * !GCK) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "CLKGATETST_X2"
+    (PORT
+      (CK
+        (COND (!GCK * !E * !SE) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (E
+        (COND (GCK * !CK * !SE) RISE_FALL
+         COND (!GCK * !CK * !SE) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SE
+        (COND (!E * !CK * GCK) RISE_FALL
+         COND (!E * !CK * !GCK) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "CLKGATETST_X4"
+    (PORT
+      (CK
+        (COND (!GCK * !E * !SE) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (E
+        (COND (GCK * !CK * !SE) RISE_FALL
+         COND (!GCK * !CK * !SE) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SE
+        (COND (!E * !CK * GCK) RISE_FALL
+         COND (!E * !CK * !GCK) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "CLKGATETST_X8"
+    (PORT
+      (CK
+        (COND (!GCK * !E * !SE) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (E
+        (COND (GCK * !CK * !SE) RISE_FALL
+         COND (!GCK * !CK * !SE) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SE
+        (COND (!E * !CK * GCK) RISE_FALL
+         COND (!E * !CK * !GCK) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "CLKGATE_X1"
+    (PORT
+      (CK
+        (COND (!GCK * !E) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (E
+        (COND (GCK * !CK) RISE_FALL
+         COND (!GCK * !CK) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "CLKGATE_X2"
+    (PORT
+      (CK
+        (COND (!GCK * !E) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (E
+        (COND (GCK * !CK) RISE_FALL
+         COND (!GCK * !CK) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "CLKGATE_X4"
+    (PORT
+      (CK
+        (COND (!GCK * !E) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (E
+        (COND (GCK * !CK) RISE_FALL
+         COND (!GCK * !CK) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "CLKGATE_X8"
+    (PORT
+      (CK
+        (COND (!GCK * !E) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (E
+        (COND (GCK * !CK) RISE_FALL
+         COND (!GCK * !CK) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "DFFRS_X1"
+    (PORT
+      (CK
+        (COND (Q * D * !QN * RN * !SN) RISE_FALL
+         COND (!Q * D * QN * !RN * SN) RISE_FALL
+         COND (!Q * !D * QN * !RN * SN) RISE_FALL
+         COND (!Q * !D * !QN * !RN * !SN) RISE_FALL
+         COND (Q * D * !QN * RN * SN) RISE_FALL
+         COND (!Q * !D * QN * RN * SN) RISE_FALL
+         COND (Q * !D * !QN * RN * !SN) RISE_FALL
+         COND (!Q * D * !QN * !RN * !SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (D
+        (COND (!Q * !CK * QN * RN * SN) RISE_FALL
+         COND (!Q * CK * !QN * !RN * !SN) RISE_FALL
+         COND (!Q * CK * QN * RN * SN) RISE_FALL
+         COND (!Q * !CK * QN * !RN * SN) RISE_FALL
+         COND (Q * !CK * !QN * RN * !SN) RISE_FALL
+         COND (Q * CK * !QN * RN * !SN) RISE_FALL
+         COND (Q * !CK * !QN * RN * SN) RISE_FALL
+         COND (Q * CK * !QN * RN * SN) RISE_FALL
+         COND (!Q * !CK * !QN * !RN * !SN) RISE_FALL
+         COND (!Q * CK * QN * !RN * SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (RN
+        (COND (D * CK * !Q * QN * SN) RISE_FALL
+         COND (D * !CK * !Q * QN * SN) RISE_FALL
+         COND (!D * !CK * !Q * QN * SN) RISE_FALL
+         COND (!D * CK * !Q * QN * SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SN
+        (COND (D * CK * Q * !QN * RN) RISE_FALL
+         COND (D * !CK * Q * !QN * RN) RISE_FALL
+         COND (!D * CK * Q * !QN * RN) RISE_FALL
+         COND (!D * !CK * Q * !QN * RN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (COND (!SN * !CK) RISE_FALL (IOPATH RN)
+         COND (SN * !CK) RISE_FALL (IOPATH RN)
+         COND (!SN * CK) RISE_FALL (IOPATH RN)
+         COND (SN * CK) RISE_FALL (IOPATH RN)
+         COND_DEFAULT RISE_FALL (IOPATH CK IOPATH SN))
+      )
+      (QN
+        (COND (!RN * !CK) RISE_FALL (IOPATH SN)
+         COND (RN * !CK) RISE_FALL (IOPATH SN)
+         COND (!RN * CK) RISE_FALL (IOPATH SN)
+         COND (RN * CK) RISE_FALL (IOPATH SN)
+         COND_DEFAULT RISE_FALL (IOPATH CK IOPATH RN))
+      )
+    )
+  )
+  (MODULE "DFFRS_X2"
+    (PORT
+      (CK
+        (COND (Q * D * !QN * RN * !SN) RISE_FALL
+         COND (!Q * D * QN * !RN * SN) RISE_FALL
+         COND (!Q * !D * QN * !RN * SN) RISE_FALL
+         COND (!Q * !D * !QN * !RN * !SN) RISE_FALL
+         COND (Q * D * !QN * RN * SN) RISE_FALL
+         COND (!Q * !D * QN * RN * SN) RISE_FALL
+         COND (Q * !D * !QN * RN * !SN) RISE_FALL
+         COND (!Q * D * !QN * !RN * !SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (D
+        (COND (!Q * !CK * QN * RN * SN) RISE_FALL
+         COND (!Q * CK * !QN * !RN * !SN) RISE_FALL
+         COND (!Q * CK * QN * RN * SN) RISE_FALL
+         COND (!Q * !CK * QN * !RN * SN) RISE_FALL
+         COND (Q * !CK * !QN * RN * !SN) RISE_FALL
+         COND (Q * CK * !QN * RN * !SN) RISE_FALL
+         COND (Q * !CK * !QN * RN * SN) RISE_FALL
+         COND (Q * CK * !QN * RN * SN) RISE_FALL
+         COND (!Q * !CK * !QN * !RN * !SN) RISE_FALL
+         COND (!Q * CK * QN * !RN * SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (RN
+        (COND (D * CK * !Q * QN * SN) RISE_FALL
+         COND (D * !CK * !Q * QN * SN) RISE_FALL
+         COND (!D * !CK * !Q * QN * SN) RISE_FALL
+         COND (!D * CK * !Q * QN * SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SN
+        (COND (D * CK * Q * !QN * RN) RISE_FALL
+         COND (D * !CK * Q * !QN * RN) RISE_FALL
+         COND (!D * CK * Q * !QN * RN) RISE_FALL
+         COND (!D * !CK * Q * !QN * RN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (COND (!SN * !CK) RISE_FALL (IOPATH RN)
+         COND (SN * !CK) RISE_FALL (IOPATH RN)
+         COND (!SN * CK) RISE_FALL (IOPATH RN)
+         COND (SN * CK) RISE_FALL (IOPATH RN)
+         COND_DEFAULT RISE_FALL (IOPATH CK IOPATH SN))
+      )
+      (QN
+        (COND (!RN * !CK) RISE_FALL (IOPATH SN)
+         COND (RN * !CK) RISE_FALL (IOPATH SN)
+         COND (!RN * CK) RISE_FALL (IOPATH SN)
+         COND (RN * CK) RISE_FALL (IOPATH SN)
+         COND_DEFAULT RISE_FALL (IOPATH CK IOPATH RN))
+      )
+    )
+  )
+  (MODULE "DFFR_X1"
+    (PORT
+      (CK
+        (COND (!Q * D * QN * !RN) RISE_FALL
+         COND (!Q * !D * QN * !RN) RISE_FALL
+         COND (!Q * !D * QN * RN) RISE_FALL
+         COND (Q * D * !QN * RN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (D
+        (COND (!Q * CK * QN * !RN) RISE_FALL
+         COND (!Q * CK * QN * RN) RISE_FALL
+         COND (Q * CK * !QN * RN) RISE_FALL
+         COND (!Q * !CK * QN * !RN) RISE_FALL
+         COND (Q * !CK * !QN * RN) RISE_FALL
+         COND (!Q * !CK * QN * RN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (RN
+        (COND (D * CK * !Q * QN) RISE_FALL
+         COND (!D * CK * !Q * QN) RISE_FALL
+         COND (!D * !CK * !Q * QN) RISE_FALL
+         COND (D * !CK * !Q * QN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH CK IOPATH RN)
+      )
+      (QN
+        (IOPATH CK IOPATH RN)
+      )
+    )
+  )
+  (MODULE "DFFR_X2"
+    (PORT
+      (CK
+        (COND (!Q * D * QN * !RN) RISE_FALL
+         COND (!Q * !D * QN * !RN) RISE_FALL
+         COND (!Q * !D * QN * RN) RISE_FALL
+         COND (Q * D * !QN * RN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (D
+        (COND (!Q * CK * QN * !RN) RISE_FALL
+         COND (!Q * CK * QN * RN) RISE_FALL
+         COND (Q * CK * !QN * RN) RISE_FALL
+         COND (!Q * !CK * QN * !RN) RISE_FALL
+         COND (Q * !CK * !QN * RN) RISE_FALL
+         COND (!Q * !CK * QN * RN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (RN
+        (COND (D * CK * !Q * QN) RISE_FALL
+         COND (!D * CK * !Q * QN) RISE_FALL
+         COND (!D * !CK * !Q * QN) RISE_FALL
+         COND (D * !CK * !Q * QN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH CK IOPATH RN)
+      )
+      (QN
+        (IOPATH CK IOPATH RN)
+      )
+    )
+  )
+  (MODULE "DFFS_X1"
+    (PORT
+      (CK
+        (COND (!Q * !D * QN * SN) RISE_FALL
+         COND (Q * D * !QN * !SN) RISE_FALL
+         COND (Q * D * !QN * SN) RISE_FALL
+         COND (Q * !D * !QN * !SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (D
+        (COND (Q * CK * !QN * SN) RISE_FALL
+         COND (!Q * !CK * QN * SN) RISE_FALL
+         COND (!Q * CK * QN * SN) RISE_FALL
+         COND (Q * !CK * !QN * SN) RISE_FALL
+         COND (Q * CK * !QN * !SN) RISE_FALL
+         COND (Q * !CK * !QN * !SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SN
+        (COND (!D * CK * Q * !QN) RISE_FALL
+         COND (D * !CK * Q * !QN) RISE_FALL
+         COND (D * CK * Q * !QN) RISE_FALL
+         COND (!D * !CK * Q * !QN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH CK IOPATH SN)
+      )
+      (QN
+        (IOPATH CK IOPATH SN)
+      )
+    )
+  )
+  (MODULE "DFFS_X2"
+    (PORT
+      (CK
+        (COND (!Q * !D * QN * SN) RISE_FALL
+         COND (Q * D * !QN * !SN) RISE_FALL
+         COND (Q * D * !QN * SN) RISE_FALL
+         COND (Q * !D * !QN * !SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (D
+        (COND (Q * CK * !QN * SN) RISE_FALL
+         COND (!Q * !CK * QN * SN) RISE_FALL
+         COND (!Q * CK * QN * SN) RISE_FALL
+         COND (Q * !CK * !QN * SN) RISE_FALL
+         COND (Q * CK * !QN * !SN) RISE_FALL
+         COND (Q * !CK * !QN * !SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SN
+        (COND (!D * CK * Q * !QN) RISE_FALL
+         COND (D * !CK * Q * !QN) RISE_FALL
+         COND (D * CK * Q * !QN) RISE_FALL
+         COND (!D * !CK * Q * !QN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH CK IOPATH SN)
+      )
+      (QN
+        (IOPATH CK IOPATH SN)
+      )
+    )
+  )
+  (MODULE "DFF_X1"
+    (PORT
+      (CK
+        (COND (Q * D * !QN) RISE_FALL
+         COND (!Q * !D * QN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (D
+        (COND (Q * CK * !QN) RISE_FALL
+         COND (!Q * !CK * QN) RISE_FALL
+         COND (!Q * CK * QN) RISE_FALL
+         COND (Q * !CK * !QN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "DFF_X2"
+    (PORT
+      (CK
+        (COND (Q * D * !QN) RISE_FALL
+         COND (!Q * !D * QN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (D
+        (COND (Q * CK * !QN) RISE_FALL
+         COND (!Q * !CK * QN) RISE_FALL
+         COND (!Q * CK * QN) RISE_FALL
+         COND (Q * !CK * !QN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "DLH_X1"
+    (PORT
+      (D
+        (COND (!Q * !G) RISE_FALL
+         COND (Q * !G) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (G
+        (COND (!Q * !D) RISE_FALL
+         COND (Q * D) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH G IOPATH D)
+      )
+    )
+  )
+  (MODULE "DLH_X2"
+    (PORT
+      (D
+        (COND (!Q * !G) RISE_FALL
+         COND (Q * !G) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (G
+        (COND (!Q * !D) RISE_FALL
+         COND (Q * D) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH G IOPATH D)
+      )
+    )
+  )
+  (MODULE "DLL_X1"
+    (PORT
+      (D
+        (COND (Q * GN) RISE_FALL
+         COND (!Q * GN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (GN
+        (COND (!Q * !D) RISE_FALL
+         COND (Q * D) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH D IOPATH GN)
+      )
+    )
+  )
+  (MODULE "DLL_X2"
+    (PORT
+      (D
+        (COND (Q * GN) RISE_FALL
+         COND (!Q * GN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (GN
+        (COND (!Q * !D) RISE_FALL
+         COND (Q * D) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH D IOPATH GN)
+      )
+    )
+  )
+  (MODULE "FA_X1"
+    (PORT
+      (CO
+        (COND (CI * !B) RISE_FALL (IOPATH A)
+         COND (!CI * B) RISE_FALL (IOPATH A)
+         COND (CI * !A) RISE_FALL (IOPATH B)
+         COND (!CI * A) RISE_FALL (IOPATH B)
+         COND (B * !A) RISE_FALL (IOPATH CI)
+         COND (!B * A) RISE_FALL (IOPATH CI))
+      )
+      (S
+        (COND (CI * !B) RISE_FALL (IOPATH A)
+         COND (!CI * B) RISE_FALL (IOPATH A)
+         COND (CI * !A) RISE_FALL (IOPATH B)
+         COND (!CI * A) RISE_FALL (IOPATH B)
+         COND (B * !A) RISE_FALL (IOPATH CI)
+         COND (!B * A) RISE_FALL (IOPATH CI)
+         COND (!CI * !B) RISE_FALL (IOPATH A)
+         COND (CI * B) RISE_FALL (IOPATH A)
+         COND (!CI * !A) RISE_FALL (IOPATH B)
+         COND (CI * A) RISE_FALL (IOPATH B)
+         COND (!B * !A) RISE_FALL (IOPATH CI)
+         COND (B * A) RISE_FALL (IOPATH CI))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A * !CI)
+      COND (!B * A * !CI)
+      COND (!B * !A * CI)
+      COND (!B * A * CI)
+      COND (B * !A * !CI)
+      COND (B * A * !CI)
+      COND (B * !A * CI)
+      COND (B * A * CI)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "HA_X1"
+    (PORT
+      (CO
+        (IOPATH A IOPATH B)
+      )
+      (S
+        (COND !B RISE_FALL (IOPATH A)
+         COND B RISE_FALL (IOPATH A)
+         COND !A RISE_FALL (IOPATH B)
+         COND A RISE_FALL (IOPATH B))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A)
+      COND (!B * A)
+      COND (B * !A)
+      COND (B * A)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "INV_X1"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "INV_X16"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "INV_X2"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "INV_X32"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "INV_X4"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "INV_X8"
+    (LEAKAGE
+     (COND !A
+      COND A
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "MUX2_X1"
+    (PORT
+      (A
+        (COND (S * B * Z) RISE_FALL
+         COND (S * !B * !Z) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B
+        (COND (!S * A * Z) RISE_FALL
+         COND (!S * !A * !Z) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (S
+        (COND (B * A * Z) RISE_FALL
+         COND (!B * !A * !Z) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Z
+        (COND (!S * !B) RISE_FALL (IOPATH A)
+         COND (!S * B) RISE_FALL (IOPATH A)
+         COND (S * !A) RISE_FALL (IOPATH B)
+         COND (S * A) RISE_FALL (IOPATH B)
+         COND (B * !A) RISE_FALL (IOPATH S)
+         COND (!B * A) RISE_FALL (IOPATH S))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A * !S)
+      COND (!B * !A * S)
+      COND (!B * A * !S)
+      COND (!B * A * S)
+      COND (B * !A * !S)
+      COND (B * !A * S)
+      COND (B * A * !S)
+      COND (B * A * S)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "MUX2_X2"
+    (PORT
+      (A
+        (COND (S * B * Z) RISE_FALL
+         COND (S * !B * !Z) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B
+        (COND (!S * A * Z) RISE_FALL
+         COND (!S * !A * !Z) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (S
+        (COND (B * A * Z) RISE_FALL
+         COND (!B * !A * !Z) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Z
+        (COND (!S * !B) RISE_FALL (IOPATH A)
+         COND (!S * B) RISE_FALL (IOPATH A)
+         COND (S * !A) RISE_FALL (IOPATH B)
+         COND (S * A) RISE_FALL (IOPATH B)
+         COND (B * !A) RISE_FALL (IOPATH S)
+         COND (!B * A) RISE_FALL (IOPATH S))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A * !S)
+      COND (!B * !A * S)
+      COND (!B * A * !S)
+      COND (!B * A * S)
+      COND (B * !A * !S)
+      COND (B * !A * S)
+      COND (B * A * !S)
+      COND (B * A * S)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NAND2_X1"
+    (PORT
+      (A1
+        (COND (ZN * !A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (ZN * !A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NAND2_X2"
+    (PORT
+      (A1
+        (COND (ZN * !A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (ZN * !A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NAND2_X4"
+    (PORT
+      (A1
+        (COND (ZN * !A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (ZN * !A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NAND3_X1"
+    (PORT
+      (A1
+        (COND (!A3 * !A2 * ZN) RISE_FALL
+         COND (!A3 * A2 * ZN) RISE_FALL
+         COND (A3 * !A2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!A3 * A1 * ZN) RISE_FALL
+         COND (A3 * !A1 * ZN) RISE_FALL
+         COND (!A3 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (!A2 * A1 * ZN) RISE_FALL
+         COND (!A2 * !A1 * ZN) RISE_FALL
+         COND (A2 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NAND3_X2"
+    (PORT
+      (A1
+        (COND (!A3 * !A2 * ZN) RISE_FALL
+         COND (!A3 * A2 * ZN) RISE_FALL
+         COND (A3 * !A2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!A3 * A1 * ZN) RISE_FALL
+         COND (A3 * !A1 * ZN) RISE_FALL
+         COND (!A3 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (!A2 * A1 * ZN) RISE_FALL
+         COND (!A2 * !A1 * ZN) RISE_FALL
+         COND (A2 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NAND3_X4"
+    (PORT
+      (A1
+        (COND (!A3 * !A2 * ZN) RISE_FALL
+         COND (!A3 * A2 * ZN) RISE_FALL
+         COND (A3 * !A2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!A3 * A1 * ZN) RISE_FALL
+         COND (A3 * !A1 * ZN) RISE_FALL
+         COND (!A3 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (!A2 * A1 * ZN) RISE_FALL
+         COND (!A2 * !A1 * ZN) RISE_FALL
+         COND (A2 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NAND4_X1"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A2 * A4 * ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (!A2 * !A1 * !A4 * ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (!A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (!A2 * !A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NAND4_X2"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A2 * A4 * ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (!A2 * !A1 * !A4 * ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (!A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (!A2 * !A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NAND4_X4"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A2 * A4 * ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (!A2 * !A1 * !A4 * ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (!A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (!A2 * !A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NOR2_X1"
+    (PORT
+      (A1
+        (COND (!ZN * A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!ZN * A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NOR2_X2"
+    (PORT
+      (A1
+        (COND (!ZN * A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!ZN * A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NOR2_X4"
+    (PORT
+      (A1
+        (COND (!ZN * A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!ZN * A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NOR3_X1"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !ZN) RISE_FALL
+         COND (A3 * A2 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!A3 * A1 * !ZN) RISE_FALL
+         COND (A3 * A1 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !ZN) RISE_FALL
+         COND (A2 * A1 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NOR3_X2"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !ZN) RISE_FALL
+         COND (A3 * A2 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!A3 * A1 * !ZN) RISE_FALL
+         COND (A3 * A1 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !ZN) RISE_FALL
+         COND (A2 * A1 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NOR3_X4"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !ZN) RISE_FALL
+         COND (A3 * A2 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (!A3 * A1 * !ZN) RISE_FALL
+         COND (A3 * A1 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !ZN) RISE_FALL
+         COND (A2 * A1 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NOR4_X1"
+    (PORT
+      (A1
+        (COND (!A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A2 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (A3 * A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (!A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * !ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (A2 * A1 * A3 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NOR4_X2"
+    (PORT
+      (A1
+        (COND (!A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A2 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (A3 * A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (!A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * !ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (A2 * A1 * A3 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "NOR4_X4"
+    (PORT
+      (A1
+        (COND (!A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A2 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A2 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (A3 * A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A3 * A1 * !A4 * !ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * !ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (!A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * !ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * !ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * A3 * !ZN) RISE_FALL
+         COND (A2 * A1 * A3 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI211_X1"
+    (PORT
+      (A
+        (COND (C1 * !B * C2 * ZN) RISE_FALL
+         COND (C1 * !B * !C2 * ZN) RISE_FALL
+         COND (!C1 * !B * C2 * ZN) RISE_FALL
+         COND (!C1 * !B * !C2 * ZN) RISE_FALL
+         COND (!C1 * B * !C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B
+        (COND (!C1 * !A * !C2 * ZN) RISE_FALL
+         COND (C1 * !A * C2 * ZN) RISE_FALL
+         COND (!C1 * A * !C2 * ZN) RISE_FALL
+         COND (C1 * !A * !C2 * ZN) RISE_FALL
+         COND (!C1 * !A * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (!B * !A * !C2 * ZN) RISE_FALL
+         COND (!B * A * !C2 * ZN) RISE_FALL
+         COND (B * !A * !C2 * ZN) RISE_FALL
+         COND (B * A * C2 * !ZN) RISE_FALL
+         COND (!B * !A * C2 * ZN) RISE_FALL
+         COND (B * !A * C2 * ZN) RISE_FALL
+         COND (!B * A * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (!B * A * !C1 * ZN) RISE_FALL
+         COND (B * !A * !C1 * ZN) RISE_FALL
+         COND (B * A * C1 * !ZN) RISE_FALL
+         COND (B * !A * C1 * ZN) RISE_FALL
+         COND (!B * !A * C1 * ZN) RISE_FALL
+         COND (!B * !A * !C1 * ZN) RISE_FALL
+         COND (!B * A * C1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!C1 * B * C2) RISE_FALL (IOPATH A)
+         COND (C1 * B * !C2) RISE_FALL (IOPATH A)
+         COND (C1 * B * C2) RISE_FALL (IOPATH A)
+         COND (!C1 * A * C2) RISE_FALL (IOPATH B)
+         COND (C1 * A * !C2) RISE_FALL (IOPATH B)
+         COND (C1 * A * C2) RISE_FALL (IOPATH B)
+         COND_DEFAULT RISE_FALL (IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A * !C1 * !C2)
+      COND (!B * A * !C1 * !C2)
+      COND (B * !A * !C1 * !C2)
+      COND (B * A * !C1 * !C2)
+      COND (!B * !A * !C1 * C2)
+      COND (!B * A * !C1 * C2)
+      COND (B * !A * !C1 * C2)
+      COND (B * A * !C1 * C2)
+      COND (!B * !A * C1 * !C2)
+      COND (!B * A * C1 * !C2)
+      COND (B * !A * C1 * !C2)
+      COND (B * A * C1 * !C2)
+      COND (!B * !A * C1 * C2)
+      COND (!B * A * C1 * C2)
+      COND (B * !A * C1 * C2)
+      COND (B * A * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI211_X2"
+    (PORT
+      (A
+        (COND (C1 * !B * C2 * ZN) RISE_FALL
+         COND (C1 * !B * !C2 * ZN) RISE_FALL
+         COND (!C1 * !B * C2 * ZN) RISE_FALL
+         COND (!C1 * !B * !C2 * ZN) RISE_FALL
+         COND (!C1 * B * !C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B
+        (COND (!C1 * !A * !C2 * ZN) RISE_FALL
+         COND (C1 * !A * C2 * ZN) RISE_FALL
+         COND (!C1 * A * !C2 * ZN) RISE_FALL
+         COND (C1 * !A * !C2 * ZN) RISE_FALL
+         COND (!C1 * !A * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (!B * !A * !C2 * ZN) RISE_FALL
+         COND (!B * A * !C2 * ZN) RISE_FALL
+         COND (B * !A * !C2 * ZN) RISE_FALL
+         COND (B * A * C2 * !ZN) RISE_FALL
+         COND (!B * !A * C2 * ZN) RISE_FALL
+         COND (B * !A * C2 * ZN) RISE_FALL
+         COND (!B * A * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (!B * A * !C1 * ZN) RISE_FALL
+         COND (B * !A * !C1 * ZN) RISE_FALL
+         COND (B * A * C1 * !ZN) RISE_FALL
+         COND (B * !A * C1 * ZN) RISE_FALL
+         COND (!B * !A * C1 * ZN) RISE_FALL
+         COND (!B * !A * !C1 * ZN) RISE_FALL
+         COND (!B * A * C1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!C1 * B * C2) RISE_FALL (IOPATH A)
+         COND (C1 * B * !C2) RISE_FALL (IOPATH A)
+         COND (C1 * B * C2) RISE_FALL (IOPATH A)
+         COND (!C1 * A * C2) RISE_FALL (IOPATH B)
+         COND (C1 * A * !C2) RISE_FALL (IOPATH B)
+         COND (C1 * A * C2) RISE_FALL (IOPATH B)
+         COND_DEFAULT RISE_FALL (IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A * !C1 * !C2)
+      COND (!B * A * !C1 * !C2)
+      COND (B * !A * !C1 * !C2)
+      COND (B * A * !C1 * !C2)
+      COND (!B * !A * !C1 * C2)
+      COND (!B * A * !C1 * C2)
+      COND (B * !A * !C1 * C2)
+      COND (B * A * !C1 * C2)
+      COND (!B * !A * C1 * !C2)
+      COND (!B * A * C1 * !C2)
+      COND (B * !A * C1 * !C2)
+      COND (B * A * C1 * !C2)
+      COND (!B * !A * C1 * C2)
+      COND (!B * A * C1 * C2)
+      COND (B * !A * C1 * C2)
+      COND (B * A * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI211_X4"
+    (PORT
+      (A
+        (COND (C1 * !B * C2 * ZN) RISE_FALL
+         COND (C1 * !B * !C2 * ZN) RISE_FALL
+         COND (!C1 * !B * C2 * ZN) RISE_FALL
+         COND (!C1 * !B * !C2 * ZN) RISE_FALL
+         COND (!C1 * B * !C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B
+        (COND (!C1 * !A * !C2 * ZN) RISE_FALL
+         COND (C1 * !A * C2 * ZN) RISE_FALL
+         COND (!C1 * A * !C2 * ZN) RISE_FALL
+         COND (C1 * !A * !C2 * ZN) RISE_FALL
+         COND (!C1 * !A * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (!B * !A * !C2 * ZN) RISE_FALL
+         COND (!B * A * !C2 * ZN) RISE_FALL
+         COND (B * !A * !C2 * ZN) RISE_FALL
+         COND (B * A * C2 * !ZN) RISE_FALL
+         COND (!B * !A * C2 * ZN) RISE_FALL
+         COND (B * !A * C2 * ZN) RISE_FALL
+         COND (!B * A * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (!B * A * !C1 * ZN) RISE_FALL
+         COND (B * !A * !C1 * ZN) RISE_FALL
+         COND (B * A * C1 * !ZN) RISE_FALL
+         COND (B * !A * C1 * ZN) RISE_FALL
+         COND (!B * !A * C1 * ZN) RISE_FALL
+         COND (!B * !A * !C1 * ZN) RISE_FALL
+         COND (!B * A * C1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!C1 * B * C2) RISE_FALL (IOPATH A)
+         COND (C1 * B * !C2) RISE_FALL (IOPATH A)
+         COND (C1 * B * C2) RISE_FALL (IOPATH A)
+         COND (!C1 * A * C2) RISE_FALL (IOPATH B)
+         COND (C1 * A * !C2) RISE_FALL (IOPATH B)
+         COND (C1 * A * C2) RISE_FALL (IOPATH B)
+         COND_DEFAULT RISE_FALL (IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A * !C1 * !C2)
+      COND (!B * A * !C1 * !C2)
+      COND (B * !A * !C1 * !C2)
+      COND (B * A * !C1 * !C2)
+      COND (!B * !A * !C1 * C2)
+      COND (!B * A * !C1 * C2)
+      COND (B * !A * !C1 * C2)
+      COND (B * A * !C1 * C2)
+      COND (!B * !A * C1 * !C2)
+      COND (!B * A * C1 * !C2)
+      COND (B * !A * C1 * !C2)
+      COND (B * A * C1 * !C2)
+      COND (!B * !A * C1 * C2)
+      COND (!B * A * C1 * C2)
+      COND (B * !A * C1 * C2)
+      COND (B * A * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI21_X1"
+    (PORT
+      (A
+        (COND (!B2 * !B1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !ZN) RISE_FALL
+         COND (!B2 * !A * ZN) RISE_FALL
+         COND (B2 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (B1 * !A * ZN) RISE_FALL
+         COND (B1 * A * !ZN) RISE_FALL
+         COND (!B1 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (B2 * !B1) RISE_FALL (IOPATH A)
+         COND (!B2 * B1) RISE_FALL (IOPATH A)
+         COND (B2 * B1) RISE_FALL (IOPATH A)
+         COND_DEFAULT RISE_FALL (IOPATH B1 IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2)
+      COND (!B1 * A * !B2)
+      COND (B1 * !A * !B2)
+      COND (B1 * A * !B2)
+      COND (!B1 * !A * B2)
+      COND (!B1 * A * B2)
+      COND (B1 * !A * B2)
+      COND (B1 * A * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI21_X2"
+    (PORT
+      (A
+        (COND (!B2 * !B1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !ZN) RISE_FALL
+         COND (!B2 * !A * ZN) RISE_FALL
+         COND (B2 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (B1 * !A * ZN) RISE_FALL
+         COND (B1 * A * !ZN) RISE_FALL
+         COND (!B1 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (B2 * !B1) RISE_FALL (IOPATH A)
+         COND (!B2 * B1) RISE_FALL (IOPATH A)
+         COND (B2 * B1) RISE_FALL (IOPATH A)
+         COND_DEFAULT RISE_FALL (IOPATH B1 IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2)
+      COND (!B1 * A * !B2)
+      COND (B1 * !A * !B2)
+      COND (B1 * A * !B2)
+      COND (!B1 * !A * B2)
+      COND (!B1 * A * B2)
+      COND (B1 * !A * B2)
+      COND (B1 * A * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI21_X4"
+    (PORT
+      (A
+        (COND (!B2 * !B1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !ZN) RISE_FALL
+         COND (!B2 * !A * ZN) RISE_FALL
+         COND (B2 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (B1 * !A * ZN) RISE_FALL
+         COND (B1 * A * !ZN) RISE_FALL
+         COND (!B1 * !A * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (B2 * !B1) RISE_FALL (IOPATH A)
+         COND (!B2 * B1) RISE_FALL (IOPATH A)
+         COND (B2 * B1) RISE_FALL (IOPATH A)
+         COND_DEFAULT RISE_FALL (IOPATH B1 IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2)
+      COND (!B1 * A * !B2)
+      COND (B1 * !A * !B2)
+      COND (B1 * A * !B2)
+      COND (!B1 * !A * B2)
+      COND (!B1 * A * B2)
+      COND (B1 * !A * B2)
+      COND (B1 * A * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI221_X1"
+    (PORT
+      (A
+        (COND (!B2 * !B1 * !C1 * C2 * ZN) RISE_FALL
+         COND (B2 * !B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !B1 * C1 * C2 * ZN) RISE_FALL
+         COND (!B2 * B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !B1 * C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (!B2 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (!B2 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * C1 * C2 * ZN) RISE_FALL
+         COND (B2 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * !A * C1 * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (!B1 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B1 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B1 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * C1 * C2 * ZN) RISE_FALL
+         COND (!B1 * !A * C1 * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C2 * ZN) RISE_FALL
+         COND (B1 * !A * !B2 * C2 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * C2 * ZN) RISE_FALL
+         COND (!B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * B2 * C2 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * !B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * C2 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (B1 * A * !B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * !A * !B2 * C1 * ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C1 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * C1 * ZN) RISE_FALL
+         COND (B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (B1 * !A * B2 * C1 * ZN) RISE_FALL
+         COND (!B1 * !A * B2 * C1 * ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND (!B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C1 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND ((!B2 * B1 * !C1 * C2) | (B2 * !B1 * C1 * !C2)) RISE_FALL (IOPATH A)
+         COND (B2 * !B1 * C2) RISE_FALL (IOPATH A)
+         COND ((C1 * B1) | (B2 * B1 * C2)) RISE_FALL (IOPATH A)
+         COND (!B2 * A * !C1 * C2) RISE_FALL (IOPATH B1)
+         COND (!B2 * A * C1 * !C2) RISE_FALL (IOPATH B1)
+         COND (!B2 * A * C1 * C2) RISE_FALL (IOPATH B1)
+         COND (!B1 * A * !C1 * C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * A * C1 * !C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * A * C1 * C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * A * B2 * !C2) RISE_FALL (IOPATH C1)
+         COND (B1 * A * !B2 * !C2) RISE_FALL (IOPATH C1)
+         COND (B1 * A * B2 * !C2) RISE_FALL (IOPATH C1)
+         COND (!B1 * A * B2 * !C1) RISE_FALL (IOPATH C2)
+         COND (B1 * A * !B2 * !C1) RISE_FALL (IOPATH C2)
+         COND (B1 * A * B2 * !C1) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2 * !C1 * !C2)
+      COND (!B1 * A * !B2 * !C1 * !C2)
+      COND (B1 * !A * !B2 * !C1 * !C2)
+      COND (B1 * A * !B2 * !C1 * !C2)
+      COND (!B1 * !A * B2 * !C1 * !C2)
+      COND (!B1 * A * B2 * !C1 * !C2)
+      COND (B1 * !A * B2 * !C1 * !C2)
+      COND (B1 * A * B2 * !C1 * !C2)
+      COND (!B1 * !A * !B2 * !C1 * C2)
+      COND (!B1 * A * !B2 * !C1 * C2)
+      COND (B1 * !A * !B2 * !C1 * C2)
+      COND (B1 * A * !B2 * !C1 * C2)
+      COND (!B1 * !A * B2 * !C1 * C2)
+      COND (!B1 * A * B2 * !C1 * C2)
+      COND (B1 * !A * B2 * !C1 * C2)
+      COND (B1 * A * B2 * !C1 * C2)
+      COND (!B1 * !A * !B2 * C1 * !C2)
+      COND (!B1 * A * !B2 * C1 * !C2)
+      COND (B1 * !A * !B2 * C1 * !C2)
+      COND (B1 * A * !B2 * C1 * !C2)
+      COND (!B1 * !A * B2 * C1 * !C2)
+      COND (!B1 * A * B2 * C1 * !C2)
+      COND (B1 * !A * B2 * C1 * !C2)
+      COND (B1 * A * B2 * C1 * !C2)
+      COND (!B1 * !A * !B2 * C1 * C2)
+      COND (!B1 * A * !B2 * C1 * C2)
+      COND (B1 * !A * !B2 * C1 * C2)
+      COND (B1 * A * !B2 * C1 * C2)
+      COND (!B1 * !A * B2 * C1 * C2)
+      COND (!B1 * A * B2 * C1 * C2)
+      COND (B1 * !A * B2 * C1 * C2)
+      COND (B1 * A * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI221_X2"
+    (PORT
+      (A
+        (COND (!B2 * !B1 * !C1 * C2 * ZN) RISE_FALL
+         COND (B2 * !B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !B1 * C1 * C2 * ZN) RISE_FALL
+         COND (!B2 * B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !B1 * C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (!B2 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (!B2 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * C1 * C2 * ZN) RISE_FALL
+         COND (B2 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * !A * C1 * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (!B1 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B1 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B1 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * C1 * C2 * ZN) RISE_FALL
+         COND (!B1 * !A * C1 * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C2 * ZN) RISE_FALL
+         COND (B1 * !A * !B2 * C2 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * C2 * ZN) RISE_FALL
+         COND (!B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * B2 * C2 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * !B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * C2 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (B1 * A * !B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * !A * !B2 * C1 * ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C1 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * C1 * ZN) RISE_FALL
+         COND (B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (B1 * !A * B2 * C1 * ZN) RISE_FALL
+         COND (!B1 * !A * B2 * C1 * ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND (!B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C1 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND ((!B2 * B1 * !C1 * C2) | (B2 * !B1 * C1 * !C2)) RISE_FALL (IOPATH A)
+         COND (B2 * !B1 * C2) RISE_FALL (IOPATH A)
+         COND ((C1 * B1) | (B2 * B1 * C2)) RISE_FALL (IOPATH A)
+         COND (!B2 * A * !C1 * C2) RISE_FALL (IOPATH B1)
+         COND (!B2 * A * C1 * !C2) RISE_FALL (IOPATH B1)
+         COND (!B2 * A * C1 * C2) RISE_FALL (IOPATH B1)
+         COND (!B1 * A * !C1 * C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * A * C1 * !C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * A * C1 * C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * A * B2 * !C2) RISE_FALL (IOPATH C1)
+         COND (B1 * A * !B2 * !C2) RISE_FALL (IOPATH C1)
+         COND (B1 * A * B2 * !C2) RISE_FALL (IOPATH C1)
+         COND (!B1 * A * B2 * !C1) RISE_FALL (IOPATH C2)
+         COND (B1 * A * !B2 * !C1) RISE_FALL (IOPATH C2)
+         COND (B1 * A * B2 * !C1) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2 * !C1 * !C2)
+      COND (!B1 * A * !B2 * !C1 * !C2)
+      COND (B1 * !A * !B2 * !C1 * !C2)
+      COND (B1 * A * !B2 * !C1 * !C2)
+      COND (!B1 * !A * B2 * !C1 * !C2)
+      COND (!B1 * A * B2 * !C1 * !C2)
+      COND (B1 * !A * B2 * !C1 * !C2)
+      COND (B1 * A * B2 * !C1 * !C2)
+      COND (!B1 * !A * !B2 * !C1 * C2)
+      COND (!B1 * A * !B2 * !C1 * C2)
+      COND (B1 * !A * !B2 * !C1 * C2)
+      COND (B1 * A * !B2 * !C1 * C2)
+      COND (!B1 * !A * B2 * !C1 * C2)
+      COND (!B1 * A * B2 * !C1 * C2)
+      COND (B1 * !A * B2 * !C1 * C2)
+      COND (B1 * A * B2 * !C1 * C2)
+      COND (!B1 * !A * !B2 * C1 * !C2)
+      COND (!B1 * A * !B2 * C1 * !C2)
+      COND (B1 * !A * !B2 * C1 * !C2)
+      COND (B1 * A * !B2 * C1 * !C2)
+      COND (!B1 * !A * B2 * C1 * !C2)
+      COND (!B1 * A * B2 * C1 * !C2)
+      COND (B1 * !A * B2 * C1 * !C2)
+      COND (B1 * A * B2 * C1 * !C2)
+      COND (!B1 * !A * !B2 * C1 * C2)
+      COND (!B1 * A * !B2 * C1 * C2)
+      COND (B1 * !A * !B2 * C1 * C2)
+      COND (B1 * A * !B2 * C1 * C2)
+      COND (!B1 * !A * B2 * C1 * C2)
+      COND (!B1 * A * B2 * C1 * C2)
+      COND (B1 * !A * B2 * C1 * C2)
+      COND (B1 * A * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI221_X4"
+    (PORT
+      (A
+        (COND (!B2 * !B1 * !C1 * C2 * ZN) RISE_FALL
+         COND (B2 * !B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !B1 * C1 * C2 * ZN) RISE_FALL
+         COND (!B2 * B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !B1 * C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * B1 * !C1 * !C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (B2 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (!B2 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (!B2 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B2 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (B2 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * C1 * C2 * ZN) RISE_FALL
+         COND (B2 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B2 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B2 * !A * C1 * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (!B1 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * !C2 * !ZN) RISE_FALL
+         COND (B1 * A * !C1 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * !C1 * C2 * ZN) RISE_FALL
+         COND (B1 * A * !C1 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * !C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * C1 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * C1 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * C1 * C2 * ZN) RISE_FALL
+         COND (!B1 * !A * C1 * C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C1
+        (COND (B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C2 * ZN) RISE_FALL
+         COND (B1 * !A * !B2 * C2 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * C2 * ZN) RISE_FALL
+         COND (!B1 * A * B2 * C2 * !ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * B2 * C2 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * A * !B2 * C2 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C2 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * C2 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C2 * ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (C2
+        (COND (B1 * A * !B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * !A * B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * !A * !B2 * C1 * ZN) RISE_FALL
+         COND (!B1 * A * !B2 * !C1 * ZN) RISE_FALL
+         COND (B1 * !A * B2 * !C1 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * C1 * ZN) RISE_FALL
+         COND (B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (B1 * !A * B2 * C1 * ZN) RISE_FALL
+         COND (!B1 * !A * B2 * C1 * ZN) RISE_FALL
+         COND (B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND (!B1 * A * B2 * C1 * !ZN) RISE_FALL
+         COND (!B1 * A * !B2 * C1 * ZN) RISE_FALL
+         COND (!B1 * !A * !B2 * !C1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND ((!B2 * B1 * !C1 * C2) | (B2 * !B1 * C1 * !C2)) RISE_FALL (IOPATH A)
+         COND (B2 * !B1 * C2) RISE_FALL (IOPATH A)
+         COND ((C1 * B1) | (B2 * B1 * C2)) RISE_FALL (IOPATH A)
+         COND (!B2 * A * !C1 * C2) RISE_FALL (IOPATH B1)
+         COND (!B2 * A * C1 * !C2) RISE_FALL (IOPATH B1)
+         COND (!B2 * A * C1 * C2) RISE_FALL (IOPATH B1)
+         COND (!B1 * A * !C1 * C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * A * C1 * !C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * A * C1 * C2) RISE_FALL (IOPATH B2)
+         COND (!B1 * A * B2 * !C2) RISE_FALL (IOPATH C1)
+         COND (B1 * A * !B2 * !C2) RISE_FALL (IOPATH C1)
+         COND (B1 * A * B2 * !C2) RISE_FALL (IOPATH C1)
+         COND (!B1 * A * B2 * !C1) RISE_FALL (IOPATH C2)
+         COND (B1 * A * !B2 * !C1) RISE_FALL (IOPATH C2)
+         COND (B1 * A * B2 * !C1) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A))
+      )
+    )
+    (LEAKAGE
+     (COND (!B1 * !A * !B2 * !C1 * !C2)
+      COND (!B1 * A * !B2 * !C1 * !C2)
+      COND (B1 * !A * !B2 * !C1 * !C2)
+      COND (B1 * A * !B2 * !C1 * !C2)
+      COND (!B1 * !A * B2 * !C1 * !C2)
+      COND (!B1 * A * B2 * !C1 * !C2)
+      COND (B1 * !A * B2 * !C1 * !C2)
+      COND (B1 * A * B2 * !C1 * !C2)
+      COND (!B1 * !A * !B2 * !C1 * C2)
+      COND (!B1 * A * !B2 * !C1 * C2)
+      COND (B1 * !A * !B2 * !C1 * C2)
+      COND (B1 * A * !B2 * !C1 * C2)
+      COND (!B1 * !A * B2 * !C1 * C2)
+      COND (!B1 * A * B2 * !C1 * C2)
+      COND (B1 * !A * B2 * !C1 * C2)
+      COND (B1 * A * B2 * !C1 * C2)
+      COND (!B1 * !A * !B2 * C1 * !C2)
+      COND (!B1 * A * !B2 * C1 * !C2)
+      COND (B1 * !A * !B2 * C1 * !C2)
+      COND (B1 * A * !B2 * C1 * !C2)
+      COND (!B1 * !A * B2 * C1 * !C2)
+      COND (!B1 * A * B2 * C1 * !C2)
+      COND (B1 * !A * B2 * C1 * !C2)
+      COND (B1 * A * B2 * C1 * !C2)
+      COND (!B1 * !A * !B2 * C1 * C2)
+      COND (!B1 * A * !B2 * C1 * C2)
+      COND (B1 * !A * !B2 * C1 * C2)
+      COND (B1 * A * !B2 * C1 * C2)
+      COND (!B1 * !A * B2 * C1 * C2)
+      COND (!B1 * A * B2 * C1 * C2)
+      COND (B1 * !A * B2 * C1 * C2)
+      COND (B1 * A * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI222_X1"
+    (PORT
+      (ZN
+        (COND (!B1 * !A2 * B2 * C1 * !C2) RISE_FALL (IOPATH A1)
+         COND ((!B1 * !A2 * B2 * !C1 * C2) | (B1 * !A2 * !B2 * !C1 * C2)) RISE_FALL (IOPATH A1)
+         COND (B1 * !A2 * B2 * !C1 * C2) RISE_FALL (IOPATH A1)
+         COND ((B1 * !A2 * C1) | (B2 * !A2 * C1 * C2)) RISE_FALL (IOPATH A1)
+         COND ((!B1 * !A1 * B2 * !C1 * C2) | (B1 * !A1 * !B2 * !C1 * C2)) RISE_FALL (IOPATH A2)
+         COND ((!B1 * !A1 * B2 * C1 * !C2) | (B1 * !A1 * !B2 * C1 * !C2)) RISE_FALL (IOPATH A2)
+         COND (B1 * !A1 * B2 * !C1 * C2) RISE_FALL (IOPATH A2)
+         COND ((B1 * !A1 * C1 * C2) | (B1 * !A1 * B2 * C1) | (B2 * !A1 * C1 * C2)) RISE_FALL (IOPATH A2)
+         COND (A2 * !A1 * !B2 * C1 * !C2) RISE_FALL (IOPATH B1)
+         COND ((!B2 * A2 * !C1 * C2) | (!B2 * A1 * !C1 * C2)) RISE_FALL (IOPATH B1)
+         COND ((!B2 * A1 * C1) | (!B2 * A2 * C1 * C2)) RISE_FALL (IOPATH B1)
+         COND ((A2 * !A1 * !B1 * C1 * !C2) | (!A2 * A1 * !B1 * C1 * !C2)) RISE_FALL (IOPATH B2)
+         COND ((!B1 * A2 * !C1 * C2) | (!B1 * A1 * !C1 * C2)) RISE_FALL (IOPATH B2)
+         COND ((!B1 * A1 * C1 * C2) | (A2 * A1 * !B1 * C1) | (!B1 * A2 * C1 * C2)) RISE_FALL (IOPATH B2)
+         COND (A2 * !A1 * !B1 * B2 * !C2) RISE_FALL (IOPATH C1)
+         COND ((!A2 * A1 * !B1 * B2 * !C2) | (A2 * !A1 * B1 * !B2 * !C2)) RISE_FALL (IOPATH C1)
+         COND ((A2 * !A1 * B1 * B2 * !C2) | (A2 * A1 * !B1 * B2 * !C2)) RISE_FALL (IOPATH C1)
+         COND (B1 * A1 * !C2) RISE_FALL (IOPATH C1)
+         COND (A2 * !A1 * !B1 * B2 * !C1) RISE_FALL (IOPATH C2)
+         COND ((!A2 * A1 * !B1 * B2 * !C1) | (A2 * !A1 * B1 * !B2 * !C1)) RISE_FALL (IOPATH C2)
+         COND ((A2 * !A1 * B1 * B2 * !C1) | (A2 * A1 * !B1 * B2 * !C1)) RISE_FALL (IOPATH C2)
+         COND (B1 * A1 * !C1) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A1 IOPATH A2 IOPATH B1 IOPATH B2 IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * A1 * B1 * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI222_X2"
+    (PORT
+      (ZN
+        (COND (!B1 * !A2 * B2 * !C1 * C2) RISE_FALL (IOPATH A1)
+         COND ((B1 * !A2 * !B2 * !C1 * C2) | (!B1 * !A2 * B2 * C1 * !C2)) RISE_FALL (IOPATH A1)
+         COND ((B1 * !A2 * B2 * C2) | (B1 * !A2 * C1) | (B2 * !A2 * C1 * C2)) RISE_FALL (IOPATH A1)
+         COND (!B1 * !A1 * B2 * !C1 * C2) RISE_FALL (IOPATH A2)
+         COND ((B1 * !A1 * !B2 * !C1 * C2) | (!B1 * !A1 * B2 * C1 * !C2) | (B1 * !A1 * !B2 * C1 * !C2)) RISE_FALL (IOPATH A2)
+         COND ((B1 * !A1 * B2 * C2) | (B1 * !A1 * B2 * C1) | (B1 * !A1 * C1 * C2) | (B2 * !A1 * C1 * C2)) RISE_FALL (IOPATH A2)
+         COND (A2 * !A1 * !B2 * C1 * !C2) RISE_FALL (IOPATH B1)
+         COND ((!B2 * A2 * !C1 * C2) | (!B2 * A1 * !C1 * C2)) RISE_FALL (IOPATH B1)
+         COND ((!B2 * A1 * C1) | (!B2 * A2 * C1 * C2)) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * !B1 * C1 * !C2) RISE_FALL (IOPATH B2)
+         COND ((!B1 * A2 * !C1 * C2) | (!B1 * A1 * !C1 * C2)) RISE_FALL (IOPATH B2)
+         COND ((!B1 * A1 * C1) | (!B1 * A2 * C1 * C2)) RISE_FALL (IOPATH B2)
+         COND (A2 * !A1 * !B1 * B2 * !C2) RISE_FALL (IOPATH C1)
+         COND ((!A2 * A1 * !B1 * B2 * !C2) | (A2 * !A1 * B1 * !B2 * !C2)) RISE_FALL (IOPATH C1)
+         COND ((A2 * !A1 * B1 * B2 * !C2) | (A2 * A1 * !B1 * B2 * !C2)) RISE_FALL (IOPATH C1)
+         COND (B1 * A1 * !C2) RISE_FALL (IOPATH C1)
+         COND (A2 * !A1 * !B1 * B2 * !C1) RISE_FALL (IOPATH C2)
+         COND ((!A2 * A1 * !B1 * B2 * !C1) | (A2 * !A1 * B1 * !B2 * !C1)) RISE_FALL (IOPATH C2)
+         COND ((A2 * !A1 * B1 * B2 * !C1) | (A2 * A1 * !B1 * B2 * !C1)) RISE_FALL (IOPATH C2)
+         COND (B1 * A1 * !C1) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A1 IOPATH A2 IOPATH B1 IOPATH B2 IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * A1 * B1 * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI222_X4"
+    (PORT
+      (ZN
+        (COND (!B1 * !A2 * B2 * !C1 * C2) RISE_FALL (IOPATH A1)
+         COND ((B1 * !A2 * !B2 * !C1 * C2) | (!B1 * !A2 * B2 * C1 * !C2)) RISE_FALL (IOPATH A1)
+         COND ((B1 * !A2 * B2 * C2) | (B1 * !A2 * C1) | (B2 * !A2 * C1 * C2)) RISE_FALL (IOPATH A1)
+         COND (!B1 * !A1 * B2 * !C1 * C2) RISE_FALL (IOPATH A2)
+         COND ((B1 * !A1 * !B2 * !C1 * C2) | (!B1 * !A1 * B2 * C1 * !C2) | (B1 * !A1 * !B2 * C1 * !C2)) RISE_FALL (IOPATH A2)
+         COND ((B1 * !A1 * B2 * C2) | (B1 * !A1 * B2 * C1) | (B1 * !A1 * C1 * C2) | (B2 * !A1 * C1 * C2)) RISE_FALL (IOPATH A2)
+         COND ((!A2 * A1 * !B2 * !C1 * C2) | (A2 * !A1 * !B2 * C1 * !C2)) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * !B2 * C1 * C2) RISE_FALL (IOPATH B1)
+         COND (!B2 * A1 * C1) RISE_FALL (IOPATH B1)
+         COND (!B2 * A2 * !C1 * C2) RISE_FALL (IOPATH B1)
+         COND ((!A2 * A1 * !B1 * !C1 * C2) | (A2 * !A1 * !B1 * C1 * !C2)) RISE_FALL (IOPATH B2)
+         COND (!B1 * A2 * !C1 * C2) RISE_FALL (IOPATH B2)
+         COND ((!B1 * A1 * C1) | (!B1 * A2 * C1 * C2)) RISE_FALL (IOPATH B2)
+         COND (A2 * !A1 * !B1 * B2 * !C2) RISE_FALL (IOPATH C1)
+         COND ((!A2 * A1 * !B1 * B2 * !C2) | (A2 * !A1 * B1 * !B2 * !C2)) RISE_FALL (IOPATH C1)
+         COND ((A2 * !A1 * B1 * B2 * !C2) | (A2 * A1 * !B1 * B2 * !C2)) RISE_FALL (IOPATH C1)
+         COND (B1 * A1 * !C2) RISE_FALL (IOPATH C1)
+         COND (A2 * !A1 * !B1 * B2 * !C1) RISE_FALL (IOPATH C2)
+         COND ((!A2 * A1 * !B1 * B2 * !C1) | (A2 * !A1 * B1 * !B2 * !C1)) RISE_FALL (IOPATH C2)
+         COND ((A2 * !A1 * B1 * B2 * !C1) | (A2 * A1 * !B1 * B2 * !C1)) RISE_FALL (IOPATH C2)
+         COND (B1 * A1 * !C1) RISE_FALL (IOPATH C2)
+         COND_DEFAULT RISE_FALL (IOPATH A1 IOPATH A2 IOPATH B1 IOPATH B2 IOPATH C1 IOPATH C2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * !C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * !C1 * C2)
+      COND (A2 * A1 * B1 * B2 * !C1 * C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * !C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * !C2)
+      COND (A2 * A1 * B1 * B2 * C1 * !C2)
+      COND (!A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (!A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (!A2 * A1 * B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * !B2 * C1 * C2)
+      COND (A2 * A1 * B1 * !B2 * C1 * C2)
+      COND (A2 * !A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * !A1 * B1 * B2 * C1 * C2)
+      COND (A2 * A1 * !B1 * B2 * C1 * C2)
+      COND (A2 * A1 * B1 * B2 * C1 * C2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI22_X1"
+    (PORT
+      (A1
+        (COND (!B1 * A2 * !B2 * ZN) RISE_FALL
+         COND (!B1 * !A2 * !B2 * ZN) RISE_FALL
+         COND (!B1 * A2 * B2 * !ZN) RISE_FALL
+         COND (B1 * A2 * !B2 * !ZN) RISE_FALL
+         COND (B1 * A2 * B2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (B1 * A1 * !B2 * !ZN) RISE_FALL
+         COND (!B1 * A1 * !B2 * ZN) RISE_FALL
+         COND (!B1 * A1 * B2 * !ZN) RISE_FALL
+         COND (B1 * A1 * B2 * !ZN) RISE_FALL
+         COND (!B1 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (!A2 * !A1 * B2 * ZN) RISE_FALL
+         COND (A2 * A1 * B2 * !ZN) RISE_FALL
+         COND (!A2 * A1 * B2 * !ZN) RISE_FALL
+         COND (A2 * !A1 * B2 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (A2 * A1 * B1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * B1 * ZN) RISE_FALL
+         COND (!A2 * A1 * B1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !B1 * ZN) RISE_FALL
+         COND (A2 * !A1 * B1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!B1 * !A2 * B2) RISE_FALL (IOPATH A1)
+         COND (B1 * !A2 * !B2) RISE_FALL (IOPATH A1)
+         COND (B1 * !A2 * B2) RISE_FALL (IOPATH A1)
+         COND (!B1 * !A1 * B2) RISE_FALL (IOPATH A2)
+         COND (B1 * !A1 * !B2) RISE_FALL (IOPATH A2)
+         COND (B1 * !A1 * B2) RISE_FALL (IOPATH A2)
+         COND (A2 * !A1 * !B2) RISE_FALL (IOPATH B1)
+         COND (!A2 * A1 * !B2) RISE_FALL (IOPATH B1)
+         COND (A2 * A1 * !B2) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * !B1) RISE_FALL (IOPATH B2)
+         COND (!A2 * A1 * !B1) RISE_FALL (IOPATH B2)
+         COND (A2 * A1 * !B1) RISE_FALL (IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2)
+      COND (!A2 * !A1 * B1 * !B2)
+      COND (!A2 * A1 * !B1 * !B2)
+      COND (!A2 * A1 * B1 * !B2)
+      COND (!A2 * !A1 * !B1 * B2)
+      COND (!A2 * !A1 * B1 * B2)
+      COND (!A2 * A1 * !B1 * B2)
+      COND (!A2 * A1 * B1 * B2)
+      COND (A2 * !A1 * !B1 * !B2)
+      COND (A2 * !A1 * B1 * !B2)
+      COND (A2 * A1 * !B1 * !B2)
+      COND (A2 * A1 * B1 * !B2)
+      COND (A2 * !A1 * !B1 * B2)
+      COND (A2 * !A1 * B1 * B2)
+      COND (A2 * A1 * !B1 * B2)
+      COND (A2 * A1 * B1 * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI22_X2"
+    (PORT
+      (A1
+        (COND (!B1 * A2 * !B2 * ZN) RISE_FALL
+         COND (!B1 * !A2 * !B2 * ZN) RISE_FALL
+         COND (!B1 * A2 * B2 * !ZN) RISE_FALL
+         COND (B1 * A2 * !B2 * !ZN) RISE_FALL
+         COND (B1 * A2 * B2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (B1 * A1 * !B2 * !ZN) RISE_FALL
+         COND (!B1 * A1 * !B2 * ZN) RISE_FALL
+         COND (!B1 * A1 * B2 * !ZN) RISE_FALL
+         COND (B1 * A1 * B2 * !ZN) RISE_FALL
+         COND (!B1 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (!A2 * !A1 * B2 * ZN) RISE_FALL
+         COND (A2 * A1 * B2 * !ZN) RISE_FALL
+         COND (!A2 * A1 * B2 * !ZN) RISE_FALL
+         COND (A2 * !A1 * B2 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (A2 * A1 * B1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * B1 * ZN) RISE_FALL
+         COND (!A2 * A1 * B1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !B1 * ZN) RISE_FALL
+         COND (A2 * !A1 * B1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!B1 * !A2 * B2) RISE_FALL (IOPATH A1)
+         COND (B1 * !A2 * !B2) RISE_FALL (IOPATH A1)
+         COND (B1 * !A2 * B2) RISE_FALL (IOPATH A1)
+         COND (!B1 * !A1 * B2) RISE_FALL (IOPATH A2)
+         COND (B1 * !A1 * !B2) RISE_FALL (IOPATH A2)
+         COND (B1 * !A1 * B2) RISE_FALL (IOPATH A2)
+         COND (A2 * !A1 * !B2) RISE_FALL (IOPATH B1)
+         COND (!A2 * A1 * !B2) RISE_FALL (IOPATH B1)
+         COND (A2 * A1 * !B2) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * !B1) RISE_FALL (IOPATH B2)
+         COND (!A2 * A1 * !B1) RISE_FALL (IOPATH B2)
+         COND (A2 * A1 * !B1) RISE_FALL (IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2)
+      COND (!A2 * !A1 * B1 * !B2)
+      COND (!A2 * A1 * !B1 * !B2)
+      COND (!A2 * A1 * B1 * !B2)
+      COND (!A2 * !A1 * !B1 * B2)
+      COND (!A2 * !A1 * B1 * B2)
+      COND (!A2 * A1 * !B1 * B2)
+      COND (!A2 * A1 * B1 * B2)
+      COND (A2 * !A1 * !B1 * !B2)
+      COND (A2 * !A1 * B1 * !B2)
+      COND (A2 * A1 * !B1 * !B2)
+      COND (A2 * A1 * B1 * !B2)
+      COND (A2 * !A1 * !B1 * B2)
+      COND (A2 * !A1 * B1 * B2)
+      COND (A2 * A1 * !B1 * B2)
+      COND (A2 * A1 * B1 * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI22_X4"
+    (PORT
+      (A1
+        (COND (!B1 * A2 * !B2 * ZN) RISE_FALL
+         COND (!B1 * !A2 * !B2 * ZN) RISE_FALL
+         COND (!B1 * A2 * B2 * !ZN) RISE_FALL
+         COND (B1 * A2 * !B2 * !ZN) RISE_FALL
+         COND (B1 * A2 * B2 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (B1 * A1 * !B2 * !ZN) RISE_FALL
+         COND (!B1 * A1 * !B2 * ZN) RISE_FALL
+         COND (!B1 * A1 * B2 * !ZN) RISE_FALL
+         COND (B1 * A1 * B2 * !ZN) RISE_FALL
+         COND (!B1 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B1
+        (COND (!A2 * !A1 * B2 * ZN) RISE_FALL
+         COND (A2 * A1 * B2 * !ZN) RISE_FALL
+         COND (!A2 * A1 * B2 * !ZN) RISE_FALL
+         COND (A2 * !A1 * B2 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !B2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (B2
+        (COND (A2 * A1 * B1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * B1 * ZN) RISE_FALL
+         COND (!A2 * A1 * B1 * !ZN) RISE_FALL
+         COND (!A2 * !A1 * !B1 * ZN) RISE_FALL
+         COND (A2 * !A1 * B1 * !ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (COND (!B1 * !A2 * B2) RISE_FALL (IOPATH A1)
+         COND (B1 * !A2 * !B2) RISE_FALL (IOPATH A1)
+         COND (B1 * !A2 * B2) RISE_FALL (IOPATH A1)
+         COND (!B1 * !A1 * B2) RISE_FALL (IOPATH A2)
+         COND (B1 * !A1 * !B2) RISE_FALL (IOPATH A2)
+         COND (B1 * !A1 * B2) RISE_FALL (IOPATH A2)
+         COND (A2 * !A1 * !B2) RISE_FALL (IOPATH B1)
+         COND (!A2 * A1 * !B2) RISE_FALL (IOPATH B1)
+         COND (A2 * A1 * !B2) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * !B1) RISE_FALL (IOPATH B2)
+         COND (!A2 * A1 * !B1) RISE_FALL (IOPATH B2)
+         COND (A2 * A1 * !B1) RISE_FALL (IOPATH B2))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !B1 * !B2)
+      COND (!A2 * !A1 * B1 * !B2)
+      COND (!A2 * A1 * !B1 * !B2)
+      COND (!A2 * A1 * B1 * !B2)
+      COND (!A2 * !A1 * !B1 * B2)
+      COND (!A2 * !A1 * B1 * B2)
+      COND (!A2 * A1 * !B1 * B2)
+      COND (!A2 * A1 * B1 * B2)
+      COND (A2 * !A1 * !B1 * !B2)
+      COND (A2 * !A1 * B1 * !B2)
+      COND (A2 * A1 * !B1 * !B2)
+      COND (A2 * A1 * B1 * !B2)
+      COND (A2 * !A1 * !B1 * B2)
+      COND (A2 * !A1 * B1 * B2)
+      COND (A2 * A1 * !B1 * B2)
+      COND (A2 * A1 * B1 * B2)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OAI33_X1"
+    (PORT
+      (ZN
+        (COND ((!A3 * !A2 * !B1 * !B2 * B3) | (!A3 * !A2 * !B1 * B2 * !B3)) RISE_FALL (IOPATH A1)
+         COND (!A3 * !A2 * !B1 * B2 * B3) RISE_FALL (IOPATH A1)
+         COND (!A3 * !A2 * B1) RISE_FALL (IOPATH A1)
+         COND ((!A3 * !A1 * !B1 * !B2 * B3) | (!A3 * !A1 * !B1 * B2 * !B3)) RISE_FALL (IOPATH A2)
+         COND (!A3 * !A1 * !B1 * B2 * B3) RISE_FALL (IOPATH A2)
+         COND (!A3 * !A1 * B1) RISE_FALL (IOPATH A2)
+         COND ((!A2 * !A1 * !B1 * !B2 * B3) | (!A2 * !A1 * !B1 * B2 * !B3)) RISE_FALL (IOPATH A3)
+         COND (!A2 * !A1 * !B1 * B2 * B3) RISE_FALL (IOPATH A3)
+         COND (!A2 * !A1 * B1 * !B2 * !B3) RISE_FALL (IOPATH A3)
+         COND ((!A2 * !A1 * B1 * B3) | (!A2 * !A1 * B1 * B2)) RISE_FALL (IOPATH A3)
+         COND ((!A2 * !A1 * A3 * !B2 * !B3) | (A2 * !A1 * !A3 * !B2 * !B3)) RISE_FALL (IOPATH B1)
+         COND (A2 * !A1 * A3 * !B2 * !B3) RISE_FALL (IOPATH B1)
+         COND (!B2 * A1 * !B3) RISE_FALL (IOPATH B1)
+         COND ((!A2 * !A1 * A3 * !B1 * !B3) | (A2 * !A1 * !A3 * !B1 * !B3)) RISE_FALL (IOPATH B2)
+         COND (A2 * !A1 * A3 * !B1 * !B3) RISE_FALL (IOPATH B2)
+         COND (!B1 * A1 * !B3) RISE_FALL (IOPATH B2)
+         COND ((!A2 * !A1 * A3 * !B1 * !B2) | (A2 * !A1 * !A3 * !B1 * !B2)) RISE_FALL (IOPATH B3)
+         COND (A2 * !A1 * A3 * !B1 * !B2) RISE_FALL (IOPATH B3)
+         COND (!B1 * A1 * !B2) RISE_FALL (IOPATH B3)
+         COND_DEFAULT RISE_FALL (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH B1 IOPATH B2 IOPATH B3))
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !B1 * !B2 * !B3)
+      COND (!A2 * !A1 * A3 * !B1 * !B2 * !B3)
+      COND (!A2 * !A1 * !A3 * !B1 * !B2 * B3)
+      COND (!A2 * !A1 * A3 * !B1 * !B2 * B3)
+      COND (!A2 * !A1 * !A3 * B1 * !B2 * !B3)
+      COND (!A2 * !A1 * A3 * B1 * !B2 * !B3)
+      COND (!A2 * !A1 * !A3 * B1 * !B2 * B3)
+      COND (!A2 * !A1 * A3 * B1 * !B2 * B3)
+      COND (!A2 * A1 * !A3 * !B1 * !B2 * !B3)
+      COND (!A2 * A1 * A3 * !B1 * !B2 * !B3)
+      COND (!A2 * A1 * !A3 * !B1 * !B2 * B3)
+      COND (!A2 * A1 * A3 * !B1 * !B2 * B3)
+      COND (!A2 * A1 * !A3 * B1 * !B2 * !B3)
+      COND (!A2 * A1 * A3 * B1 * !B2 * !B3)
+      COND (!A2 * A1 * !A3 * B1 * !B2 * B3)
+      COND (!A2 * A1 * A3 * B1 * !B2 * B3)
+      COND (!A2 * !A1 * !A3 * !B1 * B2 * !B3)
+      COND (!A2 * !A1 * A3 * !B1 * B2 * !B3)
+      COND (!A2 * !A1 * !A3 * !B1 * B2 * B3)
+      COND (!A2 * !A1 * A3 * !B1 * B2 * B3)
+      COND (!A2 * !A1 * !A3 * B1 * B2 * !B3)
+      COND (!A2 * !A1 * A3 * B1 * B2 * !B3)
+      COND (!A2 * !A1 * !A3 * B1 * B2 * B3)
+      COND (!A2 * !A1 * A3 * B1 * B2 * B3)
+      COND (!A2 * A1 * !A3 * !B1 * B2 * !B3)
+      COND (!A2 * A1 * A3 * !B1 * B2 * !B3)
+      COND (!A2 * A1 * !A3 * !B1 * B2 * B3)
+      COND (!A2 * A1 * A3 * !B1 * B2 * B3)
+      COND (!A2 * A1 * !A3 * B1 * B2 * !B3)
+      COND (!A2 * A1 * A3 * B1 * B2 * !B3)
+      COND (!A2 * A1 * !A3 * B1 * B2 * B3)
+      COND (!A2 * A1 * A3 * B1 * B2 * B3)
+      COND (A2 * !A1 * !A3 * !B1 * !B2 * !B3)
+      COND (A2 * !A1 * A3 * !B1 * !B2 * !B3)
+      COND (A2 * !A1 * !A3 * !B1 * !B2 * B3)
+      COND (A2 * !A1 * A3 * !B1 * !B2 * B3)
+      COND (A2 * !A1 * !A3 * B1 * !B2 * !B3)
+      COND (A2 * !A1 * A3 * B1 * !B2 * !B3)
+      COND (A2 * !A1 * !A3 * B1 * !B2 * B3)
+      COND (A2 * !A1 * A3 * B1 * !B2 * B3)
+      COND (A2 * A1 * !A3 * !B1 * !B2 * !B3)
+      COND (A2 * A1 * A3 * !B1 * !B2 * !B3)
+      COND (A2 * A1 * !A3 * !B1 * !B2 * B3)
+      COND (A2 * A1 * A3 * !B1 * !B2 * B3)
+      COND (A2 * A1 * !A3 * B1 * !B2 * !B3)
+      COND (A2 * A1 * A3 * B1 * !B2 * !B3)
+      COND (A2 * A1 * !A3 * B1 * !B2 * B3)
+      COND (A2 * A1 * A3 * B1 * !B2 * B3)
+      COND (A2 * !A1 * !A3 * !B1 * B2 * !B3)
+      COND (A2 * !A1 * A3 * !B1 * B2 * !B3)
+      COND (A2 * !A1 * !A3 * !B1 * B2 * B3)
+      COND (A2 * !A1 * A3 * !B1 * B2 * B3)
+      COND (A2 * !A1 * !A3 * B1 * B2 * !B3)
+      COND (A2 * !A1 * A3 * B1 * B2 * !B3)
+      COND (A2 * !A1 * !A3 * B1 * B2 * B3)
+      COND (A2 * !A1 * A3 * B1 * B2 * B3)
+      COND (A2 * A1 * !A3 * !B1 * B2 * !B3)
+      COND (A2 * A1 * A3 * !B1 * B2 * !B3)
+      COND (A2 * A1 * !A3 * !B1 * B2 * B3)
+      COND (A2 * A1 * A3 * !B1 * B2 * B3)
+      COND (A2 * A1 * !A3 * B1 * B2 * !B3)
+      COND (A2 * A1 * A3 * B1 * B2 * !B3)
+      COND (A2 * A1 * !A3 * B1 * B2 * B3)
+      COND (A2 * A1 * A3 * B1 * B2 * B3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OR2_X1"
+    (PORT
+      (A1
+        (COND (ZN * A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (ZN * A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OR2_X2"
+    (PORT
+      (A1
+        (COND (ZN * A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (ZN * A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OR2_X4"
+    (PORT
+      (A1
+        (COND (ZN * A2) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (ZN * A1) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1)
+      COND (!A2 * A1)
+      COND (A2 * !A1)
+      COND (A2 * A1)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OR3_X1"
+    (PORT
+      (A1
+        (COND (!A3 * A2 * ZN) RISE_FALL
+         COND (A3 * !A2 * ZN) RISE_FALL
+         COND (A3 * A2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * A1 * ZN) RISE_FALL
+         COND (!A3 * A1 * ZN) RISE_FALL
+         COND (A3 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * A1 * ZN) RISE_FALL
+         COND (!A2 * A1 * ZN) RISE_FALL
+         COND (A2 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OR3_X2"
+    (PORT
+      (A1
+        (COND (!A3 * A2 * ZN) RISE_FALL
+         COND (A3 * !A2 * ZN) RISE_FALL
+         COND (A3 * A2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * A1 * ZN) RISE_FALL
+         COND (!A3 * A1 * ZN) RISE_FALL
+         COND (A3 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * A1 * ZN) RISE_FALL
+         COND (!A2 * A1 * ZN) RISE_FALL
+         COND (A2 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OR3_X4"
+    (PORT
+      (A1
+        (COND (!A3 * A2 * ZN) RISE_FALL
+         COND (A3 * !A2 * ZN) RISE_FALL
+         COND (A3 * A2 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * A1 * ZN) RISE_FALL
+         COND (!A3 * A1 * ZN) RISE_FALL
+         COND (A3 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * A1 * ZN) RISE_FALL
+         COND (!A2 * A1 * ZN) RISE_FALL
+         COND (A2 * !A1 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3)
+      COND (!A2 * !A1 * A3)
+      COND (!A2 * A1 * !A3)
+      COND (!A2 * A1 * A3)
+      COND (A2 * !A1 * !A3)
+      COND (A2 * !A1 * A3)
+      COND (A2 * A1 * !A3)
+      COND (A2 * A1 * A3)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OR4_X1"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A2 * A4 * ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * ZN) RISE_FALL
+         COND (A3 * A2 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * ZN) RISE_FALL
+         COND (A3 * A1 * A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (A2 * A1 * A4 * ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (!A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (A2 * A1 * A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OR4_X2"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A2 * A4 * ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * ZN) RISE_FALL
+         COND (A3 * A2 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * ZN) RISE_FALL
+         COND (A3 * A1 * A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (A2 * A1 * A4 * ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (!A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (A2 * A1 * A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "OR4_X4"
+    (PORT
+      (A1
+        (COND (A3 * !A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * A2 * A4 * ZN) RISE_FALL
+         COND (A3 * A2 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A2 * A4 * ZN) RISE_FALL
+         COND (A3 * !A2 * A4 * ZN) RISE_FALL
+         COND (A3 * A2 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A2
+        (COND (A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * !A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * A4 * ZN) RISE_FALL
+         COND (A3 * !A1 * !A4 * ZN) RISE_FALL
+         COND (A3 * A1 * A4 * ZN) RISE_FALL
+         COND (!A3 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A3
+        (COND (A2 * !A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (A2 * A1 * A4 * ZN) RISE_FALL
+         COND (A2 * !A1 * A4 * ZN) RISE_FALL
+         COND (A2 * A1 * !A4 * ZN) RISE_FALL
+         COND (!A2 * A1 * A4 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (A4
+        (COND (!A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (A2 * !A1 * A3 * ZN) RISE_FALL
+         COND (A2 * A1 * A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * !A3 * ZN) RISE_FALL
+         COND (!A2 * A1 * A3 * ZN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (ZN
+        (IOPATH A1 IOPATH A2 IOPATH A3 IOPATH A4)
+      )
+    )
+    (LEAKAGE
+     (COND (!A2 * !A1 * !A3 * !A4)
+      COND (!A2 * !A1 * A3 * !A4)
+      COND (!A2 * A1 * !A3 * !A4)
+      COND (!A2 * A1 * A3 * !A4)
+      COND (A2 * !A1 * !A3 * !A4)
+      COND (A2 * !A1 * A3 * !A4)
+      COND (A2 * A1 * !A3 * !A4)
+      COND (A2 * A1 * A3 * !A4)
+      COND (!A2 * !A1 * !A3 * A4)
+      COND (!A2 * !A1 * A3 * A4)
+      COND (!A2 * A1 * !A3 * A4)
+      COND (!A2 * A1 * A3 * A4)
+      COND (A2 * !A1 * !A3 * A4)
+      COND (A2 * !A1 * A3 * A4)
+      COND (A2 * A1 * !A3 * A4)
+      COND (A2 * A1 * A3 * A4)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "SDFFRS_X1"
+    (PORT
+      (RN
+        (COND (!D * !CK * !Q * QN * SE * !SI * SN) RISE_FALL
+         COND (D * CK * !Q * QN * SE * SI * SN) RISE_FALL
+         COND (D * !CK * !Q * QN * SE * !SI * SN) RISE_FALL
+         COND (!D * CK * !Q * QN * SE * !SI * SN) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SE * !SI * SN) RISE_FALL
+         COND (D * CK * !Q * QN * !SE * SI * SN) RISE_FALL
+         COND (D * CK * !Q * QN * !SE * !SI * SN) RISE_FALL
+         COND (D * CK * !Q * QN * SE * !SI * SN) RISE_FALL
+         COND (D * !CK * !Q * QN * SE * SI * SN) RISE_FALL
+         COND (D * !CK * !Q * QN * !SE * !SI * SN) RISE_FALL
+         COND (!D * CK * !Q * QN * !SE * !SI * SN) RISE_FALL
+         COND (!D * CK * !Q * QN * !SE * SI * SN) RISE_FALL
+         COND (!D * !CK * !Q * QN * SE * SI * SN) RISE_FALL
+         COND (!D * CK * !Q * QN * SE * SI * SN) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SE * SI * SN) RISE_FALL
+         COND (D * !CK * !Q * QN * !SE * SI * SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SN
+        (COND (!D * !CK * Q * !QN * RN * SE * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * RN * !SE * SI) RISE_FALL
+         COND (D * CK * Q * !QN * RN * SE * !SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * RN * !SE * SI) RISE_FALL
+         COND (D * CK * Q * !QN * RN * !SE * SI) RISE_FALL
+         COND (D * CK * Q * !QN * RN * SE * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * RN * SE * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * RN * !SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * RN * SE * SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * RN * !SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * RN * SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * RN * !SE * SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * RN * SE * !SI) RISE_FALL
+         COND (!D * CK * Q * !QN * RN * SE * !SI) RISE_FALL
+         COND (D * CK * Q * !QN * RN * !SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * RN * !SE * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (COND (!SN * !CK) RISE_FALL (IOPATH RN)
+         COND (SN * !CK) RISE_FALL (IOPATH RN)
+         COND (!SN * CK) RISE_FALL (IOPATH RN)
+         COND (SN * CK) RISE_FALL (IOPATH RN)
+         COND_DEFAULT RISE_FALL (IOPATH CK IOPATH SN))
+      )
+      (QN
+        (COND (!RN * !CK) RISE_FALL (IOPATH SN)
+         COND (RN * !CK) RISE_FALL (IOPATH SN)
+         COND (!RN * CK) RISE_FALL (IOPATH SN)
+         COND (RN * CK) RISE_FALL (IOPATH SN)
+         COND_DEFAULT RISE_FALL (IOPATH CK IOPATH RN))
+      )
+    )
+  )
+  (MODULE "SDFFRS_X2"
+    (PORT
+      (RN
+        (COND (!D * !CK * !Q * QN * SE * !SI * SN) RISE_FALL
+         COND (D * CK * !Q * QN * SE * SI * SN) RISE_FALL
+         COND (D * !CK * !Q * QN * SE * !SI * SN) RISE_FALL
+         COND (!D * CK * !Q * QN * SE * !SI * SN) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SE * !SI * SN) RISE_FALL
+         COND (D * CK * !Q * QN * !SE * SI * SN) RISE_FALL
+         COND (D * CK * !Q * QN * !SE * !SI * SN) RISE_FALL
+         COND (D * CK * !Q * QN * SE * !SI * SN) RISE_FALL
+         COND (D * !CK * !Q * QN * SE * SI * SN) RISE_FALL
+         COND (D * !CK * !Q * QN * !SE * !SI * SN) RISE_FALL
+         COND (!D * CK * !Q * QN * !SE * !SI * SN) RISE_FALL
+         COND (!D * CK * !Q * QN * !SE * SI * SN) RISE_FALL
+         COND (!D * !CK * !Q * QN * SE * SI * SN) RISE_FALL
+         COND (!D * CK * !Q * QN * SE * SI * SN) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SE * SI * SN) RISE_FALL
+         COND (D * !CK * !Q * QN * !SE * SI * SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SN
+        (COND (!D * !CK * Q * !QN * RN * SE * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * RN * !SE * SI) RISE_FALL
+         COND (D * CK * Q * !QN * RN * SE * !SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * RN * !SE * SI) RISE_FALL
+         COND (D * CK * Q * !QN * RN * !SE * SI) RISE_FALL
+         COND (D * CK * Q * !QN * RN * SE * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * RN * SE * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * RN * !SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * RN * SE * SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * RN * !SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * RN * SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * RN * !SE * SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * RN * SE * !SI) RISE_FALL
+         COND (!D * CK * Q * !QN * RN * SE * !SI) RISE_FALL
+         COND (D * CK * Q * !QN * RN * !SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * RN * !SE * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (COND (!SN * !CK) RISE_FALL (IOPATH RN)
+         COND (SN * !CK) RISE_FALL (IOPATH RN)
+         COND (!SN * CK) RISE_FALL (IOPATH RN)
+         COND (SN * CK) RISE_FALL (IOPATH RN)
+         COND_DEFAULT RISE_FALL (IOPATH CK IOPATH SN))
+      )
+      (QN
+        (COND (!RN * !CK) RISE_FALL (IOPATH SN)
+         COND (RN * !CK) RISE_FALL (IOPATH SN)
+         COND (!RN * CK) RISE_FALL (IOPATH SN)
+         COND (RN * CK) RISE_FALL (IOPATH SN)
+         COND_DEFAULT RISE_FALL (IOPATH CK IOPATH RN))
+      )
+    )
+  )
+  (MODULE "SDFFR_X1"
+    (PORT
+      (CK
+        (COND (!Q * D * QN * !RN * SE * !SI) RISE_FALL
+         COND (!Q * !D * QN * !RN * SE * !SI) RISE_FALL
+         COND (!Q * !D * QN * RN * !SE * SI) RISE_FALL
+         COND (!Q * D * QN * !RN * !SE * !SI) RISE_FALL
+         COND (Q * !D * !QN * RN * SE * SI) RISE_FALL
+         COND (!Q * !D * QN * RN * !SE * !SI) RISE_FALL
+         COND (Q * D * !QN * RN * SE * SI) RISE_FALL
+         COND (!Q * !D * QN * RN * SE * !SI) RISE_FALL
+         COND (Q * D * !QN * RN * !SE * SI) RISE_FALL
+         COND (!Q * !D * QN * !RN * !SE * SI) RISE_FALL
+         COND (!Q * D * QN * RN * SE * !SI) RISE_FALL
+         COND (Q * D * !QN * RN * !SE * !SI) RISE_FALL
+         COND (!Q * !D * QN * !RN * SE * SI) RISE_FALL
+         COND (!Q * D * QN * !RN * SE * SI) RISE_FALL
+         COND (!Q * D * QN * !RN * !SE * SI) RISE_FALL
+         COND (!Q * !D * QN * !RN * !SE * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (RN
+        (COND (D * CK * !Q * QN * !SE * !SI) RISE_FALL
+         COND (D * !CK * !Q * QN * !SE * !SI) RISE_FALL
+         COND (!D * CK * !Q * QN * !SE * !SI) RISE_FALL
+         COND (D * !CK * !Q * QN * SE * SI) RISE_FALL
+         COND (D * CK * !Q * QN * SE * !SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * SE * SI) RISE_FALL
+         COND (D * CK * !Q * QN * !SE * SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SE * SI) RISE_FALL
+         COND (!D * CK * !Q * QN * !SE * SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SE * !SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * SE * !SI) RISE_FALL
+         COND (D * !CK * !Q * QN * !SE * SI) RISE_FALL
+         COND (D * CK * !Q * QN * SE * SI) RISE_FALL
+         COND (!D * CK * !Q * QN * SE * !SI) RISE_FALL
+         COND (!D * CK * !Q * QN * SE * SI) RISE_FALL
+         COND (D * !CK * !Q * QN * SE * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH CK IOPATH RN)
+      )
+      (QN
+        (IOPATH CK IOPATH RN)
+      )
+    )
+  )
+  (MODULE "SDFFR_X2"
+    (PORT
+      (CK
+        (COND (!Q * D * QN * !RN * SE * !SI) RISE_FALL
+         COND (!Q * !D * QN * !RN * SE * !SI) RISE_FALL
+         COND (!Q * !D * QN * RN * !SE * SI) RISE_FALL
+         COND (!Q * D * QN * !RN * !SE * !SI) RISE_FALL
+         COND (Q * !D * !QN * RN * SE * SI) RISE_FALL
+         COND (!Q * !D * QN * RN * !SE * !SI) RISE_FALL
+         COND (Q * D * !QN * RN * SE * SI) RISE_FALL
+         COND (!Q * !D * QN * RN * SE * !SI) RISE_FALL
+         COND (Q * D * !QN * RN * !SE * SI) RISE_FALL
+         COND (!Q * !D * QN * !RN * !SE * SI) RISE_FALL
+         COND (!Q * D * QN * RN * SE * !SI) RISE_FALL
+         COND (Q * D * !QN * RN * !SE * !SI) RISE_FALL
+         COND (!Q * !D * QN * !RN * SE * SI) RISE_FALL
+         COND (!Q * D * QN * !RN * SE * SI) RISE_FALL
+         COND (!Q * D * QN * !RN * !SE * SI) RISE_FALL
+         COND (!Q * !D * QN * !RN * !SE * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (RN
+        (COND (D * CK * !Q * QN * !SE * !SI) RISE_FALL
+         COND (D * !CK * !Q * QN * !SE * !SI) RISE_FALL
+         COND (!D * CK * !Q * QN * !SE * !SI) RISE_FALL
+         COND (D * !CK * !Q * QN * SE * SI) RISE_FALL
+         COND (D * CK * !Q * QN * SE * !SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * SE * SI) RISE_FALL
+         COND (D * CK * !Q * QN * !SE * SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SE * SI) RISE_FALL
+         COND (!D * CK * !Q * QN * !SE * SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SE * !SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * SE * !SI) RISE_FALL
+         COND (D * !CK * !Q * QN * !SE * SI) RISE_FALL
+         COND (D * CK * !Q * QN * SE * SI) RISE_FALL
+         COND (!D * CK * !Q * QN * SE * !SI) RISE_FALL
+         COND (!D * CK * !Q * QN * SE * SI) RISE_FALL
+         COND (D * !CK * !Q * QN * SE * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH CK IOPATH RN)
+      )
+      (QN
+        (IOPATH CK IOPATH RN)
+      )
+    )
+  )
+  (MODULE "SDFFS_X1"
+    (PORT
+      (CK
+        (COND (Q * !D * !QN * !SE * SI * !SN) RISE_FALL
+         COND (Q * D * !QN * !SE * SI * SN) RISE_FALL
+         COND (Q * D * !QN * !SE * SI * !SN) RISE_FALL
+         COND (!Q * !D * QN * SE * !SI * SN) RISE_FALL
+         COND (Q * D * !QN * SE * SI * SN) RISE_FALL
+         COND (Q * !D * !QN * !SE * !SI * !SN) RISE_FALL
+         COND (Q * D * !QN * SE * SI * !SN) RISE_FALL
+         COND (!Q * !D * QN * !SE * !SI * SN) RISE_FALL
+         COND (Q * !D * !QN * SE * !SI * !SN) RISE_FALL
+         COND (Q * D * !QN * !SE * !SI * SN) RISE_FALL
+         COND (Q * !D * !QN * SE * SI * SN) RISE_FALL
+         COND (!Q * D * QN * SE * !SI * SN) RISE_FALL
+         COND (Q * D * !QN * !SE * !SI * !SN) RISE_FALL
+         COND (!Q * !D * QN * !SE * SI * SN) RISE_FALL
+         COND (Q * !D * !QN * SE * SI * !SN) RISE_FALL
+         COND (Q * D * !QN * SE * !SI * !SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SN
+        (COND (!D * CK * Q * !QN * !SE * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * !SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * SE * !SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * !SE * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * !SE * SI) RISE_FALL
+         COND (D * CK * Q * !QN * SE * !SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * !SE * !SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * SE * !SI) RISE_FALL
+         COND (D * CK * Q * !QN * !SE * SI) RISE_FALL
+         COND (D * !CK * Q * !QN * SE * SI) RISE_FALL
+         COND (D * !CK * Q * !QN * !SE * !SI) RISE_FALL
+         COND (D * CK * Q * !QN * SE * SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * SE * SI) RISE_FALL
+         COND (D * CK * Q * !QN * !SE * !SI) RISE_FALL
+         COND (!D * CK * Q * !QN * SE * SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH CK IOPATH SN)
+      )
+      (QN
+        (IOPATH CK IOPATH SN)
+      )
+    )
+  )
+  (MODULE "SDFFS_X2"
+    (PORT
+      (CK
+        (COND (Q * !D * !QN * !SE * SI * !SN) RISE_FALL
+         COND (Q * D * !QN * !SE * SI * SN) RISE_FALL
+         COND (Q * D * !QN * !SE * SI * !SN) RISE_FALL
+         COND (!Q * !D * QN * SE * !SI * SN) RISE_FALL
+         COND (Q * D * !QN * SE * SI * SN) RISE_FALL
+         COND (Q * !D * !QN * !SE * !SI * !SN) RISE_FALL
+         COND (Q * D * !QN * SE * SI * !SN) RISE_FALL
+         COND (!Q * !D * QN * !SE * !SI * SN) RISE_FALL
+         COND (Q * !D * !QN * SE * !SI * !SN) RISE_FALL
+         COND (Q * D * !QN * !SE * !SI * SN) RISE_FALL
+         COND (Q * !D * !QN * SE * SI * SN) RISE_FALL
+         COND (!Q * D * QN * SE * !SI * SN) RISE_FALL
+         COND (Q * D * !QN * !SE * !SI * !SN) RISE_FALL
+         COND (!Q * !D * QN * !SE * SI * SN) RISE_FALL
+         COND (Q * !D * !QN * SE * SI * !SN) RISE_FALL
+         COND (Q * D * !QN * SE * !SI * !SN) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SN
+        (COND (!D * CK * Q * !QN * !SE * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * !SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * SE * !SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * !SE * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * SE * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * !SE * SI) RISE_FALL
+         COND (D * CK * Q * !QN * SE * !SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * !SE * !SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * SE * !SI) RISE_FALL
+         COND (D * CK * Q * !QN * !SE * SI) RISE_FALL
+         COND (D * !CK * Q * !QN * SE * SI) RISE_FALL
+         COND (D * !CK * Q * !QN * !SE * !SI) RISE_FALL
+         COND (D * CK * Q * !QN * SE * SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * SE * SI) RISE_FALL
+         COND (D * CK * Q * !QN * !SE * !SI) RISE_FALL
+         COND (!D * CK * Q * !QN * SE * SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH CK IOPATH SN)
+      )
+      (QN
+        (IOPATH CK IOPATH SN)
+      )
+    )
+  )
+  (MODULE "SDFF_X1"
+    (PORT
+      (CK
+        (COND (!Q * !D * QN * !SE * SI) RISE_FALL
+         COND (Q * D * !QN * !SE * SI) RISE_FALL
+         COND (Q * D * !QN * !SE * !SI) RISE_FALL
+         COND (Q * D * !QN * SE * SI) RISE_FALL
+         COND (!Q * !D * QN * SE * !SI) RISE_FALL
+         COND (Q * !D * !QN * SE * SI) RISE_FALL
+         COND (!Q * !D * QN * !SE * !SI) RISE_FALL
+         COND (!Q * D * QN * SE * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (D
+        (COND (Q * CK * !QN * SE * SI) RISE_FALL
+         COND (!Q * CK * QN * !SE * SI) RISE_FALL
+         COND (!Q * !CK * QN * !SE * SI) RISE_FALL
+         COND (Q * CK * !QN * !SE * !SI) RISE_FALL
+         COND (Q * !CK * !QN * SE * SI) RISE_FALL
+         COND (!Q * !CK * QN * SE * !SI) RISE_FALL
+         COND (!Q * !CK * QN * !SE * !SI) RISE_FALL
+         COND (Q * CK * !QN * !SE * SI) RISE_FALL
+         COND (Q * !CK * !QN * !SE * SI) RISE_FALL
+         COND (!Q * CK * QN * SE * !SI) RISE_FALL
+         COND (Q * !CK * !QN * !SE * !SI) RISE_FALL
+         COND (!Q * CK * QN * !SE * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SE
+        (COND (!D * CK * !Q * QN * SI) RISE_FALL
+         COND (D * CK * !Q * QN * !SI) RISE_FALL
+         COND (!D * CK * !Q * QN * !SI) RISE_FALL
+         COND (D * CK * Q * !QN * !SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * SI) RISE_FALL
+         COND (D * CK * Q * !QN * SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * SI) RISE_FALL
+         COND (D * !CK * Q * !QN * SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * !SI) RISE_FALL
+         COND (D * !CK * !Q * QN * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SI
+        (COND (!D * !CK * Q * !QN * SE) RISE_FALL
+         COND (D * !CK * Q * !QN * SE) RISE_FALL
+         COND (!D * CK * !Q * QN * SE) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SE) RISE_FALL
+         COND (D * !CK * Q * !QN * !SE) RISE_FALL
+         COND (!D * CK * !Q * QN * !SE) RISE_FALL
+         COND (D * CK * !Q * QN * SE) RISE_FALL
+         COND (!D * CK * Q * !QN * SE) RISE_FALL
+         COND (D * CK * Q * !QN * SE) RISE_FALL
+         COND (D * !CK * !Q * QN * SE) RISE_FALL
+         COND (D * CK * Q * !QN * !SE) RISE_FALL
+         COND (!D * !CK * !Q * QN * SE) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "SDFF_X2"
+    (PORT
+      (CK
+        (COND (!Q * !D * QN * !SE * SI) RISE_FALL
+         COND (Q * D * !QN * !SE * SI) RISE_FALL
+         COND (Q * D * !QN * !SE * !SI) RISE_FALL
+         COND (Q * D * !QN * SE * SI) RISE_FALL
+         COND (!Q * !D * QN * SE * !SI) RISE_FALL
+         COND (Q * !D * !QN * SE * SI) RISE_FALL
+         COND (!Q * !D * QN * !SE * !SI) RISE_FALL
+         COND (!Q * D * QN * SE * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (D
+        (COND (Q * CK * !QN * SE * SI) RISE_FALL
+         COND (!Q * CK * QN * !SE * SI) RISE_FALL
+         COND (!Q * !CK * QN * !SE * SI) RISE_FALL
+         COND (Q * CK * !QN * !SE * !SI) RISE_FALL
+         COND (Q * !CK * !QN * SE * SI) RISE_FALL
+         COND (!Q * !CK * QN * SE * !SI) RISE_FALL
+         COND (!Q * !CK * QN * !SE * !SI) RISE_FALL
+         COND (Q * CK * !QN * !SE * SI) RISE_FALL
+         COND (Q * !CK * !QN * !SE * SI) RISE_FALL
+         COND (!Q * CK * QN * SE * !SI) RISE_FALL
+         COND (Q * !CK * !QN * !SE * !SI) RISE_FALL
+         COND (!Q * CK * QN * !SE * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SE
+        (COND (!D * CK * !Q * QN * SI) RISE_FALL
+         COND (D * CK * !Q * QN * !SI) RISE_FALL
+         COND (!D * CK * !Q * QN * !SI) RISE_FALL
+         COND (D * CK * Q * !QN * !SI) RISE_FALL
+         COND (!D * !CK * Q * !QN * SI) RISE_FALL
+         COND (D * CK * Q * !QN * SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * SI) RISE_FALL
+         COND (!D * CK * Q * !QN * SI) RISE_FALL
+         COND (D * !CK * Q * !QN * SI) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SI) RISE_FALL
+         COND (D * !CK * Q * !QN * !SI) RISE_FALL
+         COND (D * !CK * !Q * QN * !SI) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (SI
+        (COND (!D * !CK * Q * !QN * SE) RISE_FALL
+         COND (D * !CK * Q * !QN * SE) RISE_FALL
+         COND (!D * CK * !Q * QN * SE) RISE_FALL
+         COND (!D * !CK * !Q * QN * !SE) RISE_FALL
+         COND (D * !CK * Q * !QN * !SE) RISE_FALL
+         COND (!D * CK * !Q * QN * !SE) RISE_FALL
+         COND (D * CK * !Q * QN * SE) RISE_FALL
+         COND (!D * CK * Q * !QN * SE) RISE_FALL
+         COND (D * CK * Q * !QN * SE) RISE_FALL
+         COND (D * !CK * !Q * QN * SE) RISE_FALL
+         COND (D * CK * Q * !QN * !SE) RISE_FALL
+         COND (!D * !CK * !Q * QN * SE) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+    )
+  )
+  (MODULE "TBUF_X1"
+    (PORT
+      (Z
+        (IOPATH A IOPATH EN IOPATH_DEFAULT)
+      )
+    )
+    (LEAKAGE
+     (COND (!EN * !A)
+      COND (!EN * A)
+      COND (EN * !A)
+      COND (EN * A)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "TBUF_X16"
+    (PORT
+      (Z
+        (IOPATH A IOPATH EN IOPATH_DEFAULT)
+      )
+    )
+    (LEAKAGE
+     (COND (!EN * !A)
+      COND (!EN * A)
+      COND (EN * !A)
+      COND (EN * A)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "TBUF_X2"
+    (PORT
+      (Z
+        (IOPATH A IOPATH EN IOPATH_DEFAULT)
+      )
+    )
+    (LEAKAGE
+     (COND (!EN * !A)
+      COND (!EN * A)
+      COND (EN * !A)
+      COND (EN * A)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "TBUF_X4"
+    (PORT
+      (Z
+        (IOPATH A IOPATH EN IOPATH_DEFAULT)
+      )
+    )
+    (LEAKAGE
+     (COND (!EN * !A)
+      COND (!EN * A)
+      COND (EN * !A)
+      COND (EN * A)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "TBUF_X8"
+    (PORT
+      (Z
+        (IOPATH A IOPATH EN IOPATH_DEFAULT)
+      )
+    )
+    (LEAKAGE
+     (COND (!EN * !A)
+      COND (!EN * A)
+      COND (EN * !A)
+      COND (EN * A)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "TINV_X1"
+    (PORT
+      (ZN
+        (IOPATH I IOPATH EN IOPATH_DEFAULT)
+      )
+    )
+    (LEAKAGE
+     (COND (!I * !EN)
+      COND (I * !EN)
+      COND (!I * EN)
+      COND (I * EN)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "TLAT_X1"
+    (PORT
+      (G
+        (COND (OE * D * Q) RISE_FALL
+         COND (OE * !D * !Q) RISE_FALL
+         COND (!OE * !D * !Q) RISE_FALL
+         COND (!OE * D * Q) RISE_FALL
+         COND_DEFAULT RISE_FALL)
+      )
+      (Q
+        (IOPATH G IOPATH D IOPATH OE IOPATH_DEFAULT)
+      )
+    )
+  )
+  (MODULE "XNOR2_X1"
+    (PORT
+      (ZN
+        (COND !B RISE_FALL (IOPATH A)
+         COND B RISE_FALL (IOPATH A)
+         COND !A RISE_FALL (IOPATH B)
+         COND A RISE_FALL (IOPATH B))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A)
+      COND (!B * A)
+      COND (B * !A)
+      COND (B * A)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "XNOR2_X2"
+    (PORT
+      (ZN
+        (COND !B RISE_FALL (IOPATH A)
+         COND B RISE_FALL (IOPATH A)
+         COND !A RISE_FALL (IOPATH B)
+         COND A RISE_FALL (IOPATH B))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A)
+      COND (!B * A)
+      COND (B * !A)
+      COND (B * A)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "XOR2_X1"
+    (PORT
+      (Z
+        (COND !B RISE_FALL (IOPATH A)
+         COND B RISE_FALL (IOPATH A)
+         COND !A RISE_FALL (IOPATH B)
+         COND A RISE_FALL (IOPATH B))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A)
+      COND (!B * A)
+      COND (B * !A)
+      COND (B * A)
+      COND_DEFAULT)
+    )
+  )
+  (MODULE "XOR2_X2"
+    (PORT
+      (Z
+        (COND !B RISE_FALL (IOPATH A)
+         COND B RISE_FALL (IOPATH A)
+         COND !A RISE_FALL (IOPATH B)
+         COND A RISE_FALL (IOPATH B))
+      )
+    )
+    (LEAKAGE
+     (COND (!B * !A)
+      COND (!B * A)
+      COND (B * !A)
+      COND (B * A)
+      COND_DEFAULT)
+    )
+  )
+)
+)

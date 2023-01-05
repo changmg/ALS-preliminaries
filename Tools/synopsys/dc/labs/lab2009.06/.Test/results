@@ -1,0 +1,17 @@
+Design_Compiler_2_DCT Installation Test
+
+Test 1a PASSED:   All files are installed 
+Test 1b PASSED:   Files are consistent
+Test 2a FAILED:   wrong version: dc_shell-t
+  Version NEEDED: 2009.06  (C-2009.06)
+
+  *******************************************************
+  * Recommended Suggestions for Corrections of FAILURES *
+  *******************************************************
+
+  1. Be sure the class materials installed correctly.    
+
+  2. Be sure the required executables are in your path.
+
+     Have a look at the tool log files in .Test/
+ Installation Test FAILS for Design_Compiler_2_DCT workshop

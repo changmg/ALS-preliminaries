@@ -1,0 +1,19 @@
+/* Script file for constraining Multiply8x8 */
+rpt_file = "mult8.rpt"
+design = "mult8"
+
+current_design Multiply8x8
+include script_path + defaults.con
+
+/* Define design environment */
+set_load 2.2 res
+set_driving_cell -cell FD1P all_inputs()
+set_drive 0 clk_name
+
+/* Define design constraints */
+set_input_delay 1.35 -clock clk_name {op1, op2}
+set_max_area 0
+
+compile 
+write -f db -hierarchy -o db_path + design + ".db"
+include script_path + report.scr

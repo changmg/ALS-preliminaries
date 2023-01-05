@@ -1,0 +1,15 @@
+/* Initial compile with estimate/time budget 
+constraints */
+include script_path + read.scr
+
+current_design ChipLevel
+include script_path + defaults.con
+
+include script_path + adder16.scr
+include script_path + comp16.scr
+include script_path + mult8.scr
+include script_path + muxmod.scr
+include script_path + pathseg.scr
+include script_path + cascademod.scr
+include script_path + mult16.scr
+

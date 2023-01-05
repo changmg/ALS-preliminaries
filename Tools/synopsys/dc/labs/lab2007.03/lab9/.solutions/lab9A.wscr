@@ -1,0 +1,267 @@
+###################################################################
+
+# Created by write_script -format dctcl on Tue Apr  3 12:59:53 2007
+
+###################################################################
+
+# Set the current_design #
+current_design MY_DESIGN
+
+set_operating_conditions cb13fs120_tsmc_max -library cb13fs120_tsmc_max
+set_wire_load_mode enclosed
+set_wire_load_model -name 8000 -library cb13fs120_tsmc_max
+set_max_area 540
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cin1[4]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cin1[3]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cin1[2]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cin1[1]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cin1[0]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cin2[4]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cin2[3]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cin2[2]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cin2[1]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cin2[0]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cout[4]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cout[3]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cout[2]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cout[1]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{Cout[0]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{data1[4]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{data1[3]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{data1[2]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{data1[1]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{data1[0]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{data2[4]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{data2[3]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{data2[2]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{data2[1]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{data2[0]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports sel]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports clk]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out1[4]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out1[3]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out1[2]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out1[1]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out1[0]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out2[4]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out2[3]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out2[2]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out2[1]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out2[0]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out3[4]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out3[3]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out3[2]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out3[1]}]
+set_wire_load_model -name 16000 -library cb13fs120_tsmc_max [get_ports         \
+{out3[0]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports       \
+{data1[4]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports       \
+{data1[3]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports       \
+{data1[2]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports       \
+{data1[1]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports       \
+{data1[0]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports       \
+{data2[4]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports       \
+{data2[3]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports       \
+{data2[2]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports       \
+{data2[1]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports       \
+{data2[0]}]
+set_driving_cell -lib_cell bufbd1 -library cb13fs120_tsmc_max [get_ports sel]
+set_port_fanout_number 2 [get_ports {Cin1[4]}]
+set_port_fanout_number 2 [get_ports {Cin1[3]}]
+set_port_fanout_number 2 [get_ports {Cin1[2]}]
+set_port_fanout_number 2 [get_ports {Cin1[1]}]
+set_port_fanout_number 2 [get_ports {Cin1[0]}]
+set_port_fanout_number 2 [get_ports {Cin2[4]}]
+set_port_fanout_number 2 [get_ports {Cin2[3]}]
+set_port_fanout_number 2 [get_ports {Cin2[2]}]
+set_port_fanout_number 2 [get_ports {Cin2[1]}]
+set_port_fanout_number 2 [get_ports {Cin2[0]}]
+set_port_fanout_number 3 [get_ports {Cout[4]}]
+set_port_fanout_number 3 [get_ports {Cout[3]}]
+set_port_fanout_number 3 [get_ports {Cout[2]}]
+set_port_fanout_number 3 [get_ports {Cout[1]}]
+set_port_fanout_number 3 [get_ports {Cout[0]}]
+set_port_fanout_number 2 [get_ports {data1[4]}]
+set_port_fanout_number 2 [get_ports {data1[3]}]
+set_port_fanout_number 2 [get_ports {data1[2]}]
+set_port_fanout_number 2 [get_ports {data1[1]}]
+set_port_fanout_number 2 [get_ports {data1[0]}]
+set_port_fanout_number 2 [get_ports {data2[4]}]
+set_port_fanout_number 2 [get_ports {data2[3]}]
+set_port_fanout_number 2 [get_ports {data2[2]}]
+set_port_fanout_number 2 [get_ports {data2[1]}]
+set_port_fanout_number 2 [get_ports {data2[0]}]
+set_port_fanout_number 2 [get_ports sel]
+set_port_fanout_number 3 [get_ports {out1[4]}]
+set_port_fanout_number 3 [get_ports {out1[3]}]
+set_port_fanout_number 3 [get_ports {out1[2]}]
+set_port_fanout_number 3 [get_ports {out1[1]}]
+set_port_fanout_number 3 [get_ports {out1[0]}]
+set_port_fanout_number 3 [get_ports {out2[4]}]
+set_port_fanout_number 3 [get_ports {out2[3]}]
+set_port_fanout_number 3 [get_ports {out2[2]}]
+set_port_fanout_number 3 [get_ports {out2[1]}]
+set_port_fanout_number 3 [get_ports {out2[0]}]
+set_port_fanout_number 3 [get_ports {out3[4]}]
+set_port_fanout_number 3 [get_ports {out3[3]}]
+set_port_fanout_number 3 [get_ports {out3[2]}]
+set_port_fanout_number 3 [get_ports {out3[1]}]
+set_port_fanout_number 3 [get_ports {out3[0]}]
+set_load -pin_load 0.0225 [get_ports {Cin1[4]}]
+set_load -pin_load 0.0225 [get_ports {Cin1[3]}]
+set_load -pin_load 0.0225 [get_ports {Cin1[2]}]
+set_load -pin_load 0.0225 [get_ports {Cin1[1]}]
+set_load -pin_load 0.0225 [get_ports {Cin1[0]}]
+set_load -pin_load 0.0225 [get_ports {Cin2[4]}]
+set_load -pin_load 0.0225 [get_ports {Cin2[3]}]
+set_load -pin_load 0.0225 [get_ports {Cin2[2]}]
+set_load -pin_load 0.0225 [get_ports {Cin2[1]}]
+set_load -pin_load 0.0225 [get_ports {Cin2[0]}]
+set_load -pin_load 0.025 [get_ports {Cout[4]}]
+set_load -pin_load 0.025 [get_ports {Cout[3]}]
+set_load -pin_load 0.025 [get_ports {Cout[2]}]
+set_load -pin_load 0.025 [get_ports {Cout[1]}]
+set_load -pin_load 0.025 [get_ports {Cout[0]}]
+set_load -pin_load 0.0225 [get_ports {data1[4]}]
+set_load -pin_load 0.0225 [get_ports {data1[3]}]
+set_load -pin_load 0.0225 [get_ports {data1[2]}]
+set_load -pin_load 0.0225 [get_ports {data1[1]}]
+set_load -pin_load 0.0225 [get_ports {data1[0]}]
+set_load -pin_load 0.0225 [get_ports {data2[4]}]
+set_load -pin_load 0.0225 [get_ports {data2[3]}]
+set_load -pin_load 0.0225 [get_ports {data2[2]}]
+set_load -pin_load 0.0225 [get_ports {data2[1]}]
+set_load -pin_load 0.0225 [get_ports {data2[0]}]
+set_load -pin_load 0.0225 [get_ports sel]
+set_load -pin_load 0.0165 [get_ports {out1[4]}]
+set_load -pin_load 0.0165 [get_ports {out1[3]}]
+set_load -pin_load 0.0165 [get_ports {out1[2]}]
+set_load -pin_load 0.0165 [get_ports {out1[1]}]
+set_load -pin_load 0.0165 [get_ports {out1[0]}]
+set_load -pin_load 0.0165 [get_ports {out2[4]}]
+set_load -pin_load 0.0165 [get_ports {out2[3]}]
+set_load -pin_load 0.0165 [get_ports {out2[2]}]
+set_load -pin_load 0.0165 [get_ports {out2[1]}]
+set_load -pin_load 0.0165 [get_ports {out2[0]}]
+set_load -pin_load 0.0165 [get_ports {out3[4]}]
+set_load -pin_load 0.0165 [get_ports {out3[3]}]
+set_load -pin_load 0.0165 [get_ports {out3[2]}]
+set_load -pin_load 0.0165 [get_ports {out3[1]}]
+set_load -pin_load 0.0165 [get_ports {out3[0]}]
+create_clock [get_ports clk]  -name my_clk  -period 3  -waveform {0 1.2}
+set_clock_latency -max 0.3  [get_clocks my_clk]
+set_clock_latency -source -max 0.7  [get_clocks my_clk]
+set_clock_uncertainty -setup 0.15  [get_clocks my_clk]
+set_clock_transition -fall 0.12 [get_clocks my_clk]
+set_clock_transition -rise 0.12 [get_clocks my_clk]
+set_input_delay -clock my_clk  -max 0.45  [get_ports {data1[4]}]
+set_input_delay -clock my_clk  -max 0.45  [get_ports {data1[3]}]
+set_input_delay -clock my_clk  -max 0.45  [get_ports {data1[2]}]
+set_input_delay -clock my_clk  -max 0.45  [get_ports {data1[1]}]
+set_input_delay -clock my_clk  -max 0.45  [get_ports {data1[0]}]
+set_input_delay -clock my_clk  -max 0.45  [get_ports {data2[4]}]
+set_input_delay -clock my_clk  -max 0.45  [get_ports {data2[3]}]
+set_input_delay -clock my_clk  -max 0.45  [get_ports {data2[2]}]
+set_input_delay -clock my_clk  -max 0.45  [get_ports {data2[1]}]
+set_input_delay -clock my_clk  -max 0.45  [get_ports {data2[0]}]
+set_input_delay -clock my_clk  -max 0.4  [get_ports sel]
+set_input_delay -clock my_clk  -clock_fall  -max 1.02  -add_delay              \
+-network_latency_included  -source_latency_included  [get_ports sel]
+set_input_delay -clock my_clk  -max 0.3  [get_ports {Cin1[4]}]
+set_input_delay -clock my_clk  -max 0.3  [get_ports {Cin1[3]}]
+set_input_delay -clock my_clk  -max 0.3  [get_ports {Cin1[2]}]
+set_input_delay -clock my_clk  -max 0.3  [get_ports {Cin1[1]}]
+set_input_delay -clock my_clk  -max 0.3  [get_ports {Cin1[0]}]
+set_input_delay -clock my_clk  -max 0.3  [get_ports {Cin2[4]}]
+set_input_delay -clock my_clk  -max 0.3  [get_ports {Cin2[3]}]
+set_input_delay -clock my_clk  -max 0.3  [get_ports {Cin2[2]}]
+set_input_delay -clock my_clk  -max 0.3  [get_ports {Cin2[1]}]
+set_input_delay -clock my_clk  -max 0.3  [get_ports {Cin2[0]}]
+set_output_delay -clock my_clk  -max 0.5  [get_ports {out1[4]}]
+set_output_delay -clock my_clk  -clock_fall  -max -0.24  -add_delay            \
+-network_latency_included  [get_ports {out1[4]}]
+set_output_delay -clock my_clk  -max 0.5  [get_ports {out1[3]}]
+set_output_delay -clock my_clk  -clock_fall  -max -0.24  -add_delay            \
+-network_latency_included  [get_ports {out1[3]}]
+set_output_delay -clock my_clk  -max 0.5  [get_ports {out1[2]}]
+set_output_delay -clock my_clk  -clock_fall  -max -0.24  -add_delay            \
+-network_latency_included  [get_ports {out1[2]}]
+set_output_delay -clock my_clk  -max 0.5  [get_ports {out1[1]}]
+set_output_delay -clock my_clk  -clock_fall  -max -0.24  -add_delay            \
+-network_latency_included  [get_ports {out1[1]}]
+set_output_delay -clock my_clk  -max 0.5  [get_ports {out1[0]}]
+set_output_delay -clock my_clk  -clock_fall  -max -0.24  -add_delay            \
+-network_latency_included  [get_ports {out1[0]}]
+set_output_delay -clock my_clk  -max 2.04  [get_ports {out2[4]}]
+set_output_delay -clock my_clk  -max 2.04  [get_ports {out2[3]}]
+set_output_delay -clock my_clk  -max 2.04  [get_ports {out2[2]}]
+set_output_delay -clock my_clk  -max 2.04  [get_ports {out2[1]}]
+set_output_delay -clock my_clk  -max 2.04  [get_ports {out2[0]}]
+set_output_delay -clock my_clk  -max 0.4  [get_ports {out3[4]}]
+set_output_delay -clock my_clk  -max 0.4  [get_ports {out3[3]}]
+set_output_delay -clock my_clk  -max 0.4  [get_ports {out3[2]}]
+set_output_delay -clock my_clk  -max 0.4  [get_ports {out3[1]}]
+set_output_delay -clock my_clk  -max 0.4  [get_ports {out3[0]}]
+set_output_delay -clock my_clk  -max 0.1  [get_ports {Cout[4]}]
+set_output_delay -clock my_clk  -max 0.1  [get_ports {Cout[3]}]
+set_output_delay -clock my_clk  -max 0.1  [get_ports {Cout[2]}]
+set_output_delay -clock my_clk  -max 0.1  [get_ports {Cout[1]}]
+set_output_delay -clock my_clk  -max 0.1  [get_ports {Cout[0]}]
+set_input_transition -max 0.12  [get_ports {Cin1[4]}]
+set_input_transition -max 0.12  [get_ports {Cin1[3]}]
+set_input_transition -max 0.12  [get_ports {Cin1[2]}]
+set_input_transition -max 0.12  [get_ports {Cin1[1]}]
+set_input_transition -max 0.12  [get_ports {Cin1[0]}]
+set_input_transition -max 0.12  [get_ports {Cin2[4]}]
+set_input_transition -max 0.12  [get_ports {Cin2[3]}]
+set_input_transition -max 0.12  [get_ports {Cin2[2]}]
+set_input_transition -max 0.12  [get_ports {Cin2[1]}]
+set_input_transition -max 0.12  [get_ports {Cin2[0]}]

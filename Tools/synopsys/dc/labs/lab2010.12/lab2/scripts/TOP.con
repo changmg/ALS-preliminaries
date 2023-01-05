@@ -1,0 +1,19 @@
+set lib_name cb13fs120_tsmc_max
+current_design TOP
+
+# Reset all constraints 
+reset_design
+
+# Create clock object and set uncertainty
+create_clock -period 2 [get_ports Clk]
+set_clock_uncertainty 0.2 [get_clocks Clk]
+
+# Set constraints on input ports
+suppress_message UID-401
+set_driving_cell -library $lib_name -lib_cell sdcfq1 [remove_from_collection [all_inputs] [get_ports Clk]]
+set_input_delay 0.1 -max -clock Clk [remove_from_collection [all_inputs] [get_ports Clk]]
+set_input_delay 1.2 -max -clock Clk [get_ports Neg_Flag]
+
+# Set constraints on output ports
+set_output_delay 1 -max -clock Clk [all_outputs]
+set_load [expr [load_of $lib_name/an02d0/A1] * 15] [all_outputs]

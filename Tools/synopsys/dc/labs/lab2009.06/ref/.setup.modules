@@ -1,0 +1,9 @@
+#
+# Module setup
+#
+# To be used only on the education cluster and similar clusters
+# For all other cases, please refer to the file setup.csh
+#
+
+# Load modules
+

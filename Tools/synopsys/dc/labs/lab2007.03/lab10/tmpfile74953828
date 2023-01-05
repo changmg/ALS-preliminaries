@@ -1,0 +1,71 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : exceptions
+Version: K-2015.06
+Date   : Thu Sep 17 19:50:19 2020
+****************************************
+
+
+   max_delay/setup ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   dout[31]                     1.00           9.60 f        -8.60  (VIOLATED)
+   dout[28]                     1.00           9.53 r        -8.53  (VIOLATED)
+   dout[29]                     1.00           9.48 f        -8.48  (VIOLATED)
+   dout[30]                     1.00           9.41 f        -8.41  (VIOLATED)
+   dout[23]                     1.00           9.37 f        -8.37  (VIOLATED)
+   dout[26]                     1.00           9.36 f        -8.36  (VIOLATED)
+   dout[22]                     1.00           9.31 r        -8.31  (VIOLATED)
+   dout[24]                     1.00           9.30 f        -8.30  (VIOLATED)
+   dout[25]                     1.00           9.30 f        -8.30  (VIOLATED)
+   dout[27]                     1.00           9.26 f        -8.26  (VIOLATED)
+   dout[21]                     1.00           8.90 f        -7.90  (VIOLATED)
+   dout[20]                     1.00           8.82 f        -7.82  (VIOLATED)
+   dout[19]                     1.00           8.76 f        -7.76  (VIOLATED)
+   dout[18]                     1.00           8.52 f        -7.52  (VIOLATED)
+   dout[17]                     1.00           8.33 f        -7.33  (VIOLATED)
+   dout[16]                     1.00           8.15 f        -7.15  (VIOLATED)
+   dout[15]                     1.00           7.77 f        -6.77  (VIOLATED)
+   dout[14]                     1.00           7.40 f        -6.40  (VIOLATED)
+   dout[13]                     1.00           7.02 f        -6.02  (VIOLATED)
+   dout[12]                     1.00           6.65 f        -5.65  (VIOLATED)
+   dout[11]                     1.00           6.27 f        -5.27  (VIOLATED)
+   dout[10]                     1.00           5.90 f        -4.90  (VIOLATED)
+   dout[9]                      1.00           5.52 f        -4.52  (VIOLATED)
+   dout[8]                      1.00           5.15 f        -4.15  (VIOLATED)
+   dout[7]                      1.00           4.78 f        -3.78  (VIOLATED)
+   dout[6]                      1.00           4.40 f        -3.40  (VIOLATED)
+   mul_result_reg[31]/D         4.92           8.31 f        -3.39  (VIOLATED)
+   mul_result_reg[28]/D         4.90           8.20 r        -3.29  (VIOLATED)
+   mul_result_reg[30]/D         4.92           8.02 f        -3.10  (VIOLATED)
+   mul_result_reg[22]/D         4.90           7.99 r        -3.09  (VIOLATED)
+   mul_result_reg[29]/D         4.92           7.98 f        -3.06  (VIOLATED)
+   dout[5]                      1.00           4.03 f        -3.03  (VIOLATED)
+   mul_result_reg[26]/D         4.92           7.91 f        -2.99  (VIOLATED)
+   mul_result_reg[24]/D         4.92           7.90 f        -2.99  (VIOLATED)
+   mul_result_reg[23]/D         4.92           7.86 f        -2.94  (VIOLATED)
+   mul_result_reg[25]/D         4.92           7.76 f        -2.84  (VIOLATED)
+   mul_result_reg[27]/D         4.92           7.74 f        -2.82  (VIOLATED)
+   mul_result_reg[21]/D         4.92           7.62 f        -2.70  (VIOLATED)
+   dout[4]                      1.00           3.65 f        -2.65  (VIOLATED)
+   mul_result_reg[20]/D         4.90           7.48 r        -2.58  (VIOLATED)
+   mul_result_reg[19]/D         4.92           7.41 f        -2.49  (VIOLATED)
+   dout[3]                      1.00           3.28 f        -2.28  (VIOLATED)
+   mul_result_reg[18]/D         4.92           7.18 f        -2.26  (VIOLATED)
+   mul_result_reg[17]/D         4.92           6.95 f        -2.03  (VIOLATED)
+   dout[2]                      1.00           2.90 f        -1.90  (VIOLATED)
+   mul_result_reg[16]/D         4.92           6.68 f        -1.76  (VIOLATED)
+   dout[1]                      1.00           2.54 f        -1.54  (VIOLATED)
+   mul_result_reg[15]/D         4.90           6.29 r        -1.39  (VIOLATED)
+   dout[0]                      1.00           2.26 f        -1.26  (VIOLATED)
+   mul_result_reg[14]/D         4.90           5.94 r        -1.03  (VIOLATED)
+   mul_result_reg[13]/D         4.90           5.61 r        -0.70  (VIOLATED)
+   mul_result_reg[12]/D         4.90           5.26 r        -0.35  (VIOLATED)
+
+
+1

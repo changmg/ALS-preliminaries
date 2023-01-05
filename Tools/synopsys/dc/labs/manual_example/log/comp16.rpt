@@ -1,0 +1,699 @@
+1
+ 
+****************************************
+Report : area
+Design : Comparator
+Version: K-2015.06
+Date   : Wed Sep 16 15:14:48 2020
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    lsi_10k (File: /home/ectl/Software/synopsys/syn2015.06/libraries/syn/lsi_10k.db)
+
+Number of ports:                           33
+Number of nets:                            91
+Number of cells:                           59
+Number of combinational cells:             59
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         26
+Number of references:                      19
+
+Combinational area:                 90.000000
+Buf/Inv area:                       26.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                    90.000000
+Total area:                 undefined
+1
+ 
+****************************************
+Report : design
+Design : Comparator
+Version: K-2015.06
+Date   : Wed Sep 16 15:14:48 2020
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    lsi_10k (File: /home/ectl/Software/synopsys/syn2015.06/libraries/syn/lsi_10k.db)
+
+Local Link Library:
+
+    {lsi_10k.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WCCOM
+    Library : lsi_10k
+    Process :   1.50
+    Temperature :  70.00
+    Voltage :   4.75
+    Interconnect Model : worst_case_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   05x05
+Location       :   lsi_10k
+Resistance     :   0
+Capacitance    :   1
+Area           :   0
+Slope          :   0.186
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.39
+
+
+
+Wire Loading Model Mode: enclosed.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : Comparator
+Version: K-2015.06
+Date   : Wed Sep 16 15:14:48 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U3                        AN2P            lsi_10k         2.000000  
+U4                        IVP             lsi_10k         1.000000  
+U5                        ND2P            lsi_10k         2.000000  
+U6                        AO2P            lsi_10k         4.000000  
+U7                        ND2P            lsi_10k         2.000000  
+U8                        ND4P            lsi_10k         4.000000  
+U9                        ND3P            lsi_10k         3.000000  
+U10                       IV              lsi_10k         1.000000  
+U11                       AO4P            lsi_10k         4.000000  
+U12                       IVA             lsi_10k         1.000000  
+U13                       IVA             lsi_10k         1.000000  
+U14                       ND2             lsi_10k         1.000000  
+U15                       IVA             lsi_10k         1.000000  
+U16                       IVA             lsi_10k         1.000000  
+U17                       IVA             lsi_10k         1.000000  
+U18                       AO1P            lsi_10k         2.000000  
+U19                       IVA             lsi_10k         1.000000  
+U20                       IVA             lsi_10k         1.000000  
+U21                       AO4             lsi_10k         2.000000  
+U22                       IVA             lsi_10k         1.000000  
+U23                       IVA             lsi_10k         1.000000  
+U24                       AO4             lsi_10k         2.000000  
+U25                       ND2             lsi_10k         1.000000  
+U26                       ND2             lsi_10k         1.000000  
+U27                       AN3             lsi_10k         2.000000  
+U28                       IVA             lsi_10k         1.000000  
+U29                       ND2             lsi_10k         1.000000  
+U30                       IVA             lsi_10k         1.000000  
+U31                       IVA             lsi_10k         1.000000  
+U32                       ND2             lsi_10k         1.000000  
+U33                       IVA             lsi_10k         1.000000  
+U34                       NR4             lsi_10k         2.000000  
+U35                       IVA             lsi_10k         1.000000  
+U36                       AO2             lsi_10k         2.000000  
+U37                       IVA             lsi_10k         1.000000  
+U38                       IVA             lsi_10k         1.000000  
+U39                       AO2             lsi_10k         2.000000  
+U40                       IVA             lsi_10k         1.000000  
+U41                       IVA             lsi_10k         1.000000  
+U42                       AO2             lsi_10k         2.000000  
+U43                       IVA             lsi_10k         1.000000  
+U44                       IVA             lsi_10k         1.000000  
+U45                       AO2             lsi_10k         2.000000  
+U46                       IVA             lsi_10k         1.000000  
+U47                       ND2             lsi_10k         1.000000  
+U48                       IVA             lsi_10k         1.000000  
+U49                       AO4             lsi_10k         2.000000  
+U50                       AO3             lsi_10k         2.000000  
+U51                       ND3             lsi_10k         2.000000  
+U52                       AO3             lsi_10k         2.000000  
+U53                       IVA             lsi_10k         1.000000  
+U54                       AO4             lsi_10k         2.000000  
+U55                       AN3             lsi_10k         2.000000  
+U56                       NR2             lsi_10k         1.000000  
+U57                       NR2             lsi_10k         1.000000  
+U58                       OR3             lsi_10k         2.000000  
+U59                       IVA             lsi_10k         1.000000  
+U60                       NR2             lsi_10k         1.000000  
+U61                       AO3             lsi_10k         2.000000  
+--------------------------------------------------------------------------------
+Total 59 cells                                            90.000000
+1
+ 
+****************************************
+Report : reference
+Design : Comparator
+Version: K-2015.06
+Date   : Wed Sep 16 15:14:48 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AN2P               lsi_10k        2.000000       1      2.000000  
+AN3                lsi_10k        2.000000       2      4.000000  
+AO1P               lsi_10k        2.000000       1      2.000000  
+AO2                lsi_10k        2.000000       4      8.000000  
+AO2P               lsi_10k        4.000000       1      4.000000  
+AO3                lsi_10k        2.000000       3      6.000000  
+AO4                lsi_10k        2.000000       4      8.000000  
+AO4P               lsi_10k        4.000000       1      4.000000  
+IV                 lsi_10k        1.000000       1      1.000000  
+IVA                lsi_10k        1.000000      24     24.000000  
+IVP                lsi_10k        1.000000       1      1.000000  
+ND2                lsi_10k        1.000000       6      6.000000  
+ND2P               lsi_10k        2.000000       2      4.000000  
+ND3                lsi_10k        2.000000       1      2.000000  
+ND3P               lsi_10k        3.000000       1      3.000000  
+ND4P               lsi_10k        4.000000       1      4.000000  
+NR2                lsi_10k        1.000000       3      3.000000  
+NR4                lsi_10k        2.000000       1      2.000000  
+OR3                lsi_10k        2.000000       1      2.000000  
+-----------------------------------------------------------------------------
+Total 19 references                                    90.000000
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : Comparator
+Version: K-2015.06
+Date   : Wed Sep 16 15:14:48 2020
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+ain[0]         in      0.0000   0.0000   --      --      --         
+ain[1]         in      0.0000   0.0000   --      --      --         
+ain[2]         in      0.0000   0.0000   --      --      --         
+ain[3]         in      0.0000   0.0000   --      --      --         
+ain[4]         in      0.0000   0.0000   --      --      --         
+ain[5]         in      0.0000   0.0000   --      --      --         
+ain[6]         in      0.0000   0.0000   --      --      --         
+ain[7]         in      0.0000   0.0000   --      --      --         
+ain[8]         in      0.0000   0.0000   --      --      --         
+ain[9]         in      0.0000   0.0000   --      --      --         
+ain[10]        in      0.0000   0.0000   --      --      --         
+ain[11]        in      0.0000   0.0000   --      --      --         
+ain[12]        in      0.0000   0.0000   --      --      --         
+ain[13]        in      0.0000   0.0000   --      --      --         
+ain[14]        in      0.0000   0.0000   --      --      --         
+ain[15]        in      0.0000   0.0000   --      --      --         
+bin[0]         in      0.0000   0.0000   --      --      --         
+bin[1]         in      0.0000   0.0000   --      --      --         
+bin[2]         in      0.0000   0.0000   --      --      --         
+bin[3]         in      0.0000   0.0000   --      --      --         
+bin[4]         in      0.0000   0.0000   --      --      --         
+bin[5]         in      0.0000   0.0000   --      --      --         
+bin[6]         in      0.0000   0.0000   --      --      --         
+bin[7]         in      0.0000   0.0000   --      --      --         
+bin[8]         in      0.0000   0.0000   --      --      --         
+bin[9]         in      0.0000   0.0000   --      --      --         
+bin[10]        in      0.0000   0.0000   --      --      --         
+bin[11]        in      0.0000   0.0000   --      --      --         
+bin[12]        in      0.0000   0.0000   --      --      --         
+bin[13]        in      0.0000   0.0000   --      --      --         
+bin[14]        in      0.0000   0.0000   --      --      --         
+bin[15]        in      0.0000   0.0000   --      --      --         
+cp_out         out     2.5000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+ain[0]             1      --              --              --        -- 
+ain[1]             1      --              --              --        -- 
+ain[2]             1      --              --              --        -- 
+ain[3]             1      --              --              --        -- 
+ain[4]             1      --              --              --        -- 
+ain[5]             1      --              --              --        -- 
+ain[6]             1      --              --              --        -- 
+ain[7]             1      --              --              --        -- 
+ain[8]             1      --              --              --        -- 
+ain[9]             1      --              --              --        -- 
+ain[10]            1      --              --              --        -- 
+ain[11]            1      --              --              --        -- 
+ain[12]            1      --              --              --        -- 
+ain[13]            1      --              --              --        -- 
+ain[14]            1      --              --              --        -- 
+ain[15]            1      --              --              --        -- 
+bin[0]             1      --              --              --        -- 
+bin[1]             1      --              --              --        -- 
+bin[2]             1      --              --              --        -- 
+bin[3]             1      --              --              --        -- 
+bin[4]             1      --              --              --        -- 
+bin[5]             1      --              --              --        -- 
+bin[6]             1      --              --              --        -- 
+bin[7]             1      --              --              --        -- 
+bin[8]             1      --              --              --        -- 
+bin[9]             1      --              --              --        -- 
+bin[10]            1      --              --              --        -- 
+bin[11]            1      --              --              --        -- 
+bin[12]            1      --              --              --        -- 
+bin[13]            1      --              --              --        -- 
+bin[14]            1      --              --              --        -- 
+bin[15]            1      --              --              --        -- 
+cp_out             1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+ain[0]        1.35    1.35    1.35    1.35  vclk      --    
+ain[1]        1.35    1.35    1.35    1.35  vclk      --    
+ain[2]        1.35    1.35    1.35    1.35  vclk      --    
+ain[3]        1.35    1.35    1.35    1.35  vclk      --    
+ain[4]        1.35    1.35    1.35    1.35  vclk      --    
+ain[5]        1.35    1.35    1.35    1.35  vclk      --    
+ain[6]        1.35    1.35    1.35    1.35  vclk      --    
+ain[7]        1.35    1.35    1.35    1.35  vclk      --    
+ain[8]        1.35    1.35    1.35    1.35  vclk      --    
+ain[9]        1.35    1.35    1.35    1.35  vclk      --    
+ain[10]       1.35    1.35    1.35    1.35  vclk      --    
+ain[11]       1.35    1.35    1.35    1.35  vclk      --    
+ain[12]       1.35    1.35    1.35    1.35  vclk      --    
+ain[13]       1.35    1.35    1.35    1.35  vclk      --    
+ain[14]       1.35    1.35    1.35    1.35  vclk      --    
+ain[15]       1.35    1.35    1.35    1.35  vclk      --    
+bin[0]        1.35    1.35    1.35    1.35  vclk      --    
+bin[1]        1.35    1.35    1.35    1.35  vclk      --    
+bin[2]        1.35    1.35    1.35    1.35  vclk      --    
+bin[3]        1.35    1.35    1.35    1.35  vclk      --    
+bin[4]        1.35    1.35    1.35    1.35  vclk      --    
+bin[5]        1.35    1.35    1.35    1.35  vclk      --    
+bin[6]        1.35    1.35    1.35    1.35  vclk      --    
+bin[7]        1.35    1.35    1.35    1.35  vclk      --    
+bin[8]        1.35    1.35    1.35    1.35  vclk      --    
+bin[9]        1.35    1.35    1.35    1.35  vclk      --    
+bin[10]       1.35    1.35    1.35    1.35  vclk      --    
+bin[11]       1.35    1.35    1.35    1.35  vclk      --    
+bin[12]       1.35    1.35    1.35    1.35  vclk      --    
+bin[13]       1.35    1.35    1.35    1.35  vclk      --    
+bin[14]       1.35    1.35    1.35    1.35  vclk      --    
+bin[15]       1.35    1.35    1.35    1.35  vclk      --    
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+ain[0]       FD1                FD1                  -- /  --     
+ain[1]       FD1                FD1                  -- /  --     
+ain[2]       FD1                FD1                  -- /  --     
+ain[3]       FD1                FD1                  -- /  --     
+ain[4]       FD1                FD1                  -- /  --     
+ain[5]       FD1                FD1                  -- /  --     
+ain[6]       FD1                FD1                  -- /  --     
+ain[7]       FD1                FD1                  -- /  --     
+ain[8]       FD1                FD1                  -- /  --     
+ain[9]       FD1                FD1                  -- /  --     
+ain[10]      FD1                FD1                  -- /  --     
+ain[11]      FD1                FD1                  -- /  --     
+ain[12]      FD1                FD1                  -- /  --     
+ain[13]      FD1                FD1                  -- /  --     
+ain[14]      FD1                FD1                  -- /  --     
+ain[15]      FD1                FD1                  -- /  --     
+bin[0]       FD1                FD1                  -- /  --     
+bin[1]       FD1                FD1                  -- /  --     
+bin[2]       FD1                FD1                  -- /  --     
+bin[3]       FD1                FD1                  -- /  --     
+bin[4]       FD1                FD1                  -- /  --     
+bin[5]       FD1                FD1                  -- /  --     
+bin[6]       FD1                FD1                  -- /  --     
+bin[7]       FD1                FD1                  -- /  --     
+bin[8]       FD1                FD1                  -- /  --     
+bin[9]       FD1                FD1                  -- /  --     
+bin[10]      FD1                FD1                  -- /  --     
+bin[11]      FD1                FD1                  -- /  --     
+bin[12]      FD1                FD1                  -- /  --     
+bin[13]      FD1                FD1                  -- /  --     
+bin[14]      FD1                FD1                  -- /  --     
+bin[15]      FD1                FD1                  -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+ain[0]        --      --     --      --     --      --     --     --        -- 
+ain[1]        --      --     --      --     --      --     --     --        -- 
+ain[2]        --      --     --      --     --      --     --     --        -- 
+ain[3]        --      --     --      --     --      --     --     --        -- 
+ain[4]        --      --     --      --     --      --     --     --        -- 
+ain[5]        --      --     --      --     --      --     --     --        -- 
+ain[6]        --      --     --      --     --      --     --     --        -- 
+ain[7]        --      --     --      --     --      --     --     --        -- 
+ain[8]        --      --     --      --     --      --     --     --        -- 
+ain[9]        --      --     --      --     --      --     --     --        -- 
+ain[10]       --      --     --      --     --      --     --     --        -- 
+ain[11]       --      --     --      --     --      --     --     --        -- 
+ain[12]       --      --     --      --     --      --     --     --        -- 
+ain[13]       --      --     --      --     --      --     --     --        -- 
+ain[14]       --      --     --      --     --      --     --     --        -- 
+ain[15]       --      --     --      --     --      --     --     --        -- 
+bin[0]        --      --     --      --     --      --     --     --        -- 
+bin[1]        --      --     --      --     --      --     --     --        -- 
+bin[2]        --      --     --      --     --      --     --     --        -- 
+bin[3]        --      --     --      --     --      --     --     --        -- 
+bin[4]        --      --     --      --     --      --     --     --        -- 
+bin[5]        --      --     --      --     --      --     --     --        -- 
+bin[6]        --      --     --      --     --      --     --     --        -- 
+bin[7]        --      --     --      --     --      --     --     --        -- 
+bin[8]        --      --     --      --     --      --     --     --        -- 
+bin[9]        --      --     --      --     --      --     --     --        -- 
+bin[10]       --      --     --      --     --      --     --     --        -- 
+bin[11]       --      --     --      --     --      --     --     --        -- 
+bin[12]       --      --     --      --     --      --     --     --        -- 
+bin[13]       --      --     --      --     --      --     --     --        -- 
+bin[14]       --      --     --      --     --      --     --     --        -- 
+bin[15]       --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+ain[0]        --      --      --      -- 
+ain[1]        --      --      --      -- 
+ain[2]        --      --      --      -- 
+ain[3]        --      --      --      -- 
+ain[4]        --      --      --      -- 
+ain[5]        --      --      --      -- 
+ain[6]        --      --      --      -- 
+ain[7]        --      --      --      -- 
+ain[8]        --      --      --      -- 
+ain[9]        --      --      --      -- 
+ain[10]       --      --      --      -- 
+ain[11]       --      --      --      -- 
+ain[12]       --      --      --      -- 
+ain[13]       --      --      --      -- 
+ain[14]       --      --      --      -- 
+ain[15]       --      --      --      -- 
+bin[0]        --      --      --      -- 
+bin[1]        --      --      --      -- 
+bin[2]        --      --      --      -- 
+bin[3]        --      --      --      -- 
+bin[4]        --      --      --      -- 
+bin[5]        --      --      --      -- 
+bin[6]        --      --      --      -- 
+bin[7]        --      --      --      -- 
+bin[8]        --      --      --      -- 
+bin[9]        --      --      --      -- 
+bin[10]       --      --      --      -- 
+bin[11]       --      --      --      -- 
+bin[12]       --      --      --      -- 
+bin[13]       --      --      --      -- 
+bin[14]       --      --      --      -- 
+bin[15]       --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+cp_out        5.10    5.10    5.10    5.10  vclk      0.00  
+
+1
+ 
+****************************************
+Report : net
+Design : Comparator
+Version: K-2015.06
+Date   : Wed Sep 16 15:14:48 2020
+****************************************
+
+
+Operating Conditions: WCCOM   Library: lsi_10k
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Comparator             05x05             lsi_10k
+
+
+Net                 Fanout     Fanin      Load   Resistance    Pins   Attributes
+--------------------------------------------------------------------------------
+ain[0]                   1         1      1.39         0.00       2   
+ain[1]                   2         1      2.58         0.00       3   
+ain[2]                   1         1      1.89         0.00       2   
+ain[3]                   2         1      3.08         0.00       3   
+ain[4]                   2         1      3.58         0.00       3   
+ain[5]                   2         1      3.58         0.00       3   
+ain[6]                   2         1      3.08         0.00       3   
+ain[7]                   1         1      1.89         0.00       2   
+ain[8]                   1         1      1.89         0.00       2   
+ain[9]                   1         1      1.89         0.00       2   
+ain[10]                  2         1      3.08         0.00       3   
+ain[11]                  2         1      2.58         0.00       3   
+ain[12]                  2         1      2.58         0.00       3   
+ain[13]                  2         1      2.58         0.00       3   
+ain[14]                  1         1      2.39         0.00       2   
+ain[15]                  2         1      3.08         0.00       3   
+bin[0]                   1         1      1.89         0.00       2   
+bin[1]                   1         1      2.39         0.00       2   
+bin[2]                   2         1      2.58         0.00       3   
+bin[3]                   2         1      3.08         0.00       3   
+bin[4]                   1         1      1.89         0.00       2   
+bin[5]                   1         1      1.89         0.00       2   
+bin[6]                   2         1      3.08         0.00       3   
+bin[7]                   2         1      2.58         0.00       3   
+bin[8]                   2         1      2.58         0.00       3   
+bin[9]                   2         1      2.58         0.00       3   
+bin[10]                  2         1      3.08         0.00       3   
+bin[11]                  1         1      1.89         0.00       2   
+bin[12]                  1         1      1.89         0.00       2   
+bin[13]                  1         1      1.89         0.00       2   
+bin[14]                  1         1      1.89         0.00       2   
+bin[15]                  2         1      4.08         0.00       3   
+cp_out                   1         1      2.89         0.00       2   
+n3                       2         1      3.58         0.00       3   
+n4                       1         1      1.39         0.00       2   
+n5                       1         1      2.39         0.00       2   
+n6                       1         1      1.39         0.00       2   
+n7                       2         1      2.58         0.00       3   
+n8                       2         1      2.58         0.00       3   
+n9                       1         1      1.39         0.00       2   
+n10                      1         1      1.39         0.00       2   
+n11                      1         1      1.39         0.00       2   
+n12                      1         1      1.39         0.00       2   
+n13                      1         1      1.39         0.00       2   
+n14                      2         1      2.58         0.00       3   
+n15                      1         1      1.39         0.00       2   
+n16                      1         1      1.39         0.00       2   
+n17                      2         1      3.58         0.00       3   
+n18                      1         1      1.39         0.00       2   
+n19                      2         1      3.58         0.00       3   
+n20                      1         1      1.39         0.00       2   
+n21                      1         1      1.39         0.00       2   
+n22                      2         1      2.58         0.00       3   
+n23                      1         1      1.39         0.00       2   
+n24                      1         1      1.39         0.00       2   
+n25                      2         1      2.58         0.00       3   
+n26                      1         1      1.39         0.00       2   
+n27                      1         1      1.39         0.00       2   
+n28                      1         1      1.39         0.00       2   
+n29                      1         1      1.39         0.00       2   
+n30                      1         1      1.39         0.00       2   
+n31                      2         1      3.08         0.00       3   
+n32                      1         1      1.39         0.00       2   
+n33                      1         1      2.39         0.00       2   
+n34                      1         1      2.39         0.00       2   
+n35                      2         1      3.58         0.00       3   
+n36                      2         1      3.58         0.00       3   
+n37                      1         1      2.39         0.00       2   
+n38                      1         1      2.39         0.00       2   
+n39                      1         1      1.39         0.00       2   
+n40                      2         1      2.58         0.00       3   
+n41                      2         1      3.08         0.00       3   
+n42                      1         1      1.39         0.00       2   
+n43                      2         1      3.08         0.00       3   
+n44                      2         1      2.58         0.00       3   
+n45                      2         1      2.58         0.00       3   
+n46                      1         1      1.39         0.00       2   
+n47                      1         1      1.39         0.00       2   
+n48                      1         1      1.39         0.00       2   
+n49                      1         1      2.39         0.00       2   
+n50                      1         1      2.39         0.00       2   
+n51                      1         1      2.39         0.00       2   
+n52                      1         1      2.39         0.00       2   
+n53                      2         1      3.58         0.00       3   
+n54                      3         1      5.76         0.00       4   
+n55                      1         1      1.39         0.00       2   
+n56                      2         1      3.08         0.00       3   
+n57                      2         1      3.08         0.00       3   
+n58                      1         1      1.39         0.00       2   
+n59                      1         1      2.39         0.00       2   
+n60                      1         1      2.39         0.00       2   
+--------------------------------------------------------------------------------
+Total 91 nets          130        91    210.24         0.00     221
+Maximum                  3         1      5.76         0.00       4
+Average               1.43      1.00      2.31         0.00    2.43
+1
+ 
+****************************************
+Report : compile_options
+Design : Comparator
+Version: K-2015.06
+Date   : Wed Sep 16 15:14:48 2020
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+Comparator                               flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : Comparator
+Version: K-2015.06
+Date   : Wed Sep 16 15:14:48 2020
+****************************************
+
+
+    Design: Comparator
+
+    max_area               0.00
+  - Current Area          90.00
+  ------------------------------
+    Slack                -90.00  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : Comparator
+Version: K-2015.06
+Date   : Wed Sep 16 15:14:48 2020
+****************************************
+
+Operating Conditions: WCCOM   Library: lsi_10k
+Wire Load Model Mode: enclosed
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+cp_out (out)                       14.45 r           14.45         0.00
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 15
+Design : Comparator
+Version: K-2015.06
+Date   : Wed Sep 16 15:14:48 2020
+****************************************
+
+Operating Conditions: WCCOM   Library: lsi_10k
+Wire Load Model Mode: enclosed
+
+  Startpoint: bin[0] (input port clocked by vclk)
+  Endpoint: cp_out (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Comparator         05x05                 lsi_10k
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.35       1.35 r
+  bin[0] (in)                              0.51       1.86 r
+  U48/Z (IVA)                              0.62       2.48 f
+  U49/Z (AO4)                              2.39       4.87 r
+  U50/Z (AO3)                              1.02       5.89 f
+  U51/Z (ND3)                              1.58       7.47 r
+  U52/Z (AO3)                              1.23       8.70 f
+  U8/Z (ND4P)                              1.48      10.19 r
+  U7/Z (ND2P)                              0.60      10.79 f
+  U9/Z (ND3P)                              1.49      12.28 r
+  U6/Z (AO2P)                              0.91      13.18 f
+  U5/Z (ND2P)                              1.27      14.45 r
+  cp_out (out)                             0.00      14.45 r
+  data arrival time                                  14.45
+
+  clock vclk (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  output external delay                   -5.10      14.45
+  data required time                                 14.45
+  -----------------------------------------------------------
+  data required time                                 14.45
+  data arrival time                                 -14.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : counter
+Version: K-2015.06
+Date   : Thu Sep 17 10:26:03 2020
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10
+Wire Load Model Mode: top
+
+  Startpoint: value_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: zero (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  value_reg[0]/CK (DFF_X1)               0.0000     0.0000 r
+  value_reg[0]/Q (DFF_X1)                0.5595     0.5595 f
+  U44/ZN (OR3_X1)                        0.4832     1.0426 f
+  U43/ZN (NOR2_X1)                       0.1621     1.2047 r
+  zero (out)                             0.0000     1.2047 r
+  data arrival time                                 1.2047
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

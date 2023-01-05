@@ -1,0 +1,52 @@
+include script_path + read.scr
+ 
+current_design ChipLevel
+include script_path + defaults.con
+
+include script_path + adder16.wscr
+compile
+write -f db -hier -o db_path + adder16_wscr.db
+rpt_file = adder16_wscr.rpt
+include script_path + report.scr
+
+include script_path + cascademod.wscr
+dont_touch u12
+uniquify
+compile
+write -f db -hier -o db_path + cascademod_wscr.db
+rpt_file = cascade_wscr.rpt
+include script_path + report.scr
+
+include script_path + comp16.wscr
+compile
+write -f db -hier -o db_path + comp16_wscr.db
+rpt_file = comp16_wscr.rpt
+include script_path + report.scr
+
+include script_path + mult8.wscr
+compile
+write -f db -hier -o db_path + mult8_wscr.db
+rpt_file = mult8_wscr.rpt
+include script_path + report.scr
+
+include script_path + mult16.wscr
+compile -ungroup_all
+write -f db -hier -o db_path + mult16_wscr.db
+rpt_file = mult16_wscr.rpt
+include script_path + report.scr
+report_timing_requirements -ignore \
+   >> log_path + rpt_file
+
+include script_path + muxmod.wscr
+compile
+write -f db -hier -o db_path + muxmod_wscr.db
+rpt_file = muxmod_wscr.rpt
+include script_path + report.scr
+
+include script_path + pathseg.wscr
+compile
+write -f db -hier -o db_path + pathseg_wscr.db
+rpt_file = pathseg_wscr.rpt
+include script_path + report.scr
+report_timing_requirements -ignore \
+   >> log_path + rpt_file

@@ -1,0 +1,3 @@
+set_placement_area -coordinate {0 0 150 100}
+create_placement_blockage -name Blockage1 -coordinate {0 80 20 100}
+

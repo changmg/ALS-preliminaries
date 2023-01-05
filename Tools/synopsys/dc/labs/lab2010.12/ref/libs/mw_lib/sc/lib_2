@@ -1,0 +1,21 @@
+/* 
+#       File:           cb13l4_10_tsmc.tf
+#       Author:         Yu Chen
+#       @(#) Apollo/Astro tech file For PASSPORT 0.13U 4LM Process
+#       @(#) With Passport 0.13U 4LM design Rules
+#       @(#) Revision 1.0.1.2
+#       @(#) Date     15-Oct-04
+###############################################################################
+# Copyright Synopsys Inc. 1997 1998 1999 2000 2001 2002 2003 2004
+# technology: cb13l4_10_tsmc
+# drawing grid: 0.005 microns
+# Revision history:
+# rev            date     who  what
+# ------------  --------- ---- ------------------------------------------------
+# Rev  1.0.1.2  15-Oct-04 AS   Changed ltGreen index from 51 to 59
+# Rev. 1.0.1.1  16-Jan-02 ZD   Updated ContactCodes to coincide with 8lm TF.
+#                              Updated the metal Resistance value.
+# Rev. 1.0.1.0  06-Dec-01 YC   Initial Passport 0.13 tech file with specific TSMC process values.
+# ----------------------------------------------------
+#
+*/

@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : cell
+Design : counter
+Version: K-2015.06
+Date   : Wed Sep 16 20:48:22 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U7                        NOR2_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.7980  
+U9                        NAND2_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.7980  
+U13                       AOI221_X2       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.5960  
+U14                       NOR2_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.7980  
+U15                       NOR2_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.7980  
+U16                       NOR3_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U17                       NOR4_X2         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.3300  
+U18                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.5320  
+U19                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.5320  
+U20                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.5320  
+U21                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.5320  
+U22                       INV_X4          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.5320  
+U23                       AOI21_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U24                       OAI21_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U25                       AOI22_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.3300  
+U26                       OAI21_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U27                       OAI21_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U28                       AOI21_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U29                       AOI21_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U30                       AOI22_X2        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.3300  
+value_reg[0]              DFF_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+value_reg[1]              DFF_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+value_reg[2]              DFF_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+value_reg[3]              DFF_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+--------------------------------------------------------------------------------
+Total 24 cells                                             38.0380
+1

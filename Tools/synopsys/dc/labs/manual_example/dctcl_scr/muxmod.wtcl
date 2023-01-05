@@ -1,0 +1,408 @@
+###################################################################
+
+# Created by write_script -format dctcl on Wed Sep 16 15:15:05 2020
+
+###################################################################
+
+# Set the current_design #
+current_design MuxMod
+
+set_units -time ns -resistance 1.000000e+04kOhm -capacitance 1.000000e-04pF    \
+-voltage V -current uA
+set_operating_conditions WCCOM -library lsi_10k
+set_wire_load_mode top
+set_local_link_library {lsi_10k.db}
+set_max_area 0
+set_driving_cell -lib_cell IV -no_design_rule [get_ports {MUX_CNT[1]}]
+set_driving_cell -lib_cell IV -no_design_rule [get_ports {MUX_CNT[0]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[15]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[14]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[13]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[12]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[11]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[10]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[9]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[8]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[7]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[6]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[5]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[4]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[3]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[2]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[1]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {D[0]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[15]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[14]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[13]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[12]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[11]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[10]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[9]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[8]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[7]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[6]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[5]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[4]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[3]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[2]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[1]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {R[0]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[15]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[14]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[13]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[12]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[11]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[10]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[9]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[8]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[7]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[6]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[5]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[4]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[3]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[2]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[1]}]
+set_driving_cell -lib_cell FD1 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {F[0]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[15]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[14]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[13]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[12]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[11]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[10]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[9]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[8]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[7]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[6]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[5]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[4]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[3]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[2]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[1]}]
+set_driving_cell -lib_cell FD2 -library lsi_10k -pin Q -from_pin CP            \
+-no_design_rule [get_ports {UPC[0]}]
+set_port_fanout_number 2 [get_ports {D[15]}]
+set_port_fanout_number 1 [get_ports {D[14]}]
+set_port_fanout_number 2 [get_ports {D[13]}]
+set_port_fanout_number 2 [get_ports {D[12]}]
+set_port_fanout_number 2 [get_ports {D[11]}]
+set_port_fanout_number 2 [get_ports {D[10]}]
+set_port_fanout_number 1 [get_ports {D[9]}]
+set_port_fanout_number 1 [get_ports {D[8]}]
+set_port_fanout_number 1 [get_ports {D[7]}]
+set_port_fanout_number 2 [get_ports {D[6]}]
+set_port_fanout_number 2 [get_ports {D[5]}]
+set_port_fanout_number 2 [get_ports {D[4]}]
+set_port_fanout_number 2 [get_ports {D[3]}]
+set_port_fanout_number 1 [get_ports {D[2]}]
+set_port_fanout_number 2 [get_ports {D[1]}]
+set_port_fanout_number 1 [get_ports {D[0]}]
+set_port_fanout_number 4 [get_ports {R[15]}]
+set_port_fanout_number 2 [get_ports {R[14]}]
+set_port_fanout_number 3 [get_ports {R[13]}]
+set_port_fanout_number 3 [get_ports {R[12]}]
+set_port_fanout_number 3 [get_ports {R[11]}]
+set_port_fanout_number 4 [get_ports {R[10]}]
+set_port_fanout_number 3 [get_ports {R[9]}]
+set_port_fanout_number 3 [get_ports {R[8]}]
+set_port_fanout_number 3 [get_ports {R[7]}]
+set_port_fanout_number 4 [get_ports {R[6]}]
+set_port_fanout_number 3 [get_ports {R[5]}]
+set_port_fanout_number 3 [get_ports {R[4]}]
+set_port_fanout_number 4 [get_ports {R[3]}]
+set_port_fanout_number 3 [get_ports {R[2]}]
+set_port_fanout_number 3 [get_ports {R[1]}]
+set_port_fanout_number 2 [get_ports {R[0]}]
+set_port_fanout_number 3 [get_ports {UPC[15]}]
+set_port_fanout_number 2 [get_ports {UPC[14]}]
+set_port_fanout_number 2 [get_ports {UPC[13]}]
+set_port_fanout_number 2 [get_ports {UPC[12]}]
+set_port_fanout_number 2 [get_ports {UPC[11]}]
+set_port_fanout_number 3 [get_ports {UPC[10]}]
+set_port_fanout_number 3 [get_ports {UPC[9]}]
+set_port_fanout_number 3 [get_ports {UPC[8]}]
+set_port_fanout_number 3 [get_ports {UPC[7]}]
+set_port_fanout_number 3 [get_ports {UPC[6]}]
+set_port_fanout_number 2 [get_ports {UPC[5]}]
+set_port_fanout_number 2 [get_ports {UPC[4]}]
+set_port_fanout_number 3 [get_ports {UPC[3]}]
+set_port_fanout_number 3 [get_ports {UPC[2]}]
+set_port_fanout_number 2 [get_ports {UPC[1]}]
+set_port_fanout_number 2 [get_ports {UPC[0]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[15]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[14]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[13]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[12]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[11]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[10]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[9]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[8]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[7]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[6]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[5]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[4]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[3]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[2]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[1]}]
+set_load -pin_load 1.5 [get_ports {Y_IN[0]}]
+set_load -pin_load 2.5 [get_ports {D[15]}]
+set_load -pin_load 2 [get_ports {D[14]}]
+set_load -pin_load 2 [get_ports {D[13]}]
+set_load -pin_load 2 [get_ports {D[12]}]
+set_load -pin_load 2 [get_ports {D[11]}]
+set_load -pin_load 2.5 [get_ports {D[10]}]
+set_load -pin_load 1.5 [get_ports {D[9]}]
+set_load -pin_load 1.5 [get_ports {D[8]}]
+set_load -pin_load 1.5 [get_ports {D[7]}]
+set_load -pin_load 2.5 [get_ports {D[6]}]
+set_load -pin_load 3 [get_ports {D[5]}]
+set_load -pin_load 3 [get_ports {D[4]}]
+set_load -pin_load 2.5 [get_ports {D[3]}]
+set_load -pin_load 1.5 [get_ports {D[2]}]
+set_load -pin_load 2 [get_ports {D[1]}]
+set_load -pin_load 1 [get_ports {D[0]}]
+set_load -pin_load 6 [get_ports {R[15]}]
+set_load -pin_load 3.5 [get_ports {R[14]}]
+set_load -pin_load 3.5 [get_ports {R[13]}]
+set_load -pin_load 3.5 [get_ports {R[12]}]
+set_load -pin_load 3.5 [get_ports {R[11]}]
+set_load -pin_load 5 [get_ports {R[10]}]
+set_load -pin_load 3.5 [get_ports {R[9]}]
+set_load -pin_load 3.5 [get_ports {R[8]}]
+set_load -pin_load 3.5 [get_ports {R[7]}]
+set_load -pin_load 5 [get_ports {R[6]}]
+set_load -pin_load 4.5 [get_ports {R[5]}]
+set_load -pin_load 4.5 [get_ports {R[4]}]
+set_load -pin_load 5 [get_ports {R[3]}]
+set_load -pin_load 3.5 [get_ports {R[2]}]
+set_load -pin_load 4 [get_ports {R[1]}]
+set_load -pin_load 2.5 [get_ports {R[0]}]
+set_load -pin_load 4.5 [get_ports {UPC[15]}]
+set_load -pin_load 2.5 [get_ports {UPC[14]}]
+set_load -pin_load 2.5 [get_ports {UPC[13]}]
+set_load -pin_load 2.5 [get_ports {UPC[12]}]
+set_load -pin_load 2.5 [get_ports {UPC[11]}]
+set_load -pin_load 3.5 [get_ports {UPC[10]}]
+set_load -pin_load 3 [get_ports {UPC[9]}]
+set_load -pin_load 3 [get_ports {UPC[8]}]
+set_load -pin_load 3 [get_ports {UPC[7]}]
+set_load -pin_load 3.5 [get_ports {UPC[6]}]
+set_load -pin_load 2.5 [get_ports {UPC[5]}]
+set_load -pin_load 2.5 [get_ports {UPC[4]}]
+set_load -pin_load 3.5 [get_ports {UPC[3]}]
+set_load -pin_load 3 [get_ports {UPC[2]}]
+set_load -pin_load 3 [get_ports {UPC[1]}]
+set_load -pin_load 2.5 [get_ports {UPC[0]}]
+create_clock -name clk  -period 20  -waveform {0 10}
+set_clock_uncertainty -setup 0.45  [get_clocks clk]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[0]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[0]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[1]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[1]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[2]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[2]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[3]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[3]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[4]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[4]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[5]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[5]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[6]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[6]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[7]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[7]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[8]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[8]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[9]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[9]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[10]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[10]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[11]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[11]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[12]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[12]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[13]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[13]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[14]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[14]}]
+set_input_delay -clock clk  -rise 2.21755  [get_ports {UPC[15]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {UPC[15]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[0]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[0]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[1]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[1]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[2]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[2]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[3]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[3]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[4]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[4]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[5]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[5]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[6]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[6]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[7]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[7]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[8]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[8]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[9]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[9]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[10]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[10]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[11]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[11]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[12]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[12]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[13]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[13]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[14]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[14]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {F[15]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {F[15]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[0]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[0]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[1]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[1]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[2]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[2]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[3]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[3]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[4]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[4]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[5]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[5]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[6]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[6]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[7]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[7]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[8]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[8]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[9]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[9]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[10]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[10]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[11]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[11]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[12]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[12]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[13]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[13]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[14]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[14]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {R[15]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {R[15]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[0]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[0]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[1]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[1]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[2]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[2]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[3]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[3]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[4]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[4]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[5]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[5]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[6]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[6]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[7]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[7]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[8]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[8]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[9]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[9]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[10]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[10]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[11]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[11]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[12]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[12]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[13]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[13]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[14]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[14]}]
+set_input_delay -clock clk  -rise 2.0312  [get_ports {D[15]}]
+set_input_delay -clock clk  -fall 2.55297  [get_ports {D[15]}]
+set_input_delay -clock clk  -rise 1.2  [get_ports {MUX_CNT[0]}]
+set_input_delay -clock clk  -fall 1.2  [get_ports {MUX_CNT[0]}]
+set_input_delay -clock clk  -rise 1.2  [get_ports {MUX_CNT[1]}]
+set_input_delay -clock clk  -fall 1.2  [get_ports {MUX_CNT[1]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[0]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[1]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[2]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[3]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[4]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[5]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[6]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[7]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[8]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[9]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[10]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[11]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[12]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[13]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[14]}]
+set_output_delay -clock clk  1.5  [get_ports {Y_IN[15]}]
+1

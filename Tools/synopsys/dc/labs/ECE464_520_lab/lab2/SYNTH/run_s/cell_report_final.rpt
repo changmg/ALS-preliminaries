@@ -1,0 +1,72 @@
+ 
+****************************************
+Report : cell
+Design : counter
+Version: K-2015.06
+Date   : Thu Sep 17 10:26:03 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U23                       OAI221_X1       NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.5960  
+U24                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.7980  
+U25                       INV_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.5320  
+U26                       AOI21_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U27                       AND2_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U28                       OAI21_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U29                       AOI21_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U30                       INV_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.5320  
+U31                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.7980  
+U32                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.7980  
+U33                       MUX2_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.8620  
+U34                       MUX2_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.8620  
+U35                       NAND2_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.7980  
+U36                       OAI21_X1        NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U37                       INV_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.5320  
+U38                       MUX2_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.8620  
+U39                       NOR2_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.7980  
+U40                       INV_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.5320  
+U41                       NOR3_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.0640  
+U42                       INV_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.5320  
+U43                       NOR2_X1         NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            0.7980  
+U44                       OR3_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            1.3300  
+value_reg[0]              DFF_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+value_reg[1]              DFF_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+value_reg[2]              DFF_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+value_reg[3]              DFF_X1          NangateOpenCellLibrary_PDKv1_2_v2008_10
+                                                            4.7880  n
+--------------------------------------------------------------------------------
+Total 26 cells                                             41.4960
+1

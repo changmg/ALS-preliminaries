@@ -1,0 +1,1351 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Sep 16 15:15:07 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Unconnected ports (LINT-28)                                     3
+
+Cells                                                               3
+    Connected to power or ground (LINT-32)                          2
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'Adder16_DW01_add_1', port 'A[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'Adder16_DW01_add_1', port 'B[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'Adder16_DW01_add_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'Adder16', a pin on submodule 'add_1_root_add_20_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[16]' is connected to logic 0. 
+Warning: In design 'Adder16', a pin on submodule 'add_1_root_add_20_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[16]' is connected to logic 0. 
+Warning: In design 'Adder16', the same net is connected to more than one pin on submodule 'add_1_root_add_20_2'. (LINT-33)
+   Net 'n1' is connected to pins 'A[16]', 'B[16]''.
+1
+ 
+****************************************
+Report : area
+Design : Adder16
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:07 2020
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    lsi_10k (File: /home/ectl/Software/synopsys/syn2015.06/libraries/syn/lsi_10k.db)
+
+Number of ports:                          104
+Number of nets:                           331
+Number of cells:                          248
+Number of combinational cells:            196
+Number of sequential cells:                51
+Number of macros/black boxes:               0
+Number of buf/inv:                         42
+Number of references:                       2
+
+Combinational area:                280.000000
+Buf/Inv area:                       42.000000
+Noncombinational area:             350.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   630.000000
+Total area:                 undefined
+1
+ 
+****************************************
+Report : design
+Design : Adder16
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:07 2020
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    lsi_10k (File: /home/ectl/Software/synopsys/syn2015.06/libraries/syn/lsi_10k.db)
+
+Local Link Library:
+
+    {lsi_10k.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WCCOM
+    Library : lsi_10k
+    Process :   1.50
+    Temperature :  70.00
+    Voltage :   4.75
+    Interconnect Model : worst_case_tree
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : Adder16
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:07 2020
+****************************************
+
+Attributes:
+   BO - reference allows boundary optimization
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+add_1_root_add_20_2       Adder16_DW01_add_1              280.000000
+                                                                    BO, h
+ain_tmp_reg[0]            FD1             lsi_10k         7.000000  n
+ain_tmp_reg[1]            FD1             lsi_10k         7.000000  n
+ain_tmp_reg[2]            FD1             lsi_10k         7.000000  n
+ain_tmp_reg[3]            FD1             lsi_10k         7.000000  n
+ain_tmp_reg[4]            FD1             lsi_10k         7.000000  n
+ain_tmp_reg[5]            FD1             lsi_10k         7.000000  n
+ain_tmp_reg[6]            FD1             lsi_10k         7.000000  n
+ain_tmp_reg[7]            FD1             lsi_10k         7.000000  n
+ain_tmp_reg[8]            FD1             lsi_10k         7.000000  n
+ain_tmp_reg[9]            FD1             lsi_10k         7.000000  n
+ain_tmp_reg[10]           FD1             lsi_10k         7.000000  n
+ain_tmp_reg[11]           FD1             lsi_10k         7.000000  n
+ain_tmp_reg[12]           FD1             lsi_10k         7.000000  n
+ain_tmp_reg[13]           FD1             lsi_10k         7.000000  n
+ain_tmp_reg[14]           FD1             lsi_10k         7.000000  n
+ain_tmp_reg[15]           FD1             lsi_10k         7.000000  n
+bin_tmp_reg[0]            FD1             lsi_10k         7.000000  n
+bin_tmp_reg[1]            FD1             lsi_10k         7.000000  n
+bin_tmp_reg[2]            FD1             lsi_10k         7.000000  n
+bin_tmp_reg[3]            FD1             lsi_10k         7.000000  n
+bin_tmp_reg[4]            FD1             lsi_10k         7.000000  n
+bin_tmp_reg[5]            FD1             lsi_10k         7.000000  n
+bin_tmp_reg[6]            FD1             lsi_10k         7.000000  n
+bin_tmp_reg[7]            FD1             lsi_10k         7.000000  n
+bin_tmp_reg[8]            FD1             lsi_10k         7.000000  n
+bin_tmp_reg[9]            FD1             lsi_10k         7.000000  n
+bin_tmp_reg[10]           FD1             lsi_10k         7.000000  n
+bin_tmp_reg[11]           FD1             lsi_10k         7.000000  n
+bin_tmp_reg[12]           FD1             lsi_10k         7.000000  n
+bin_tmp_reg[13]           FD1             lsi_10k         7.000000  n
+bin_tmp_reg[14]           FD1             lsi_10k         7.000000  n
+bin_tmp_reg[15]           FD1             lsi_10k         7.000000  n
+cin_tmp_reg               FD1             lsi_10k         7.000000  n
+cout_reg                  FD1             lsi_10k         7.000000  n
+sout_reg[0]               FD1             lsi_10k         7.000000  n
+sout_reg[1]               FD1             lsi_10k         7.000000  n
+sout_reg[2]               FD1             lsi_10k         7.000000  n
+sout_reg[3]               FD1             lsi_10k         7.000000  n
+sout_reg[4]               FD1             lsi_10k         7.000000  n
+sout_reg[5]               FD1             lsi_10k         7.000000  n
+sout_reg[6]               FD1             lsi_10k         7.000000  n
+sout_reg[7]               FD1             lsi_10k         7.000000  n
+sout_reg[8]               FD1             lsi_10k         7.000000  n
+sout_reg[9]               FD1             lsi_10k         7.000000  n
+sout_reg[10]              FD1             lsi_10k         7.000000  n
+sout_reg[11]              FD1             lsi_10k         7.000000  n
+sout_reg[12]              FD1             lsi_10k         7.000000  n
+sout_reg[13]              FD1             lsi_10k         7.000000  n
+sout_reg[14]              FD1             lsi_10k         7.000000  n
+sout_reg[15]              FD1             lsi_10k         7.000000  n
+--------------------------------------------------------------------------------
+Total 51 cells                                            630.000000
+1
+ 
+****************************************
+Report : reference
+Design : Adder16
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:07 2020
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+Adder16_DW01_add_1              280.000000       1    280.000000  h
+FD1                lsi_10k        7.000000      50    350.000000  n
+-----------------------------------------------------------------------------
+Total 2 references                                    630.000000
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : Adder16
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:07 2020
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+ain[0]         in      4.0000   0.0000   --      --      --         
+ain[1]         in      4.0000   0.0000   --      --      --         
+ain[2]         in      4.0000   0.0000   --      --      --         
+ain[3]         in      4.0000   0.0000   --      --      --         
+ain[4]         in      4.0000   0.0000   --      --      --         
+ain[5]         in      4.0000   0.0000   --      --      --         
+ain[6]         in      4.0000   0.0000   --      --      --         
+ain[7]         in      4.0000   0.0000   --      --      --         
+ain[8]         in      4.0000   0.0000   --      --      --         
+ain[9]         in      4.0000   0.0000   --      --      --         
+ain[10]        in      4.0000   0.0000   --      --      --         
+ain[11]        in      3.0000   0.0000   --      --      --         
+ain[12]        in     18.0000   0.0000   --      --      --         
+ain[13]        in     18.0000   0.0000   --      --      --         
+ain[14]        in     18.0000   0.0000   --      --      --         
+ain[15]        in     18.0000   0.0000   --      --      --         
+bin[0]         in      6.0000   0.0000   --      --      --         
+bin[1]         in      6.0000   0.0000   --      --      --         
+bin[2]         in      6.0000   0.0000   --      --      --         
+bin[3]         in      6.0000   0.0000   --      --      --         
+bin[4]         in      6.0000   0.0000   --      --      --         
+bin[5]         in      6.0000   0.0000   --      --      --         
+bin[6]         in      4.0000   0.0000   --      --      --         
+bin[7]         in      4.0000   0.0000   --      --      --         
+bin[8]         in      4.0000   0.0000   --      --      --         
+bin[9]         in      4.0000   0.0000   --      --      --         
+bin[10]        in      4.0000   0.0000   --      --      --         
+bin[11]        in      6.0000   0.0000   --      --      --         
+bin[12]        in      4.0000   0.0000   --      --      --         
+bin[13]        in      4.0000   0.0000   --      --      --         
+bin[14]        in      6.0000   0.0000   --      --      --         
+bin[15]        in      4.0000   0.0000   --      --      --         
+cin            in      1.0000   0.0000   --      --      --         
+clk            in    164.0000   0.0000   --      --      --         
+cout           out     1.5000   0.0000   --      --      --         
+sout[0]        out     2.0000   0.0000   --      --      --         
+sout[1]        out     3.0000   0.0000   --      --      --         
+sout[2]        out     2.5000   0.0000   --      --      --         
+sout[3]        out     3.5000   0.0000   --      --      --         
+sout[4]        out     4.0000   0.0000   --      --      --         
+sout[5]        out     4.0000   0.0000   --      --      --         
+sout[6]        out     3.5000   0.0000   --      --      --         
+sout[7]        out     2.5000   0.0000   --      --      --         
+sout[8]        out     2.5000   0.0000   --      --      --         
+sout[9]        out     2.5000   0.0000   --      --      --         
+sout[10]       out     3.5000   0.0000   --      --      --         
+sout[11]       out     3.0000   0.0000   --      --      --         
+sout[12]       out     3.0000   0.0000   --      --      --         
+sout[13]       out     3.0000   0.0000   --      --      --         
+sout[14]       out     3.0000   0.0000   --      --      --         
+sout[15]       out     3.5000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+ain[0]             4      --              --              --        -- 
+ain[1]             4      --              --              --        -- 
+ain[2]             4      --              --              --        -- 
+ain[3]             4      --              --              --        -- 
+ain[4]             4      --              --              --        -- 
+ain[5]             4      --              --              --        -- 
+ain[6]             4      --              --              --        -- 
+ain[7]             4      --              --              --        -- 
+ain[8]             4      --              --              --        -- 
+ain[9]             4      --              --              --        -- 
+ain[10]            4      --              --              --        -- 
+ain[11]            4      --              --              --        -- 
+ain[12]           19      --              --              --        -- 
+ain[13]           19      --              --              --        -- 
+ain[14]           19      --              --              --        -- 
+ain[15]           19      --              --              --        -- 
+bin[0]             4      --              --              --        -- 
+bin[1]             4      --              --              --        -- 
+bin[2]             4      --              --              --        -- 
+bin[3]             4      --              --              --        -- 
+bin[4]             4      --              --              --        -- 
+bin[5]             4      --              --              --        -- 
+bin[6]             4      --              --              --        -- 
+bin[7]             4      --              --              --        -- 
+bin[8]             4      --              --              --        -- 
+bin[9]             4      --              --              --        -- 
+bin[10]            4      --              --              --        -- 
+bin[11]            4      --              --              --        -- 
+bin[12]            4      --              --              --        -- 
+bin[13]            4      --              --              --        -- 
+bin[14]            4      --              --              --        -- 
+bin[15]            4      --              --              --        -- 
+cin                2      --              --              --        -- 
+clk              165      --              --              --        -- 
+cout               1      --              --              --        -- 
+sout[0]            2      --              --              --        -- 
+sout[1]            3      --              --              --        -- 
+sout[2]            2      --              --              --        -- 
+sout[3]            3      --              --              --        -- 
+sout[4]            3      --              --              --        -- 
+sout[5]            3      --              --              --        -- 
+sout[6]            3      --              --              --        -- 
+sout[7]            2      --              --              --        -- 
+sout[8]            2      --              --              --        -- 
+sout[9]            2      --              --              --        -- 
+sout[10]           3      --              --              --        -- 
+sout[11]           3      --              --              --        -- 
+sout[12]           3      --              --              --        -- 
+sout[13]           3      --              --              --        -- 
+sout[14]           2      --              --              --        -- 
+sout[15]           3      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+ain[0]        1.20    1.20    1.20    1.20  clk       --    
+ain[1]        1.20    1.20    1.20    1.20  clk       --    
+ain[2]        1.20    1.20    1.20    1.20  clk       --    
+ain[3]        1.20    1.20    1.20    1.20  clk       --    
+ain[4]        1.20    1.20    1.20    1.20  clk       --    
+ain[5]        1.20    1.20    1.20    1.20  clk       --    
+ain[6]        1.20    1.20    1.20    1.20  clk       --    
+ain[7]        1.20    1.20    1.20    1.20  clk       --    
+ain[8]        1.20    1.20    1.20    1.20  clk       --    
+ain[9]        1.20    1.20    1.20    1.20  clk       --    
+ain[10]       1.20    1.20    1.20    1.20  clk       --    
+ain[11]       1.20    1.20    1.20    1.20  clk       --    
+ain[12]       1.20    1.20    1.20    1.20  clk       --    
+ain[13]       1.20    1.20    1.20    1.20  clk       --    
+ain[14]       1.20    1.20    1.20    1.20  clk       --    
+ain[15]       1.20    1.20    1.20    1.20  clk       --    
+bin[0]        1.20    1.20    1.20    1.20  clk       --    
+bin[1]        1.20    1.20    1.20    1.20  clk       --    
+bin[2]        1.20    1.20    1.20    1.20  clk       --    
+bin[3]        1.20    1.20    1.20    1.20  clk       --    
+bin[4]        1.20    1.20    1.20    1.20  clk       --    
+bin[5]        1.20    1.20    1.20    1.20  clk       --    
+bin[6]        1.20    1.20    1.20    1.20  clk       --    
+bin[7]        1.20    1.20    1.20    1.20  clk       --    
+bin[8]        1.20    1.20    1.20    1.20  clk       --    
+bin[9]        1.20    1.20    1.20    1.20  clk       --    
+bin[10]       1.20    1.20    1.20    1.20  clk       --    
+bin[11]       1.20    1.20    1.20    1.20  clk       --    
+bin[12]       1.20    1.20    1.20    1.20  clk       --    
+bin[13]       1.20    1.20    1.20    1.20  clk       --    
+bin[14]       1.20    1.20    1.20    1.20  clk       --    
+bin[15]       1.20    1.20    1.20    1.20  clk       --    
+cin           1.20    1.20    1.20    1.20  clk       --    
+clk           1.20    --      1.20    --    clk       --    
+              --      1.20    --      1.20  clk(f)          
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+ain[0]       IV                 IV                   -- /  --     n,N
+ain[1]       IV                 IV                   -- /  --     n,N
+ain[2]       IV                 IV                   -- /  --     n,N
+ain[3]       IV                 IV                   -- /  --     n,N
+ain[4]       IV                 IV                   -- /  --     n,N
+ain[5]       IV                 IV                   -- /  --     n,N
+ain[6]       IV                 IV                   -- /  --     n,N
+ain[7]       IV                 IV                   -- /  --     n,N
+ain[8]       IV                 IV                   -- /  --     n,N
+ain[9]       IV                 IV                   -- /  --     n,N
+ain[10]      IV                 IV                   -- /  --     n,N
+ain[11]      IV                 IV                   -- /  --     n,N
+ain[12]      IV                 IV                   -- /  --     n,N
+ain[13]      IV                 IV                   -- /  --     n,N
+ain[14]      IV                 IV                   -- /  --     n,N
+ain[15]      IV                 IV                   -- /  --     n,N
+bin[0]       IV                 IV                   -- /  --     n,N
+bin[1]       IV                 IV                   -- /  --     n,N
+bin[2]       IV                 IV                   -- /  --     n,N
+bin[3]       IV                 IV                   -- /  --     n,N
+bin[4]       IV                 IV                   -- /  --     n,N
+bin[5]       IV                 IV                   -- /  --     n,N
+bin[6]       IV                 IV                   -- /  --     n,N
+bin[7]       IV                 IV                   -- /  --     n,N
+bin[8]       IV                 IV                   -- /  --     n,N
+bin[9]       IV                 IV                   -- /  --     n,N
+bin[10]      IV                 IV                   -- /  --     n,N
+bin[11]      IV                 IV                   -- /  --     n,N
+bin[12]      IV                 IV                   -- /  --     n,N
+bin[13]      IV                 IV                   -- /  --     n,N
+bin[14]      IV                 IV                   -- /  --     n,N
+bin[15]      IV                 IV                   -- /  --     n,N
+cin          IV                 IV                   -- /  --     n,N
+clk          IV/  --            IV/  --              -- /  --     n,N
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+ain[0]        --      --     --      --     --      --     --     --        -- 
+ain[1]        --      --     --      --     --      --     --     --        -- 
+ain[2]        --      --     --      --     --      --     --     --        -- 
+ain[3]        --      --     --      --     --      --     --     --        -- 
+ain[4]        --      --     --      --     --      --     --     --        -- 
+ain[5]        --      --     --      --     --      --     --     --        -- 
+ain[6]        --      --     --      --     --      --     --     --        -- 
+ain[7]        --      --     --      --     --      --     --     --        -- 
+ain[8]        --      --     --      --     --      --     --     --        -- 
+ain[9]        --      --     --      --     --      --     --     --        -- 
+ain[10]       --      --     --      --     --      --     --     --        -- 
+ain[11]       --      --     --      --     --      --     --     --        -- 
+ain[12]       --      --     --      --     --      --     --     --        -- 
+ain[13]       --      --     --      --     --      --     --     --        -- 
+ain[14]       --      --     --      --     --      --     --     --        -- 
+ain[15]       --      --     --      --     --      --     --     --        -- 
+bin[0]        --      --     --      --     --      --     --     --        -- 
+bin[1]        --      --     --      --     --      --     --     --        -- 
+bin[2]        --      --     --      --     --      --     --     --        -- 
+bin[3]        --      --     --      --     --      --     --     --        -- 
+bin[4]        --      --     --      --     --      --     --     --        -- 
+bin[5]        --      --     --      --     --      --     --     --        -- 
+bin[6]        --      --     --      --     --      --     --     --        -- 
+bin[7]        --      --     --      --     --      --     --     --        -- 
+bin[8]        --      --     --      --     --      --     --     --        -- 
+bin[9]        --      --     --      --     --      --     --     --        -- 
+bin[10]       --      --     --      --     --      --     --     --        -- 
+bin[11]       --      --     --      --     --      --     --     --        -- 
+bin[12]       --      --     --      --     --      --     --     --        -- 
+bin[13]       --      --     --      --     --      --     --     --        -- 
+bin[14]       --      --     --      --     --      --     --     --        -- 
+bin[15]       --      --     --      --     --      --     --     --        -- 
+cin           --      --     --      --     --      --     --     --        -- 
+clk           --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+ain[0]        --      --      --      -- 
+ain[1]        --      --      --      -- 
+ain[2]        --      --      --      -- 
+ain[3]        --      --      --      -- 
+ain[4]        --      --      --      -- 
+ain[5]        --      --      --      -- 
+ain[6]        --      --      --      -- 
+ain[7]        --      --      --      -- 
+ain[8]        --      --      --      -- 
+ain[9]        --      --      --      -- 
+ain[10]       --      --      --      -- 
+ain[11]       --      --      --      -- 
+ain[12]       --      --      --      -- 
+ain[13]       --      --      --      -- 
+ain[14]       --      --      --      -- 
+ain[15]       --      --      --      -- 
+bin[0]        --      --      --      -- 
+bin[1]        --      --      --      -- 
+bin[2]        --      --      --      -- 
+bin[3]        --      --      --      -- 
+bin[4]        --      --      --      -- 
+bin[5]        --      --      --      -- 
+bin[6]        --      --      --      -- 
+bin[7]        --      --      --      -- 
+bin[8]        --      --      --      -- 
+bin[9]        --      --      --      -- 
+bin[10]       --      --      --      -- 
+bin[11]       --      --      --      -- 
+bin[12]       --      --      --      -- 
+bin[13]       --      --      --      -- 
+bin[14]       --      --      --      -- 
+bin[15]       --      --      --      -- 
+cin           --      --      --      -- 
+clk           --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+cout          1.50    1.50    1.50    1.50  clk       0.00  
+sout[0]       3.85    4.00   12.36   12.67  clk       0.00  
+sout[1]       3.85    4.00   12.36   12.67  clk       0.00  
+sout[2]       3.85    4.00   12.76   11.27  clk       0.00  
+sout[3]       3.85    4.00   12.65   11.14  clk       0.00  
+sout[4]       3.85    4.00   11.55   12.39  clk       0.00  
+sout[5]       3.85    4.00   11.55   12.39  clk       0.00  
+sout[6]       3.85    4.00   10.29   10.07  clk       0.00  
+sout[7]       3.85    4.00   11.28   12.64  clk       0.00  
+sout[8]       3.85    4.00   11.28   12.64  clk       0.00  
+sout[9]       3.85    4.00   10.78   12.51  clk       0.00  
+sout[10]      3.85    4.00   10.77   10.93  clk       0.00  
+sout[11]      3.85    4.00   10.77   11.53  clk       0.00  
+sout[12]      3.85    4.00   10.57   11.53  clk       0.00  
+sout[13]      3.85    4.00    8.81    8.68  clk       0.00  
+sout[14]      3.85    4.00    4.60    6.29  clk       0.00  
+sout[15]      3.85    4.00    6.00    8.05  clk       0.00  
+
+1
+ 
+****************************************
+Report : net
+Design : Adder16
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:07 2020
+****************************************
+
+
+Operating Conditions: WCCOM   Library: lsi_10k
+Wire Load Model Mode: top
+
+
+Attributes:
+   dr - drc disabled
+
+Net                 Fanout     Fanin      Load   Resistance    Pins   Attributes
+--------------------------------------------------------------------------------
+ain[0]                   1         1      5.00         0.00       2   
+ain[1]                   1         1      5.00         0.00       2   
+ain[2]                   1         1      5.00         0.00       2   
+ain[3]                   1         1      5.00         0.00       2   
+ain[4]                   1         1      5.00         0.00       2   
+ain[5]                   1         1      5.00         0.00       2   
+ain[6]                   1         1      5.00         0.00       2   
+ain[7]                   1         1      5.00         0.00       2   
+ain[8]                   1         1      5.00         0.00       2   
+ain[9]                   1         1      5.00         0.00       2   
+ain[10]                  1         1      5.00         0.00       2   
+ain[11]                  1         1      4.00         0.00       2   
+ain[12]                  1         1     19.00         0.00       2   
+ain[13]                  1         1     19.00         0.00       2   
+ain[14]                  1         1     19.00         0.00       2   
+ain[15]                  1         1     19.00         0.00       2   
+ain_tmp[0]               4         1      4.00         0.00       5   
+ain_tmp[1]               4         1      4.00         0.00       5   
+ain_tmp[2]               3         1      3.00         0.00       4   
+ain_tmp[3]               3         1      3.00         0.00       4   
+ain_tmp[4]               3         1      3.00         0.00       4   
+ain_tmp[5]               3         1      3.00         0.00       4   
+ain_tmp[6]               2         1      3.00         0.00       3   
+ain_tmp[7]               2         1      3.00         0.00       3   
+ain_tmp[8]               2         1      3.00         0.00       3   
+ain_tmp[9]               3         1      3.00         0.00       4   
+ain_tmp[10]              2         1      3.00         0.00       3   
+ain_tmp[11]              2         1      2.00         0.00       3   
+ain_tmp[12]              2         1      3.00         0.00       3   
+ain_tmp[13]              2         1      3.00         0.00       3   
+ain_tmp[14]              2         1      3.00         0.00       3   
+ain_tmp[15]              2         1      3.00         0.00       3   
+bin[0]                   1         1      7.00         0.00       2   
+bin[1]                   1         1      7.00         0.00       2   
+bin[2]                   1         1      7.00         0.00       2   
+bin[3]                   1         1      7.00         0.00       2   
+bin[4]                   1         1      7.00         0.00       2   
+bin[5]                   1         1      7.00         0.00       2   
+bin[6]                   1         1      5.00         0.00       2   
+bin[7]                   1         1      5.00         0.00       2   
+bin[8]                   1         1      5.00         0.00       2   
+bin[9]                   1         1      5.00         0.00       2   
+bin[10]                  1         1      5.00         0.00       2   
+bin[11]                  1         1      7.00         0.00       2   
+bin[12]                  1         1      5.00         0.00       2   
+bin[13]                  1         1      5.00         0.00       2   
+bin[14]                  1         1      7.00         0.00       2   
+bin[15]                  1         1      5.00         0.00       2   
+bin_tmp[0]               4         1      4.00         0.00       5   
+bin_tmp[1]               4         1      4.00         0.00       5   
+bin_tmp[2]               3         1      3.00         0.00       4   
+bin_tmp[3]               3         1      3.00         0.00       4   
+bin_tmp[4]               3         1      3.00         0.00       4   
+bin_tmp[5]               3         1      3.00         0.00       4   
+bin_tmp[6]               2         1      3.00         0.00       3   
+bin_tmp[7]               2         1      3.00         0.00       3   
+bin_tmp[8]               2         1      3.00         0.00       3   
+bin_tmp[9]               3         1      3.00         0.00       4   
+bin_tmp[10]              2         1      3.00         0.00       3   
+bin_tmp[11]              2         1      2.00         0.00       3   
+bin_tmp[12]              2         1      3.00         0.00       3   
+bin_tmp[13]              2         1      3.00         0.00       3   
+bin_tmp[14]              2         1      3.00         0.00       3   
+bin_tmp[15]              2         1      3.00         0.00       3   
+cin                      1         1      2.00         0.00       2   
+cin_tmp                  2         1      4.00         0.00       3   
+clk                     50         1    214.00         0.00      51   dr
+cout                     1         1      1.50         0.00       2   
+cout_tmp                 1         1      1.00         0.00       2   
+n1                       0         1      0.00         0.00       1   dr
+sout[0]                  1         1      2.00         0.00       2   
+sout[1]                  1         1      3.00         0.00       2   
+sout[2]                  1         1      2.50         0.00       2   
+sout[3]                  1         1      3.50         0.00       2   
+sout[4]                  1         1      4.00         0.00       2   
+sout[5]                  1         1      4.00         0.00       2   
+sout[6]                  1         1      3.50         0.00       2   
+sout[7]                  1         1      2.50         0.00       2   
+sout[8]                  1         1      2.50         0.00       2   
+sout[9]                  1         1      2.50         0.00       2   
+sout[10]                 1         1      3.50         0.00       2   
+sout[11]                 1         1      3.00         0.00       2   
+sout[12]                 1         1      3.00         0.00       2   
+sout[13]                 1         1      3.00         0.00       2   
+sout[14]                 1         1      3.00         0.00       2   
+sout[15]                 1         1      3.50         0.00       2   
+sout_tmp[0]              1         1      1.00         0.00       2   
+sout_tmp[1]              1         1      1.00         0.00       2   
+sout_tmp[2]              1         1      1.00         0.00       2   
+sout_tmp[3]              1         1      1.00         0.00       2   
+sout_tmp[4]              1         1      1.00         0.00       2   
+sout_tmp[5]              1         1      1.00         0.00       2   
+sout_tmp[6]              1         1      1.00         0.00       2   
+sout_tmp[7]              1         1      1.00         0.00       2   
+sout_tmp[8]              1         1      1.00         0.00       2   
+sout_tmp[9]              1         1      1.00         0.00       2   
+sout_tmp[10]             1         1      1.00         0.00       2   
+sout_tmp[11]             1         1      1.00         0.00       2   
+sout_tmp[12]             1         1      1.00         0.00       2   
+sout_tmp[13]             1         1      1.00         0.00       2   
+sout_tmp[14]             1         1      1.00         0.00       2   
+sout_tmp[15]             1         1      1.00         0.00       2   
+--------------------------------------------------------------------------------
+Total 102 nets         201       102    616.50         0.00     303
+Maximum                 50         1    214.00         0.00      51
+Average               1.97      1.00      6.04         0.00    2.97
+1
+ 
+****************************************
+Report : compile_options
+Design : Adder16
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:07 2020
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+Adder16                                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+
+Adder16_DW01_add_1                       flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : Adder16
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:07 2020
+****************************************
+
+
+    Design: Adder16
+
+    max_area               0.00
+  - Current Area         630.00
+  ------------------------------
+    Slack               -630.00  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : Adder16
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:07 2020
+****************************************
+
+Operating Conditions: WCCOM   Library: lsi_10k
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+sout_reg[14]/D (FD1)               17.83 f           18.75         0.92
+sout_reg[15]/D (FD1)               17.83 f           18.75         0.92
+sout_reg[12]/D (FD1)               17.04 f           18.75         1.71
+sout_reg[9]/D (FD1)                17.04 f           18.75         1.71
+sout_reg[11]/D (FD1)               16.50 f           18.75         2.25
+sout_reg[7]/D (FD1)                16.12 f           18.75         2.63
+sout_reg[13]/D (FD1)               15.69 f           18.75         3.06
+sout_reg[6]/D (FD1)                15.58 f           18.75         3.17
+sout_reg[5]/D (FD1)                15.58 f           18.75         3.17
+cout_reg/D (FD1)                   15.52 r           18.75         3.23
+sout_reg[8]/D (FD1)                15.45 f           18.75         3.30
+sout_reg[10]/D (FD1)               14.99 f           18.75         3.76
+sout[3] (out)                       2.98 r            6.90         3.92
+sout[1] (out)                       2.85 f            6.88         4.04
+sout[2] (out)                       2.71 r            6.79         4.08
+sout[8] (out)                       2.80 f            6.91         4.12
+sout[7] (out)                       2.80 f            6.91         4.12
+sout[0] (out)                       2.75 f            6.88         4.14
+sout[5] (out)                       2.94 f            7.16         4.21
+sout[4] (out)                       2.94 f            7.16         4.21
+sout[9] (out)                       2.80 f            7.04         4.24
+sout_reg[4]/D (FD1)                13.99 f           18.75         4.76
+sout[12] (out)                      2.85 f            8.02         5.17
+sout[11] (out)                      2.85 f            8.02         5.17
+sout[10] (out)                      2.89 f            8.62         5.72
+sout_reg[3]/D (FD1)                12.66 f           18.75         6.09
+sout[6] (out)                       2.98 r            9.26         6.28
+sout_reg[2]/D (FD1)                11.07 f           18.75         7.68
+sout[13] (out)                      2.85 r           10.74         7.89
+sout[15] (out)                      2.89 f           11.50         8.61
+sout_reg[1]/D (FD1)                 9.22 f           18.75         9.53
+sout[14] (out)                      2.85 f           13.26        10.42
+sout_reg[0]/D (FD1)                 8.09 f           18.75        10.66
+ain_tmp_reg[15]/D (FD1)             6.31 r           18.75        12.44
+ain_tmp_reg[14]/D (FD1)             6.31 r           18.75        12.44
+ain_tmp_reg[13]/D (FD1)             6.31 r           18.75        12.44
+ain_tmp_reg[12]/D (FD1)             6.31 r           18.75        12.44
+cout (out)                          2.70 f           18.05        15.35
+bin_tmp_reg[14]/D (FD1)             3.08 r           18.75        15.67
+bin_tmp_reg[5]/D (FD1)              3.08 r           18.75        15.67
+bin_tmp_reg[4]/D (FD1)              3.08 r           18.75        15.67
+bin_tmp_reg[3]/D (FD1)              3.08 r           18.75        15.67
+bin_tmp_reg[2]/D (FD1)              3.08 r           18.75        15.67
+bin_tmp_reg[0]/D (FD1)              3.08 r           18.75        15.67
+bin_tmp_reg[11]/D (FD1)             3.08 r           18.75        15.67
+bin_tmp_reg[1]/D (FD1)              3.08 r           18.75        15.67
+bin_tmp_reg[15]/D (FD1)             2.54 r           18.75        16.21
+bin_tmp_reg[13]/D (FD1)             2.54 r           18.75        16.21
+ain_tmp_reg[5]/D (FD1)              2.54 r           18.75        16.21
+ain_tmp_reg[4]/D (FD1)              2.54 r           18.75        16.21
+ain_tmp_reg[3]/D (FD1)              2.54 r           18.75        16.21
+ain_tmp_reg[2]/D (FD1)              2.54 r           18.75        16.21
+ain_tmp_reg[7]/D (FD1)              2.54 r           18.75        16.21
+ain_tmp_reg[6]/D (FD1)              2.54 r           18.75        16.21
+bin_tmp_reg[7]/D (FD1)              2.54 r           18.75        16.21
+bin_tmp_reg[6]/D (FD1)              2.54 r           18.75        16.21
+ain_tmp_reg[9]/D (FD1)              2.54 r           18.75        16.21
+bin_tmp_reg[9]/D (FD1)              2.54 r           18.75        16.21
+ain_tmp_reg[10]/D (FD1)             2.54 r           18.75        16.21
+ain_tmp_reg[8]/D (FD1)              2.54 r           18.75        16.21
+bin_tmp_reg[12]/D (FD1)             2.54 r           18.75        16.21
+bin_tmp_reg[10]/D (FD1)             2.54 r           18.75        16.21
+bin_tmp_reg[8]/D (FD1)              2.54 r           18.75        16.21
+ain_tmp_reg[0]/D (FD1)              2.54 r           18.75        16.21
+ain_tmp_reg[1]/D (FD1)              2.54 r           18.75        16.21
+ain_tmp_reg[11]/D (FD1)             2.28 r           18.75        16.47
+cin_tmp_reg/D (FD1)                 1.74 r           18.75        17.01
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 15
+Design : Adder16
+Version: K-2015.06
+Date   : Wed Sep 16 15:15:07 2020
+****************************************
+
+Operating Conditions: WCCOM   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: bin_tmp_reg[11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bin_tmp_reg[11]/CP (FD1)                                0.00       0.00 r
+  bin_tmp_reg[11]/Q (FD1)                                 2.57       2.57 r
+  add_1_root_add_20_2/B[11] (Adder16_DW01_add_1)          0.00       2.57 r
+  add_1_root_add_20_2/U102/Z (IV)                         0.39       2.96 f
+  add_1_root_add_20_2/U101/Z (ND2)                        2.47       5.44 r
+  add_1_root_add_20_2/U44/Z (ND3)                         0.90       6.34 f
+  add_1_root_add_20_2/U42/Z (NR2)                         2.47       8.81 r
+  add_1_root_add_20_2/U50/Z (ND3)                         0.90       9.71 f
+  add_1_root_add_20_2/U13/Z (AN3)                         1.69      11.41 f
+  add_1_root_add_20_2/U11/Z (AO3)                         2.19      13.59 r
+  add_1_root_add_20_2/U172/Z (IVA)                        0.69      14.28 f
+  add_1_root_add_20_2/U28/Z (AO7)                         1.46      15.73 r
+  add_1_root_add_20_2/U27/Z (EO)                          2.10      17.83 f
+  add_1_root_add_20_2/SUM[14] (Adder16_DW01_add_1)        0.00      17.83 f
+  sout_reg[14]/D (FD1)                                    0.00      17.83 f
+  data arrival time                                                 17.83
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[14]/CP (FD1)                                   0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -17.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.92
+
+
+  Startpoint: bin_tmp_reg[11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bin_tmp_reg[11]/CP (FD1)                                0.00       0.00 r
+  bin_tmp_reg[11]/Q (FD1)                                 2.57       2.57 r
+  add_1_root_add_20_2/B[11] (Adder16_DW01_add_1)          0.00       2.57 r
+  add_1_root_add_20_2/U102/Z (IV)                         0.39       2.96 f
+  add_1_root_add_20_2/U101/Z (ND2)                        2.47       5.44 r
+  add_1_root_add_20_2/U44/Z (ND3)                         0.90       6.34 f
+  add_1_root_add_20_2/U42/Z (NR2)                         2.47       8.81 r
+  add_1_root_add_20_2/U50/Z (ND3)                         0.90       9.71 f
+  add_1_root_add_20_2/U13/Z (AN3)                         1.69      11.41 f
+  add_1_root_add_20_2/U11/Z (AO3)                         2.19      13.59 r
+  add_1_root_add_20_2/U172/Z (IVA)                        0.69      14.28 f
+  add_1_root_add_20_2/U25/Z (AO7)                         1.46      15.73 r
+  add_1_root_add_20_2/U24/Z (EO)                          2.10      17.83 f
+  add_1_root_add_20_2/SUM[15] (Adder16_DW01_add_1)        0.00      17.83 f
+  sout_reg[15]/D (FD1)                                    0.00      17.83 f
+  data arrival time                                                 17.83
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[15]/CP (FD1)                                   0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -17.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.92
+
+
+  Startpoint: ain_tmp_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ain_tmp_reg[1]/CP (FD1)                                 0.00       0.00 r
+  ain_tmp_reg[1]/Q (FD1)                                  3.12       3.12 r
+  add_1_root_add_20_2/A[1] (Adder16_DW01_add_1)           0.00       3.12 r
+  add_1_root_add_20_2/U187/Z (OR2)                        2.46       5.57 r
+  add_1_root_add_20_2/U186/Z (IVA)                        0.69       6.26 f
+  add_1_root_add_20_2/U10/Z (NR3)                         2.23       8.49 r
+  add_1_root_add_20_2/U8/Z (ND2)                          0.88       9.37 f
+  add_1_root_add_20_2/U19/Z (ND2)                         1.19      10.56 r
+  add_1_root_add_20_2/U16/Z (AO7)                         0.84      11.40 f
+  add_1_root_add_20_2/U15/Z (ND2)                         1.96      13.36 r
+  add_1_root_add_20_2/U4/Z (ND2)                          0.40      13.76 f
+  add_1_root_add_20_2/U30/Z (ND2)                         1.19      14.95 r
+  add_1_root_add_20_2/U29/Z (EO)                          2.10      17.04 f
+  add_1_root_add_20_2/SUM[12] (Adder16_DW01_add_1)        0.00      17.04 f
+  sout_reg[12]/D (FD1)                                    0.00      17.04 f
+  data arrival time                                                 17.04
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[12]/CP (FD1)                                   0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -17.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.71
+
+
+  Startpoint: ain_tmp_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ain_tmp_reg[1]/CP (FD1)                                 0.00       0.00 r
+  ain_tmp_reg[1]/Q (FD1)                                  3.12       3.12 r
+  add_1_root_add_20_2/A[1] (Adder16_DW01_add_1)           0.00       3.12 r
+  add_1_root_add_20_2/U187/Z (OR2)                        2.46       5.57 r
+  add_1_root_add_20_2/U186/Z (IVA)                        0.69       6.26 f
+  add_1_root_add_20_2/U10/Z (NR3)                         2.23       8.49 r
+  add_1_root_add_20_2/U8/Z (ND2)                          0.88       9.37 f
+  add_1_root_add_20_2/U19/Z (ND2)                         1.19      10.56 r
+  add_1_root_add_20_2/U16/Z (AO7)                         0.84      11.40 f
+  add_1_root_add_20_2/U15/Z (ND2)                         1.96      13.36 r
+  add_1_root_add_20_2/U23/Z (ND2)                         0.40      13.76 f
+  add_1_root_add_20_2/U22/Z (ND2)                         1.19      14.95 r
+  add_1_root_add_20_2/U20/Z (EN)                          2.10      17.04 f
+  add_1_root_add_20_2/SUM[9] (Adder16_DW01_add_1)         0.00      17.04 f
+  sout_reg[9]/D (FD1)                                     0.00      17.04 f
+  data arrival time                                                 17.04
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[9]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -17.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.71
+
+
+  Startpoint: ain_tmp_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ain_tmp_reg[1]/CP (FD1)                                 0.00       0.00 r
+  ain_tmp_reg[1]/Q (FD1)                                  3.12       3.12 r
+  add_1_root_add_20_2/A[1] (Adder16_DW01_add_1)           0.00       3.12 r
+  add_1_root_add_20_2/U187/Z (OR2)                        2.46       5.57 r
+  add_1_root_add_20_2/U186/Z (IVA)                        0.69       6.26 f
+  add_1_root_add_20_2/U10/Z (NR3)                         2.23       8.49 r
+  add_1_root_add_20_2/U8/Z (ND2)                          0.88       9.37 f
+  add_1_root_add_20_2/U36/Z (ND2)                         1.19      10.56 r
+  add_1_root_add_20_2/U34/Z (AO3)                         1.15      11.71 f
+  add_1_root_add_20_2/U37/Z (AO6)                         2.01      13.72 r
+  add_1_root_add_20_2/U41/Z (NR2)                         0.69      14.41 f
+  add_1_root_add_20_2/U39/Z (EO)                          2.10      16.50 f
+  add_1_root_add_20_2/SUM[11] (Adder16_DW01_add_1)        0.00      16.50 f
+  sout_reg[11]/D (FD1)                                    0.00      16.50 f
+  data arrival time                                                 16.50
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[11]/CP (FD1)                                   0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -16.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.25
+
+
+  Startpoint: ain_tmp_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ain_tmp_reg[1]/CP (FD1)                                 0.00       0.00 r
+  ain_tmp_reg[1]/Q (FD1)                                  3.12       3.12 r
+  add_1_root_add_20_2/A[1] (Adder16_DW01_add_1)           0.00       3.12 r
+  add_1_root_add_20_2/U187/Z (OR2)                        2.46       5.57 r
+  add_1_root_add_20_2/U186/Z (IVA)                        0.69       6.26 f
+  add_1_root_add_20_2/U10/Z (NR3)                         2.23       8.49 r
+  add_1_root_add_20_2/U8/Z (ND2)                          0.88       9.37 f
+  add_1_root_add_20_2/U32/Z (ND4)                         2.53      11.89 r
+  add_1_root_add_20_2/U47/Z (AO3)                         0.94      12.83 f
+  add_1_root_add_20_2/U46/Z (ND2)                         1.19      14.02 r
+  add_1_root_add_20_2/U45/Z (EO)                          2.10      16.12 f
+  add_1_root_add_20_2/SUM[7] (Adder16_DW01_add_1)         0.00      16.12 f
+  sout_reg[7]/D (FD1)                                     0.00      16.12 f
+  data arrival time                                                 16.12
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[7]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -16.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.63
+
+
+  Startpoint: bin_tmp_reg[11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bin_tmp_reg[11]/CP (FD1)                                0.00       0.00 r
+  bin_tmp_reg[11]/Q (FD1)                                 2.57       2.57 r
+  add_1_root_add_20_2/B[11] (Adder16_DW01_add_1)          0.00       2.57 r
+  add_1_root_add_20_2/U102/Z (IV)                         0.39       2.96 f
+  add_1_root_add_20_2/U101/Z (ND2)                        2.47       5.44 r
+  add_1_root_add_20_2/U44/Z (ND3)                         0.90       6.34 f
+  add_1_root_add_20_2/U42/Z (NR2)                         2.47       8.81 r
+  add_1_root_add_20_2/U50/Z (ND3)                         0.90       9.71 f
+  add_1_root_add_20_2/U13/Z (AN3)                         1.69      11.41 f
+  add_1_root_add_20_2/U11/Z (AO3)                         2.19      13.59 r
+  add_1_root_add_20_2/U54/Z (EN)                          2.10      15.69 f
+  add_1_root_add_20_2/SUM[13] (Adder16_DW01_add_1)        0.00      15.69 f
+  sout_reg[13]/D (FD1)                                    0.00      15.69 f
+  data arrival time                                                 15.69
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[13]/CP (FD1)                                   0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -15.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.06
+
+
+  Startpoint: ain_tmp_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ain_tmp_reg[1]/CP (FD1)                                 0.00       0.00 r
+  ain_tmp_reg[1]/Q (FD1)                                  3.12       3.12 r
+  add_1_root_add_20_2/A[1] (Adder16_DW01_add_1)           0.00       3.12 r
+  add_1_root_add_20_2/U187/Z (OR2)                        2.46       5.57 r
+  add_1_root_add_20_2/U186/Z (IVA)                        0.69       6.26 f
+  add_1_root_add_20_2/U10/Z (NR3)                         2.23       8.49 r
+  add_1_root_add_20_2/U8/Z (ND2)                          0.88       9.37 f
+  add_1_root_add_20_2/U32/Z (ND4)                         2.53      11.89 r
+  add_1_root_add_20_2/U49/Z (ND2)                         0.40      12.29 f
+  add_1_root_add_20_2/U158/Z (ND2)                        1.19      13.48 r
+  add_1_root_add_20_2/U48/Z (EO)                          2.10      15.58 f
+  add_1_root_add_20_2/SUM[6] (Adder16_DW01_add_1)         0.00      15.58 f
+  sout_reg[6]/D (FD1)                                     0.00      15.58 f
+  data arrival time                                                 15.58
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[6]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -15.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.17
+
+
+  Startpoint: ain_tmp_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ain_tmp_reg[1]/CP (FD1)                                 0.00       0.00 r
+  ain_tmp_reg[1]/Q (FD1)                                  3.12       3.12 r
+  add_1_root_add_20_2/A[1] (Adder16_DW01_add_1)           0.00       3.12 r
+  add_1_root_add_20_2/U187/Z (OR2)                        2.46       5.57 r
+  add_1_root_add_20_2/U186/Z (IVA)                        0.69       6.26 f
+  add_1_root_add_20_2/U10/Z (NR3)                         2.23       8.49 r
+  add_1_root_add_20_2/U8/Z (ND2)                          0.88       9.37 f
+  add_1_root_add_20_2/U32/Z (ND4)                         2.53      11.89 r
+  add_1_root_add_20_2/U64/Z (ND2)                         0.40      12.29 f
+  add_1_root_add_20_2/U63/Z (ND2)                         1.19      13.48 r
+  add_1_root_add_20_2/U61/Z (EN)                          2.10      15.58 f
+  add_1_root_add_20_2/SUM[5] (Adder16_DW01_add_1)         0.00      15.58 f
+  sout_reg[5]/D (FD1)                                     0.00      15.58 f
+  data arrival time                                                 15.58
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[5]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -15.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.17
+
+
+  Startpoint: ain_tmp_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cout_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ain_tmp_reg[1]/CP (FD1)                                 0.00       0.00 r
+  ain_tmp_reg[1]/Q (FD1)                                  3.12       3.12 r
+  add_1_root_add_20_2/A[1] (Adder16_DW01_add_1)           0.00       3.12 r
+  add_1_root_add_20_2/U187/Z (OR2)                        2.46       5.57 r
+  add_1_root_add_20_2/U186/Z (IVA)                        0.69       6.26 f
+  add_1_root_add_20_2/U10/Z (NR3)                         2.23       8.49 r
+  add_1_root_add_20_2/U8/Z (ND2)                          0.88       9.37 f
+  add_1_root_add_20_2/U19/Z (ND2)                         1.19      10.56 r
+  add_1_root_add_20_2/U16/Z (AO7)                         0.84      11.40 f
+  add_1_root_add_20_2/U15/Z (ND2)                         1.96      13.36 r
+  add_1_root_add_20_2/U53/Z (AO6)                         0.66      14.01 f
+  add_1_root_add_20_2/U51/Z (NR2)                         1.51      15.52 r
+  add_1_root_add_20_2/SUM[16] (Adder16_DW01_add_1)        0.00      15.52 r
+  cout_reg/D (FD1)                                        0.00      15.52 r
+  data arrival time                                                 15.52
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  cout_reg/CP (FD1)                                       0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -15.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.23
+
+
+  Startpoint: ain_tmp_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ain_tmp_reg[1]/CP (FD1)                                 0.00       0.00 r
+  ain_tmp_reg[1]/Q (FD1)                                  3.12       3.12 r
+  add_1_root_add_20_2/A[1] (Adder16_DW01_add_1)           0.00       3.12 r
+  add_1_root_add_20_2/U187/Z (OR2)                        2.46       5.57 r
+  add_1_root_add_20_2/U186/Z (IVA)                        0.69       6.26 f
+  add_1_root_add_20_2/U10/Z (NR3)                         2.23       8.49 r
+  add_1_root_add_20_2/U8/Z (ND2)                          0.88       9.37 f
+  add_1_root_add_20_2/U19/Z (ND2)                         1.19      10.56 r
+  add_1_root_add_20_2/U16/Z (AO7)                         0.84      11.40 f
+  add_1_root_add_20_2/U15/Z (ND2)                         1.96      13.36 r
+  add_1_root_add_20_2/U59/Z (EN)                          2.10      15.45 f
+  add_1_root_add_20_2/SUM[8] (Adder16_DW01_add_1)         0.00      15.45 f
+  sout_reg[8]/D (FD1)                                     0.00      15.45 f
+  data arrival time                                                 15.45
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[8]/CP (FD1)                                    0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -15.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.30
+
+
+  Startpoint: ain_tmp_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ain_tmp_reg[1]/CP (FD1)                                 0.00       0.00 r
+  ain_tmp_reg[1]/Q (FD1)                                  3.12       3.12 r
+  add_1_root_add_20_2/A[1] (Adder16_DW01_add_1)           0.00       3.12 r
+  add_1_root_add_20_2/U187/Z (OR2)                        2.46       5.57 r
+  add_1_root_add_20_2/U186/Z (IVA)                        0.69       6.26 f
+  add_1_root_add_20_2/U10/Z (NR3)                         2.23       8.49 r
+  add_1_root_add_20_2/U8/Z (ND2)                          0.88       9.37 f
+  add_1_root_add_20_2/U36/Z (ND2)                         1.19      10.56 r
+  add_1_root_add_20_2/U34/Z (AO3)                         1.15      11.71 f
+  add_1_root_add_20_2/U57/Z (ND2)                         1.19      12.89 r
+  add_1_root_add_20_2/U56/Z (EO)                          2.10      14.99 f
+  add_1_root_add_20_2/SUM[10] (Adder16_DW01_add_1)        0.00      14.99 f
+  sout_reg[10]/D (FD1)                                    0.00      14.99 f
+  data arrival time                                                 14.99
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.45      19.55
+  sout_reg[10]/CP (FD1)                                   0.00      19.55 r
+  library setup time                                     -0.80      18.75
+  data required time                                                18.75
+  --------------------------------------------------------------------------
+  data required time                                                18.75
+  data arrival time                                                -14.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.76
+
+
+  Startpoint: sout_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sout_reg[3]/CP (FD1)                     0.00       0.00 r
+  sout_reg[3]/Q (FD1)                      2.98       2.98 r
+  sout[3] (out)                            0.00       2.98 r
+  data arrival time                                   2.98
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  output external delay                  -12.65       6.90
+  data required time                                  6.90
+  -----------------------------------------------------------
+  data required time                                  6.90
+  data arrival time                                  -2.98
+  -----------------------------------------------------------
+  slack (MET)                                         3.92
+
+
+  Startpoint: sout_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sout_reg[1]/CP (FD1)                     0.00       0.00 r
+  sout_reg[1]/Q (FD1)                      2.85       2.85 f
+  sout[1] (out)                            0.00       2.85 f
+  data arrival time                                   2.85
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  output external delay                  -12.67       6.88
+  data required time                                  6.88
+  -----------------------------------------------------------
+  data required time                                  6.88
+  data arrival time                                  -2.85
+  -----------------------------------------------------------
+  slack (MET)                                         4.04
+
+
+  Startpoint: sout_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sout[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sout_reg[2]/CP (FD1)                     0.00       0.00 r
+  sout_reg[2]/Q (FD1)                      2.71       2.71 r
+  sout[2] (out)                            0.00       2.71 r
+  data arrival time                                   2.71
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -0.45      19.55
+  output external delay                  -12.76       6.79
+  data required time                                  6.79
+  -----------------------------------------------------------
+  data required time                                  6.79
+  data arrival time                                  -2.71
+  -----------------------------------------------------------
+  slack (MET)                                         4.08
+
+
+1
