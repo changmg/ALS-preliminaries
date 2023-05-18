@@ -7,7 +7,7 @@
 
 ## 2 安装和使用Docker
 
-https://kalacloud.com/blog/how-to-install-and-use-docker-on-ubuntu/
+https://www.runoob.com/docker/docker-tutorial.html
 
 ## 3 安装ALS开发环境的虚拟机
 
