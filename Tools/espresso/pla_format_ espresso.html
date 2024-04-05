@@ -1,0 +1,499 @@
+
+<!-- saved from url=(0070)http://www.ecs.umass.edu/ece/labs/vlsicad/ece667/links/espresso.5.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> <title>File Format: espresso</title> </head>
+<body bgcolor="#FFFFFF">
+<h1>ESPRESSO(5OCTTOOLS)</h1><p>
+</p><dl>
+<dt><b>NAME</b>
+       </dt><dd>espresso - input file format for espresso(1OCTTOOLS)</dd><dd>
+<p>
+</p></dd><dt><b>DESCRIPTION</b>
+</dt><dd>
+       Espresso  accepts  as  input  a two-level description of a
+       Boolean function.  This is described as a character matrix
+       with keywords embedded in the input to specify the size of
+       the matrix and the logical format of the  input  function.
+       Programs  exist  to translate a set of equations into this
+       format (e.g., eqntott(1OCTTOOLS), bdsyn(1OCTTOOLS), eqnto-
+       pla(1OCTTOOLS)).   This  manual page refers to Version 2.3
+       of Espresso.
+<p>
+       Comments are allowed within the input by placing  a  pound
+       sign  (#)  as the first character on a line.  Comments and
+       unrecognized keywords are passed directly from  the  input
+       file  to  standard output.  Any white-space (blanks, tabs,
+       etc.), except when used as a delimiter in an embedded com-
+       mand, is ignored.  It is generally assumed that the PLA is
+       specified such that each row of the PLA fits on  a  single
+       line in the input file.
+</p><p>
+</p></dd><dt><b>KEYWORDS</b></dt><dt>
+</dt><dd>
+       The  following  keywords  are recognized by espresso.  The
+       list shows the probable order of the  keywords  in  a  PLA
+       description.  [d] denotes a decimal number and [s] denotes
+       a text string.  The minimum required set of keywords is .i
+       and  .o  for binary-valued functions, or .mv for multiple-
+       valued functions.
+<p>
+</p><dl>
+<dt> .i [d]</dt><dd>      Specifies the number of input variables.
+
+</dd><dt>       .o [d]</dt><dd>      Specifies the number of output functions.
+<p>
+</p></dd><dt>       .mv [num_var] [num_binary_var] [d1] . . . [dn]
+                  </dt><dd> Specifies the number of  variables  (num_var),
+                   the     number     of     binary     variables
+                   (num_binary_var), and the size of each of  the
+                   multiple-valued variables (d1 through dn).
+<p>
+</p></dd><dt>       .ilb [s1] [s2] . . . [sn]
+                   </dt><dd>Gives  the  names  of  the binary valued vari-
+                   ables.  This must come after  .i  and  .o  (or
+                   after .mv).  There must be as many tokens fol-
+                   lowing the keyword as there  are  input  vari-
+                   ables.
+<p>
+</p></dd><dt>       .ob [s1] [s2] . . . [sn]
+                   </dt><dd>Gives the names of the output functions.  This
+                   must come after .i  and  .o  (or  after  .mv).
+                   There  must  be  as  many tokens following the
+                   keyword as there are output variables.
+<p>
+</p></dd><dt>       .label var=[d] [s1] [s2] ...
+                   </dt><dd>Specifies the names of the parts of  a  multi-
+                   ple-valued  variable.   This  must  come after
+                   .mv.  There must be as many  tokens  following
+                   the  keyword as there are parts for this vari-
+                   able.  Note that the  variables  are  numbered
+                   starting from 0.
+<p>
+</p></dd><dt>       .type [s]   Sets the logical interpretation of the charac-
+                   </dt><dd>ter matrix as described below  under  "Logical
+                   Description of a PLA".  This keyword must come
+                   before any product terms.  [s] is one of f, r,
+                   fd, fr, dr, or fdr.
+<p>
+</p></dd><dt>       .phase [s]  [s] is a string of as many 0's or 1's as there
+                   </dt><dd>are  output  functions.   It  specifies  which
+                   polarity  of  each  output  function should be
+                   used for the minimization (a 1 specifies  that
+                   the  ON-set  of the corresponding output func-
+                   tion should be used, and a  0  specifies  that
+                   the  OFF-set of the corresponding output func-
+                   tion should be minimized).
+<p>
+</p></dd><dt>       .pair [d]   Specifies the number  of  pairs  of  variables
+                   </dt><dd>which  will  be  paired together using two-bit
+                   decoders.  The rest of the line contains pairs
+                   of  numbers which specify the binary variables
+                   of the PLA which will be paired together.  The
+                   binary variables are numbered starting with 0.
+                   The PLA will be reshaped so that any  unpaired
+                   binary  variables  occupy the leftmost part of
+                   the array,  then  the  paired  multiple-valued
+                   columns, and finally any multiple-valued vari-
+                   ables.  If  the  labels  have  been  specified
+                   using  .ilb,  then  the  variable names may be
+                   used instead of the column number.
+<p>
+</p></dd><dt>       .symbolic [s0] [s1] . . . [sn] ; [t0] [t1]  . . . [tm] ;
+                   </dt><dd>Specifies  that  the  binary-valued  variables
+                   named [s0] thru [sn] are to be considered as a
+                   single  multiple-valued  variable.    Variable
+                   [s0]  is  considered the most significant bit,
+                   [s1] the next most significant,  and  [sn]  is
+                   the  least  significant  bit.   This creates a
+                   variable with 2**n parts corresponding to  the
+                   decodes  of  the binary-valued variables.  The
+                   keywords [t0] thru [tm] provide the labels for
+                   each  decode  of [s0] thru [sn].  ([t0] corre-
+                   sponds to a value  of  00...00,  [t1]  is  the
+                   value  00...01,  etc.).   The binary-variables
+                   may be identified  by  column  number,  or  by
+                   variable  name when .ilb is used.  The binary-
+                   variables are removed from the function  after
+                   the multiple-valued variable is created.
+<p>
+</p></dd><dt>       .symbolic-output [s0] [s1] . . . [sn] ; [t0] [t1] . . .
+                   [tm] ;
+                   </dt><dd>Specifies that the output functions  [s0]  ...
+                   [sn] are to be considered as a single symbolic
+                   output.  This creates 2**n more  output  vari-
+                   ables  corresponding to the possible values of
+                   the outputs.  The outputs may be identified by
+                   number  (starting from 0), or by variable name
+                   when .ob is used.   The  outputs  are  removed
+                   from the function after the new set of outputs
+                   is created.
+<p>
+</p></dd><dt>       .kiss       </dt><dd>Sets up for a kiss-style minimization.
+<p>
+</p></dd><dt>       .p [d]      </dt><dd>Specifies the number of  product  terms.   The
+                   product  terms  (one  per line) follow immedi-
+                   ately after this keyword.  Actually, this line
+                   is  ignored,  and the ".e", ".end", or the end
+                   of the file indicate  the  end  of  the  input
+                   description.
+<p>
+</p></dd><dt>       .e (.end)   </dt><dd>Optionally  marks  the end of the PLA descrip-
+                   tion.
+</dd></dl>
+<p>
+</p></dd><dt><b>LOGICAL DESCRIPTION OF A PLA</b></dt><dt>
+</dt><dd>
+       When we speak of the ON-set of a Boolean function, we mean
+       those  minterms  which  imply  the  function value is a 1.
+       Likewise, the OFF-set are  those  terms  which  imply  the
+       function is a 0, and the DC-set (don't care set) are those
+       terms for which the function is unspecified.   A  function
+       is  completely  described by providing its ON-set, OFF-set
+       and DC-set.  Note that all minterms lie in  the  union  of
+       the  ON-set, OFF-set and DC-set, and that the ON-set, OFF-
+       set and DC-set share no minterms.
+<p>
+       The purpose of the espresso  minimization  program  is  to
+       find a logically equivalent set of product-terms to repre-
+       sent the ON-set and optionally minterms which lie  in  the
+       DC-set, without containing any minterms of the OFF-set.
+</p><p>
+       A  Boolean function can be described in one of the follow-
+       ing ways:
+</p><p>
+</p><dl>
+<dt>       1)    </dt><dd> By providing the ON-set.  In  this  case,  espresso
+              computes  the  OFF-set as the complement of the ON-
+              set and the DC-set is  empty.   This  is  indicated
+              with the keyword .type f in the input file.
+<p>
+</p></dd><dt>       2)     </dt><dd>By  providing the ON-set and DC-set.  In this case,
+              espresso computes the OFF-set as the complement  of
+              the  union  of  the  ON-set and the DC-set.  If any
+              minterm belongs to both the ON-set and DC-set, then
+              it  is  considered  a don't care and may be removed
+              from the ON-set during  the  minimization  process.
+              This  is indicated with the keyword .type fd in the
+              input file.
+<p>
+</p></dd><dt>       3)    </dt><dd> By providing the ON-set and OFF-set.  In this case,
+              espresso  computes  the DC-set as the complement of
+              the union of the ON-set and the OFF-set.  It is  an
+              error  for any minterm to belong to both the ON-set
+              and OFF-set.  This error may not be detected during
+              the  minimization,  but  it can be checked with the
+              subprogram "-Dcheck" which will check  the  consis-
+              tency  of  a  function.  This is indicated with the
+              keyword .type fr in the input file.
+<p>
+</p></dd><dt>       4)     </dt><dd>By providing the ON-set, OFF-set and DC-set.   This
+              is  indicated  with  the  keyword  .type fdr in the
+              input file.
+<p>
+</p></dd></dl>
+       If at all possible, espresso should be  given  the  DC-set
+       (either  implicitly or explicitly) in order to improve the
+       results of the minimization.
+<p>
+       A term is represented by a "cube" which can be  considered
+       either  a  compact  representation of an algebraic product
+       term which implies the function value is a 1, or as a rep-
+       resentation  of  a row in a PLA which implements the term.
+       A cube has an input part which corresponds  to  the  input
+       plane  of  a  PLA, and an output part which corresponds to
+       the output plane of a PLA (for the  multiple-valued  case,
+       see below).
+</p><p>
+
+</p></dd><dt><b>SYMBOLS IN THE PLA MATRIX AND THEIR INTERPRETATION</b></dt><dt>
+</dt><dd>
+       Each  position  in the input plane corresponds to an input
+       variable where a 0 implies the corresponding input literal
+       appears  complemented in the product term, a 1 implies the
+       input literal appears uncomplemented in the product  term,
+       and  -  implies  the  input literal does not appear in the
+       product term.
+<p>
+       With type f, for each output, a 1 means this product  term
+       belongs  to  the  ON-set,  and a 0 or - means this product
+       term has no meaning for the value of this function.   This
+       type corresponds to an actual PLA where only the ON-set is
+       actually implemented.
+</p><p>
+       With type fd (the default), for each  output,  a  1  means
+       this  product  term  belongs to the ON-set, a 0 means this
+       product term has no meaning for the value  of  this  func-
+       tion, and a - implies this product term belongs to the DC-
+       set.
+</p><p>
+       With type fr, for each output, a 1 means this product term
+       belongs to the ON-set, a 0 means this product term belongs
+       to the OFF-set, and a - means this  product  term  has  no
+       meaning for the value of this function.
+</p><p>
+       With  type  fdr,  for  each output, a 1 means this product
+       term belongs to the ON-set, a 0 means  this  product  term
+       belongs  to  the  OFF-set,  a  -  means  this product term
+       belongs to the DC-set, and a ~ implies this  product  term
+       has no meaning for the value of this function.
+</p><p>
+       Note  that  regardless of the type of PLA, a ~ implies the
+       product term has no meaning for the value  of  this  func-
+       tion.   2  is allowed as a synonym for -, 4 is allowed for
+       1,  and 3 is allowed for ~.
+</p><p>
+
+</p></dd><dt><b>MULTIPLE-VALUED FUNCTIONS</b></dt><dt>
+</dt><dd>
+       Espresso will also minimize multiple-valued Boolean  func-
+       tions.   There  can  be  an  arbitrary number of multiple-
+       valued variables, and each can be of a different size.  If
+       there  are  also  binary-valued  variables, they should be
+       given as the first variables on  the  line  (for  ease  of
+       description).   Of  course, it is always possible to place
+       them anywhere on the line as a two-valued  multiple-valued
+       variable.   The function size is described by the embedded
+       option .mv rather than .i and .o.
+<p>
+       A multiple-output binary function with ni  inputs  and  no
+       outputs  would be specified as .mv ni+1 ni no.  .mv cannot
+       be used with either .i or .o - use one  or  the  other  to
+       specify the function size.
+</p><p>
+       The  binary  variables are given as described above.  Each
+       of the multiple-valued variables are given as a bit-vector
+       of  0  and  1 which have their usual meaning for multiple-
+       valued functions.  The last multiple-valued variable (also
+       called  the  output) is interpreted as described above for
+       the output (to split the function into an ON-set,  OFF-set
+       and DC-set).  A vertical bar | may be used to separate the
+       multiple-valued fields in the input file.
+</p><p>
+       If the size of the  multiple-valued  field  is  less  than
+       zero,  than a symbolic field is interpreted from the input
+       file.  The absolute value of the size specifies the  maxi-
+       mum number of unique symbolic labels which are expected in
+       this column.  The symbolic labels are  white-space  delim-
+       ited strings of characters.
+</p><p>
+       To  perform  a  kiss-style  encoding  problem, the keyword
+       .kiss should be included in the file.  The third  to  last
+       variable  on  the input file must be the symbolic "present
+       state", and the second to last variable must be the  "next
+       state".   As always, the last variable is the output.  The
+       symbolic "next state" will be hacked to be  actually  part
+       of the output.
+</p><p>
+</p></dd><dt><b>EXAMPLE #1</b></dt><dt>
+</dt><dd>
+       A two-bit adder which takes in two 2-bit operands and pro-
+       duces a  3-bit  result  can  be  described  completely  in
+       minterms as:
+<p>
+</p><pre>                 # 2-bit by 2-bit binary adder (with no carry input)
+                 .i 4
+                 .o 3
+                 0000  000
+                 0001  001
+                 0010  010
+                 0011  011
+                 0100  001
+                 0101  010
+                 0110  011
+                 0111  100
+                 1000  010
+                 1001  011
+                 1010  100
+                 1011  101
+                 1100  011
+                 1101  100
+                 1110  101
+                 1111  110
+</pre>
+<p>
+       It  is  also  possible to specify some extra options, such
+       as:
+</p><p>
+</p><pre>                 # 2-bit by 2-bit binary adder (with no carry input)
+                 .i 4
+                 .o 3
+              .ilb a1 a0 b1 b0
+              .ob s2 s1 s0
+                 .pair 2 (a1 b1) (a0 b0)
+                 .phase 011
+                 0000  000
+                 0001  001
+                 0010  010
+                 .
+                 .
+                 .
+                 1111  110
+              .e
+</pre>
+<p>
+       The option .pair indicates that  the  first  binary-valued
+       variable  should  be  paired  with the third binary-valued
+       variable, and that the second variable  should  be  paired
+       with  the  fourth  variable.   The  function  will then be
+       mapped into  an  equivalent  multiple-valued  minimization
+       problem.
+</p><p>
+       The option .phase indicates that the positive-phase should
+       be used for the second and third  outputs,  and  that  the
+       negative phase should be used for the first output.
+</p><p>
+</p></dd><dt><b>EXAMPLE #2</b></dt><dt>
+</dt><dd>
+       This  example  shows  a  description  of a multiple-valued
+       function with 5 binary  variables  and  3  multiple-valued
+       variables  (8  variables  total) where the multiple-valued
+       variables have sizes of 4 27 and 10 (note  that  the  last
+       multiple-valued  variable is the "output" and also encodes
+       the ON-set, DC-set and OFF-set information).
+<pre>            .mv 8 5 4 27 10
+            .ilb in1 in2 in3 in4 in5
+            .label var=5 part1 part2 part3 part4
+            .label var=6 a b c d e f g h i j k l m n
+                o p q r s t u v w x y z a1
+            .label var=7 out1 out2 out3 out4 out5 out6
+                out7 out8 out9 out10
+            0-010|1000|100000000000000000000000000|0010000000
+            10-10|1000|010000000000000000000000000|1000000000
+            0-111|1000|001000000000000000000000000|0001000000
+            0-10-|1000|000100000000000000000000000|0001000000
+            00000|1000|000010000000000000000000000|1000000000
+            00010|1000|000001000000000000000000000|0010000000
+            01001|1000|000000100000000000000000000|0000000010
+            0101-|1000|000000010000000000000000000|0000000000
+            0-0-0|1000|000000001000000000000000000|1000000000
+            10000|1000|000000000100000000000000000|0000000000
+            11100|1000|000000000010000000000000000|0010000000
+            10-10|1000|000000000001000000000000000|0000000000
+            11111|1000|000000000000100000000000000|0010000000
+                                .
+                                .
+                                .
+            11111|0001|000000000000000000000000001|0000000000
+</pre>
+<p>
+</p></dd><dt><b>EXAMPLE #3</b></dt><dt>
+</dt><dd>
+       This example shows  a  description  of  a  multiple-valued
+       function  setup  for kiss-style minimization.  There are 5
+       binary variables, 2 symbolic variables (the  present-state
+       and the next-state of the FSM) and the output (8 variables
+       total).
+<pre>            .mv 8 5 -10 -10 6
+            .ilb io1 io0 init swr mack
+            .ob wait minit mrd sack mwr dli
+            .type fr
+            .kiss
+            --1--     -        init0     110000
+            --1--     init0    init0     110000
+            --0--     init0    init1     110000
+            --00-     init1    init1     110000
+            --01-     init1    init2     110001
+            --0--     init2    init4     110100
+            --01-     init4    init4     110100
+            --00-     init4    iowait    000000
+            0000-     iowait   iowait    000000
+            1000-     iowait   init1     110000
+            01000     iowait   read0     101000
+            11000     iowait   write0    100010
+            01001     iowait   rmack     100000
+            11001     iowait   wmack     100000
+            --01-     iowait   init2     110001
+            --0-0     rmack    rmack     100000
+            --0-1     rmack    read0     101000
+            --0-0     wmack    wmack     100000
+            --0-1     wmack    write0    100010
+            --0--     read0    read1     101001
+            --0--     read1    iowait    000000
+            --0--     write0   iowait    000000
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          22 August 1986                       10
+
+
+
+
+
+ESPRESSO(5OCTTOOLS)                           ESPRESSO(5OCTTOOLS)
+
+
+</dd><dt><b>EXAMPLE 4</b></dt><dt>
+</dt><dd>
+       This example shows the use of  the  .symbolic  keyword  to
+       setup a multiple-valued minimization problem.
+<pre>            .i 15
+            .o 4
+            .ilb SeqActive&lt;0&gt; CacheOp&lt;6&gt; CacheOp&lt;5&gt; CacheOp&lt;4&gt;
+                 CacheOp&lt;3&gt; CacheOp&lt;2&gt; CacheOp&lt;1&gt; CacheOp&lt;0&gt;
+                 userKernel&lt;0&gt; Protection&lt;1&gt; Protection&lt;0&gt;
+                 cacheState&lt;1&gt; cacheState&lt;0&gt; PageDirty&lt;0&gt;
+                 WriteCycleIn&lt;0&gt;
+
+            .ob CacheBusy&lt;0&gt; dataMayBeValid&lt;0&gt; dataIsValid&lt;0&gt;
+                 WriteCycleOut&lt;0&gt;
+
+            .symbolic CacheOp&lt;6&gt; CacheOp&lt;5&gt; CacheOp&lt;4&gt; CacheOp&lt;3&gt;
+                 CacheOp&lt;2&gt; CacheOp&lt;1&gt; CacheOp&lt;0&gt; ;
+                 FET NA PHY_FET PR32 PRE_FET PW32 RA32 RD32
+                 RD64 RDCACHE RFO32 RFO64 TS32 WR32 WR64 WRCACHE ;
+
+            .symbolic Protection&lt;1&gt; Protection&lt;0&gt; ;
+                 PROT_KRO_UNA PROT_KRW_UNA PROT_KRW_URO PROT_KRW_URW ;
+
+            .symbolic cacheState&lt;1&gt; cacheState&lt;0&gt; ;
+                 CS_Invalid CS_OwnPrivate CS_OwnShared CS_UnOwned ;
+
+            .p 22
+            0000001--010110 0001
+            0000001-1-00110 0001
+            00001011-01011- 0100
+            000010111-0011- 0100
+            0000--001--01-- 0100
+            0000-10--0-1--- 0100
+            0000-10-1--1--- 0100
+            00000-0--0-1--- 0100
+            00000-0-1--1--- 0100
+            0000-10--0--1-- 0100
+            0000-10-1---1-- 0100
+            00000-0--0--1-- 0100
+            00000-0-1---1-- 0100
+            ---1----------- 1000
+            --1------------ 1000
+            -1------------- 1000
+            1-------------- 1000
+            -------0------- 1000
+            ----1---------- 1000
+            -----0--------- 1000
+            ------0-------- 1000
+            --------------1 1110
+            .e
+</pre>
+</dd><dt><b>See Also</b></dt><dt>
+</dt><dd>
+<a href="http://www.ecs.umass.edu/ece/labs/vlsicad/ece667/links/espresso.1.html">espresso(1OCTTOOLS)</a>
+</dd></dl></body></html>
