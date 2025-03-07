@@ -8,6 +8,8 @@
 ## 2 安装和使用Docker
 
 https://www.runoob.com/docker/docker-tutorial.html
+https://wiki.rcp.epfl.ch/home/CaaS/FAQ/how-to-prepare-environment
+https://wiki.rcp.epfl.ch/home/CaaS/FAQ/how-to-build-a-container-part1
 
 ## 3 安装ALS开发环境的虚拟机
 
